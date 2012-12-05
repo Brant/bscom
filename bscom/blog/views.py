@@ -61,6 +61,7 @@ def archive(request, month, year):
     
     return render_to_response("blog/archive.html", response_data, context_instance=RequestContext(request))
 
+
 def index(request):
     """
     Blog Index
