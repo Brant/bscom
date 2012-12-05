@@ -1,0 +1,1964 @@
+[
+     {
+          "pk": 14, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "piece", 
+               "name": "Portfolio Piece", 
+               "app_label": "folio"
+          }
+     }, 
+     {
+          "pk": 12, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "tag", 
+               "name": "Tag", 
+               "app_label": "taggit"
+          }
+     }, 
+     {
+          "pk": 13, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "taggeditem", 
+               "name": "Tagged Item", 
+               "app_label": "taggit"
+          }
+     }, 
+     {
+          "pk": 11, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "category", 
+               "name": "category", 
+               "app_label": "blog"
+          }
+     }, 
+     {
+          "pk": 15, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "contactsubmission", 
+               "name": "contact submission", 
+               "app_label": "noodles"
+          }
+     }, 
+     {
+          "pk": 5, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "contenttype", 
+               "name": "content type", 
+               "app_label": "contenttypes"
+          }
+     }, 
+     {
+          "pk": 10, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "entry", 
+               "name": "entry", 
+               "app_label": "blog"
+          }
+     }, 
+     {
+          "pk": 2, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "group", 
+               "name": "group", 
+               "app_label": "auth"
+          }
+     }, 
+     {
+          "pk": 8, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "logentry", 
+               "name": "log entry", 
+               "app_label": "admin"
+          }
+     }, 
+     {
+          "pk": 4, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "message", 
+               "name": "message", 
+               "app_label": "auth"
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "permission", 
+               "name": "permission", 
+               "app_label": "auth"
+          }
+     }, 
+     {
+          "pk": 6, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "session", 
+               "name": "session", 
+               "app_label": "sessions"
+          }
+     }, 
+     {
+          "pk": 7, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "site", 
+               "name": "site", 
+               "app_label": "sites"
+          }
+     }, 
+     {
+          "pk": 9, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "sitemeta", 
+               "name": "site meta", 
+               "app_label": "noodles"
+          }
+     }, 
+     {
+          "pk": 3, 
+          "model": "contenttypes.contenttype", 
+          "fields": {
+               "model": "user", 
+               "name": "user", 
+               "app_label": "auth"
+          }
+     }, 
+     {
+          "pk": "fe9b17db55f72420336cd19cd2fdf283", 
+          "model": "sessions.session", 
+          "fields": {
+               "expire_date": "2011-10-17 21:02:18", 
+               "session_data": "MzM3ZDc1MWFjZDUyNzEzZTljMThmZGQyYTkzY2JiMjFmMWY2ZGM5NDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+          }
+     }, 
+     {
+          "pk": "53acfb791265a427ce7d85cb9886ee5a", 
+          "model": "sessions.session", 
+          "fields": {
+               "expire_date": "2011-10-20 14:39:10", 
+               "session_data": "MzM3ZDc1MWFjZDUyNzEzZTljMThmZGQyYTkzY2JiMjFmMWY2ZGM5NDqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLAXUu\n"
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "sites.site", 
+          "fields": {
+               "domain": "brantsteen.com", 
+               "name": "Brant Steen"
+          }
+     }, 
+     {
+          "pk": 63, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-16 16:13:44", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "10", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 62, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-15 13:23:07", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "9", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 61, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-15 10:36:33", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "8", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 60, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-15 10:35:43", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "7", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 59, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-15 10:34:56", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "6", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 58, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 13:02:45", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "5", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 57, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 13:02:34", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "4", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 56, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 13:02:19", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "3", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 55, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 13:01:59", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "2", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 54, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 12:03:55", 
+               "object_repr": "SiteMeta object", 
+               "object_id": "1", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 53, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 11:53:30", 
+               "object_repr": "Synergetic Consulting", 
+               "object_id": "7", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 52, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 11:51:09", 
+               "object_repr": "WTF are we doing?", 
+               "object_id": "6", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 51, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 11:48:30", 
+               "object_repr": "Final Form Games", 
+               "object_id": "5", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 50, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 11:47:29", 
+               "object_repr": "God's Love Lutheran", 
+               "object_id": "4", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 49, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:45:52", 
+               "object_repr": "Eurest", 
+               "object_id": "3", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 48, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:45:48", 
+               "object_repr": "Crothall", 
+               "object_id": "2", 
+               "change_message": "Changed blurb and tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 47, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 11:45:21", 
+               "object_repr": "Eurest", 
+               "object_id": "3", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 46, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 11:44:33", 
+               "object_repr": "Crothall", 
+               "object_id": "2", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 45, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:42:07", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 44, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:42:06", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 43, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:42:06", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 42, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:42:05", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 41, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:42:05", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 40, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:42:04", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 39, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:42:04", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 38, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:42:02", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed slug and tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 37, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:40:24", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 36, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:40:23", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 35, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 11:40:22", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 34, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 1, 
+               "action_time": "2011-10-14 11:40:14", 
+               "object_repr": "Jennisodes Podcast", 
+               "object_id": "1", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 33, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 00:01:48", 
+               "object_repr": "Django: Adding inline formset rows without JavaScript", 
+               "object_id": "1", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 32, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 00:01:44", 
+               "object_repr": "Django Quick Tip: Using Django's Redirects Middleware", 
+               "object_id": "4", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 31, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 00:01:27", 
+               "object_repr": "Ruby, Sinatra, and haml on OSX Snow Leopard", 
+               "object_id": "7", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 30, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 00:01:18", 
+               "object_repr": "Adding Akismet to Django Comments", 
+               "object_id": "11", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 29, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 00:01:06", 
+               "object_repr": "Thoughts on the HTML5 logo", 
+               "object_id": "13", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 28, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 00:01:01", 
+               "object_repr": "Using PIL to edit an image while maintaining the image's quality", 
+               "object_id": "15", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 27, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-14 00:00:44", 
+               "object_repr": "Python 2.7, libjpeg, PIL on OSX", 
+               "object_id": "20", 
+               "change_message": "Changed tags.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 26, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 15:06:28", 
+               "object_repr": "brantsteen.com", 
+               "object_id": "1", 
+               "change_message": "Changed domain.", 
+               "user": 1, 
+               "content_type": 7
+          }
+     }, 
+     {
+          "pk": 25, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:58:34", 
+               "object_repr": "www.brantsteen.com", 
+               "object_id": "1", 
+               "change_message": "Changed domain.", 
+               "user": 1, 
+               "content_type": 7
+          }
+     }, 
+     {
+          "pk": 24, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:58:09", 
+               "object_repr": "Django: Adding inline formset rows without JavaScript", 
+               "object_id": "1", 
+               "change_message": "Changed slug.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 23, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:58:02", 
+               "object_repr": "Django Quick Tip: Using Django's Redirects Middleware", 
+               "object_id": "4", 
+               "change_message": "Changed slug.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 22, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:57:57", 
+               "object_repr": "Microsoft Removes IE from Spoon Browser Sandbox", 
+               "object_id": "5", 
+               "change_message": "Changed slug.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 21, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:57:50", 
+               "object_repr": "Ruby, Sinatra, and haml on OSX Snow Leopard", 
+               "object_id": "7", 
+               "change_message": "Changed slug.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 20, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:57:45", 
+               "object_repr": "Adding Akismet to Django Comments", 
+               "object_id": "11", 
+               "change_message": "Changed slug.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 19, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:57:41", 
+               "object_repr": "My Resolutions, as a Web Professional", 
+               "object_id": "12", 
+               "change_message": "No fields changed.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 18, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:57:38", 
+               "object_repr": "My Resolutions, as a Web Professional", 
+               "object_id": "12", 
+               "change_message": "Changed slug.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 17, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:57:33", 
+               "object_repr": "Thoughts on the HTML5 logo", 
+               "object_id": "13", 
+               "change_message": "Changed slug.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 16, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:57:29", 
+               "object_repr": "Using PIL to edit an image while maintaining the image's quality", 
+               "object_id": "15", 
+               "change_message": "Changed slug.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 15, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:57:24", 
+               "object_repr": "Python 2.7, libjpeg, PIL on OSX", 
+               "object_id": "20", 
+               "change_message": "Changed slug.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 14, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:41:39", 
+               "object_repr": "localhost:8001", 
+               "object_id": "1", 
+               "change_message": "Changed domain.", 
+               "user": 1, 
+               "content_type": 7
+          }
+     }, 
+     {
+          "pk": 13, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:41:09", 
+               "object_repr": "www.brantsteen.com", 
+               "object_id": "1", 
+               "change_message": "Changed domain.", 
+               "user": 1, 
+               "content_type": 7
+          }
+     }, 
+     {
+          "pk": 12, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-06 14:39:25", 
+               "object_repr": "localhost:8001", 
+               "object_id": "1", 
+               "change_message": "Changed domain and name.", 
+               "user": 1, 
+               "content_type": 7
+          }
+     }, 
+     {
+          "pk": 11, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:19:28", 
+               "object_repr": "Django: Adding inline formset rows without JavaScript", 
+               "object_id": "1", 
+               "change_message": "Changed thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 10, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:18:46", 
+               "object_repr": "Django Quick Tip: Using Django's Redirects Middleware", 
+               "object_id": "4", 
+               "change_message": "Changed category and thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 9, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:17:59", 
+               "object_repr": "Microsoft Removes IE from Spoon Browser Sandbox", 
+               "object_id": "5", 
+               "change_message": "Changed thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 8, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 3, 
+               "action_time": "2011-10-03 21:17:11", 
+               "object_repr": "Mobile Progress Bar, Nudity Detection using JavaScript, and TinyMCE in Django", 
+               "object_id": "3", 
+               "change_message": "", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 7, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:17:01", 
+               "object_repr": "Adding Akismet to Django Comments", 
+               "object_id": "11", 
+               "change_message": "Changed thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 6, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:16:18", 
+               "object_repr": "Ruby, Sinatra, and haml on OSX Snow Leopard", 
+               "object_id": "7", 
+               "change_message": "Changed thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 5, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:14:49", 
+               "object_repr": "My Resolutions, as a Web Professional", 
+               "object_id": "12", 
+               "change_message": "Changed thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 4, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:13:51", 
+               "object_repr": "Thoughts on the HTML5 logo", 
+               "object_id": "13", 
+               "change_message": "Changed thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 3, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:11:46", 
+               "object_repr": "Python 2.7, libjpeg, PIL on OSX", 
+               "object_id": "20", 
+               "change_message": "Changed thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 2, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:10:53", 
+               "object_repr": "Using PIL to edit an image while maintaining the image's quality", 
+               "object_id": "15", 
+               "change_message": "Changed category and thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "admin.logentry", 
+          "fields": {
+               "action_flag": 2, 
+               "action_time": "2011-10-03 21:10:12", 
+               "object_repr": "Python 2.7, libjpeg, PIL on OSX", 
+               "object_id": "20", 
+               "change_message": "Changed thumbnail.", 
+               "user": 1, 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "noodles.contactsubmission", 
+          "fields": {
+               "date": "2011-10-15 11:46:11", 
+               "message": "Hello There, you!", 
+               "name": "Timmy Tommy", 
+               "email": "brant.steen@gmail.com"
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "Confidential Client", 
+               "key": "confidential_client_title"
+          }
+     }, 
+     {
+          "pk": 2, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "http://brantsteen.tumblr.com", 
+               "key": "tumblr"
+          }
+     }, 
+     {
+          "pk": 3, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "http://itunes.apple.com/us/podcast/wtfawd-wtf-are-we-doing/id431656852", 
+               "key": "wtfawd_itunes"
+          }
+     }, 
+     {
+          "pk": 4, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "https://github.com/Brant", 
+               "key": "github"
+          }
+     }, 
+     {
+          "pk": 5, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "http://twitter.com/brantsteen", 
+               "key": "twitter"
+          }
+     }, 
+     {
+          "pk": 6, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "http://www.linkedin.com/in/brantsteen", 
+               "key": "linkedin"
+          }
+     }, 
+     {
+          "pk": 7, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "http://www.facebook.com/brant.steen", 
+               "key": "facebook"
+          }
+     }, 
+     {
+          "pk": 8, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "https://plus.google.com/u/0/101511867048257994266/posts?hl=en", 
+               "key": "google"
+          }
+     }, 
+     {
+          "pk": 9, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "http://timlwhite.com/", 
+               "key": "tim_website"
+          }
+     }, 
+     {
+          "pk": 10, 
+          "model": "noodles.sitemeta", 
+          "fields": {
+               "value": "http://feeds.feedburner.com/brantsteen", 
+               "key": "rss"
+          }
+     }, 
+     {
+          "pk": 20, 
+          "model": "blog.entry", 
+          "fields": {
+               "category": 1, 
+               "title": "Python 2.7, libjpeg, PIL on OSX", 
+               "content": "<p>The web is littered with people having the \"jpeg_resync_to_restart\" error, accompanied by a zillion walkthroughs of how to get libjpeg and PIL configured and installed on OSX. If your experience is anything like mine, though, none of those walkthrough seem to work.</p>\r\n<p>So, here's another walkthrough, outlining what worked for <em>me</em>. Hopefully, it helps you too.</p>\r\n<h2>Delete all the old crap</h2>\r\n<p>You've probably been trying to install libjpeg and PIL for a few hours now, and there are likely remnants of various versions strewn throughout your computer. The first thing to do is get rid of all of that. Here's what I've found you'll need to remove.</p>\r\n<pre><code>cd /usr/local/include\r\nsudo rm jpeglib.h\r\ncd /usr/local/lib\r\nsudo rm libjpeg*.*\r\ncd /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/\r\nsudo rm -R ./PIL\r\nsudo rm PIL.pth\r\n</code>\r\n</pre>\r\n<p>Notice that I am doing this in Python2.7 above. You'll need to change your directories a bit if you are doing this for some other version of python.</p>\r\n<h3>Update (3/20/2011):</h3>\r\n<p>I was trying to get PIL and libjpeg setup on a separate computer recently and I found that if you have installed PIL or libjpeg in the past (for previous versions of python) using MacPorts or something similar, you'll like have some libjpeg remnants scattered in some places other than those listed above.</p>\r\n<p>I found that most of mine were sitting inside /opt/local/include and /opt/local/lib. However, to be more thorough, run this command:</p>\r\n<pre><code>find / -name *jpeg* -print</code></pre>\r\n<p>That will show you anything that even remotely smells of libjpeg. You can then delete selectively.&nbsp;</p>\r\n<p>Furthermore, I cleaned up my ~/.bash_profile to only include things on my PATH that I <em>knew</em>&nbsp;I wanted.</p>\r\n<h2>libjpeg</h2>\r\n<p>At this time of this post, the most recent version of <a href=\"http://www.ijg.org/\" target=\"_blank\">libjpeg was 8c</a>. Get it. Make sure you get the .tar.gz, the zip seems to be configured for windows. Once you have that, extract it and go into that directory.</p>\r\n<p>Then, follow these instructions <strong>exactly</strong>.</p>\r\n<pre><code>export CC=\"gcc -arch i386\"\r\n./configure\r\nmake\r\nsudo make install\r\n</code>\r\n</pre>\r\n<p><strong>Note:</strong> do not 'sudo' the ./configure OR the first make. That will blow it.</p>\r\n<h2>PIL</h2>\r\n<p>At the time of this post, the most recent version of <a href=\"http://www.pythonware.com/products/pil/\" target=\"_blank\">PIL was 1.1.7</a>. Get it, extract it, go into that directory.</p>\r\n<h3>Configure Setup.py</h3>\r\n<p>Open up 'setup.py', find the line that reads:</p>\r\n<pre><code>JPEG_ROOT = None\r\n</code></pre>\r\n<p>...and change it to:</p>\r\n<pre><code>JPEG_ROOT = libinclude(\"/usr/local\")\r\n</code></pre>\r\n<p>From what I've gathered, that last step is actually no longer necessary. I've now done a couple installs of PIL without changing the JPEG_ROOT. If you comb through the source code, you'll see that the script will automatically look in /usr/local/lib, so adding it isn't really needed.</p>\r\n<h3>Install PIL</h3>\r\n<p>Save that file, head into the terminal in that directory and run the setup.</p>\r\n<pre><code>sudo python2.7 setup.py install\r\n</code></pre>\r\n<p>Notice that I am explicitly using the 'python2.7' instead of just 'python'. I doubt this really makes a difference, considering my 'python' is just a symlink to 'python2.7'. However, the iteration through all of this that it finally worked, I used python2.7 to run the setup and I'm a bit superstitious.</p>\r\n<h2>See if it works</h2>\r\n<p>To see if it all worked... run this command:</p>\r\n<pre><code>otool -L /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/PIL/_imaging.so\r\n</code></pre>\r\n<p>That should spit out a bunch of lines, one of which will reference your libjpeg. It will look something like this:</p>\r\n<pre><code>/usr/local/lib/libjpeg.8.dylib (compatibility version 12.0.0, current version 12.0.0)\r\n</code></pre>\r\n<p>If you get that line back, then chances are it all worked. If you don't see a reference to your libjpeg, something went wrong with the libjpeg configuration/installation.</p>\r\n<p>To test it more definitively, open up a terminal and run the python command line.</p>\r\n<pre><code>python\r\nimport _imaging\r\n</code></pre>\r\n<p>No news is good news, the import shouldn't kick back any errors.</p>\r\n<p>Hope this worked for you, good luck.</p>", 
+               "date": "2011-03-06 12:16:35", 
+               "thumbnail": "blog/img/thumbnails/pilinstall.jpg", 
+               "blurb": "<p>It took me entirely too long to get the right set of steps together for installing libjpeg and PIL on OSX. It seemed worthwhile to write down.</p>"
+          }
+     }, 
+     {
+          "pk": 15, 
+          "model": "blog.entry", 
+          "fields": {
+               "category": 1, 
+               "title": "Using PIL to edit an image while maintaining the image's quality",
+              "slug": "pil-quality", 
+               "content": "<p>Here's something that was bugging me for a while. It was one of those things that was <em>just </em>annoying enough to make me cringe whenever I saw the result but never important enough to fix.</p>\r\n<p>At any rate, for some time I have been working on a project at my day-job where some simple server-side image manipulation was required. It's a Django project, so I've been using Python's <a href=\"http://www.pythonware.com/products/pil/\" target=\"_blank\">PIL</a>. All I was doing was some resizing and cropping.</p>\r\n<p>When I first started using PIL, I noticed that I was getting some significant grainyness when saving an image. After a little poking around, I found that during image resizing, one can use an anti-aliasing filter.</p>\r\n<pre><code class=\"python\">import Image\r\nimg = Image.open(\"path/to/image.jpg\")\r\nimg = img.resize((100,100),Image.ANTIALIAS)\r\nimg.save(\"path/to/new_image.jpg\")\r\n</code>\r\n</pre>\r\n<p>This somewhat cleared up the image quality issues I was having. It still wasn't <em>great</em>, mind you, but it was generally \"good enough\" and at the time, I needed to move on.</p>\r\n<p>Months went by of looking at those resized images and being just ever-so-slightly annoyed; not enough to do anyhting about it but just enough to subconsciously cringe a little each time I saw one. Recently, I was revisiting that part of the project and decided it would be a good time to try to figure out how to maintain better image quality when using the PIL.</p>\r\n<p>What I found (and what doesn't seem to be documented in the <a href=\"http://www.pythonware.com/library/pil/handbook/image.htm\" target=\"_blank\">PIL's Image docs</a>) is that one can pass a \"quality\" argument to the save method.</p>\r\n<pre><code class=\"python\">import Image\r\nimg = Image.open(\"path/to/image.jpg\")\r\nimg = img.resize((100,100),Image.ANTIALIAS)\r\nimg.save(\"path/to/new_image.jpg\",quality=100)\r\n</code>\r\n</pre>\r\n<p><figure><img src=\"http://media.brantsteen.com/global/gallery/img/bs-strip_1.jpg\" alt=\"\" /><figcaption>Left to right: (1)Original image, (2)Raw save using PIL, (3)Save after using ANTIALIAS only, (4)Save using ANTIALIAS and quality setting</figcaption></figure></p>\r\n<p>This is akin to dealing with the quality setting when saving a JPEG in photoshop. I learned this out after finding <a href=\"http://djangosaur.tumblr.com/post/422589280/django-resize-thumbnail-image-pil\" target=\"_blank\">Djangosaur</a>, which, by the way, is a damn cool name for a django blog.</p>\r\n<p><figure><img src=\"http://media.brantsteen.com/global/gallery/img/happy-strip.jpg\" alt=\"\" /><figcaption>Top to bottom, Left to right: (1)Original image, (2)Raw save using PIL, (3)Save after using ANTIALIAS only, (4)Save using ANTIALIAS and quality setting</figcaption></figure></p>\r\n<p>It's somewhat tough to see the difference between antialias only and antialiased saved at 100 quality in the above examples. It's probably clearer in the picture of me than in the picture of the dog. However, it is a bit grainier, especially in larger images.</p>", 
+               "date": "2011-02-09 12:00:00", 
+               "thumbnail": "blog/img/thumbnails/pil-quality_1_1.jpg", 
+               "blurb": "<p>Manipulating an image with Python and the Python Imaging Library (PIL) while maintaining the image's quality.</p>"
+          }
+     }, 
+     {
+          "pk": 13, 
+          "model": "blog.entry", 
+          "fields": {
+               "category": 4, 
+               "title": "Thoughts on the HTML5 logo", 
+               "content": "<p class=\"crushed crushed-first\">In case you've been living in a cave</p>\r\n<div class=\"clearfix\">\r\n<div class=\"left-side\">\r\n<h2>The good</h2>\r\n<p><img class=\"gallery-align-right\" src=\"http://media.brantsteen.com/global/gallery/img/html5_logo_small.png\" alt=\"Small html5 logo, grayscale\" />Well, I like the color and it looks good in black and white/grayscale. Also, it seems immediately \"branded,\" so I don't imagine there will be much confusion when web-savvy folks see the logo.</p>\r\n<h2>The bad</h2>\r\n<p><img class=\"gallery-align-left\" src=\"http://media.brantsteen.com/global/gallery/img/slomin.png\" alt=\"Slomin Shield Logo\" />It kind of looks like a 'S' and the smaller the logo gets, the more it looks like an 'S'. Logo's are supposed to scale well, I'm not sure this one pulls that off. Also, it reminds me of the Slomin shield.</p>\r\n</div>\r\n<p class=\"html5-logo-large\"><a href=\"http://www.w3.org/html/logo/\" target=\"blank\"><img class=\"gallery-align-left\" src=\"http://media.brantsteen.com/global/gallery/img/HTML5_Logo_512_1.png\" alt=\"HTML5 Logo\" /></a></p>\r\n<div class=\"right-side\">\r\n<h2>The ugly</h2>\r\n<p>Simply put, it isn't. I don't find anything outright ugly or displeasing about the logo. Furthermore, it looks like it belongs on the web; like it belongs to a website. It has that <em>web quality</em> to it that seems to define a well-designed webapp logo. As it should, after all, it is a logo for a web technology.</p>\r\n<h2>By the way</h2>\r\n<p>I don't claim to be a logo designer or analyst but this seems like something worth talking about. So, take my opinions with a grain of salt, though I don't really think that disclaimer needs to be explicitly stated on a blog...</p>\r\n</div>\r\n</div>\r\n<p class=\"crushed crushed-second\">HTML5 has a logo now.</p>\r\n<div class=\"html5-logo-your-thoughts\">\r\n<h2 class=\"no-margin\">Your thoughts?</h2>\r\n<p>What are your thoughts on the logo? Please leave a comment and let me know.</p>\r\n<p><a href=\"http://www.w3.org/html/logo/#the-technology\" target=\"_blank\"><img src=\"http://media.brantsteen.com/global/gallery/img/Styling_and_Semantics.png\" alt=\"html5 badge\" /></a></p>\r\n</div>", 
+               "date": "2011-01-25 16:00:00", 
+               "thumbnail": "blog/img/thumbnails/thoughts-on-the-html5-logo.jpg", 
+               "blurb": "<p>The new HTML5 logo has been released and I have some thoughts on its design. What are yours?</p>"
+          }
+     }, 
+     {
+          "pk": 12, 
+          "model": "blog.entry", 
+          "fields": {
+               "category": 7, 
+               "title": "My Resolutions, as a Web Professional", 
+               "content": "<p>I thought I'd work up a list of resolutions and post it, so I can look back at it as the year goes on.</p>\r\n<p>So, here they are, in no particular order.</p>\r\n<ol>\r\n<li>Improve my design capabilities</li>\r\n<li>Learn Ruby</li>\r\n<li>Learn Python Decorators (for some reason, this seems daunting to me. I just haven't sat down and looked at them very&nbsp;thoroughly.)</li>\r\n<li>Learn Django Tests, and use them</li>\r\n</ol>\r\n<p>I'll go into each in a bit of detail.</p>\r\n<h2>Improve my design capabilities</h2>\r\n<p>I thought about wording this as \"get better at design\" but it didn't seem to quite accurately express what I'd like to do. I'm primarily a developer. I'm not a <em>great</em> designer. Depending on your point of view, this website might be a testament to that. However, I am consistently trying to improve.</p>\r\n<p>So, to resolve that I would like to \"get better at design\" somewhat implies that to date, I haven't gotten better, that I haven't been trying to get better, or something else along those lines. In fact, I believe that I have improved over time, dramatically, and that I am consistently improving.</p>\r\n<p>Instead, I resolve to improve my capabilities. I want to learn new <em>ways</em>&nbsp;to design. For example, I want to learn more about typography and color theory. These things will add to my designer tool box which, in turn, will help me continue to get better at design.</p>\r\n<h2>Learn Ruby</h2>\r\n<p>Last year, I delved into Python. This year, I'd like to learn Ruby. Just as I wish to&nbsp;expand&nbsp;my designer toolbox, I want to continue to expand my developer toolbox.</p>\r\n<p>I'm not going to dive into Rails immediately. I plan on starting with <a href=\"http://haml-lang.com/\" target=\"_blank\">haml</a> and <a href=\"http://www.sinatrarb.com/\" target=\"_blank\">Sinatra</a>, as I found some of their features appealing while reading this <a href=\"http://net.tutsplus.com/tutorials/ruby/an-introduction-to-haml-and-sinatra/\" target=\"_blank\">introductory tutorial</a>. That said, my guess is that I will, in time, delve into Rails as well. It seems to be the web&nbsp;de-facto&nbsp;standard in the Ruby world.</p>\r\n<p>So, I resolve to learn Ruby this year. The community looks like fun and the language looks interesting. Plus, it'll give me another heavy hitter for web development.</p>\r\n<h2>Learn Python Decorators</h2>\r\n<p>Well, the first two resolutions were my big ones. These next two are a bit more specific. As I mentioned, last year I delved into Python. Well, I still don't really understand how to write decorators. I resolve to tackle that this year.</p>\r\n<h2>Learn Django Tests, and use them</h2>\r\n<p>My greatest sin as a developer is likely that I do not do very much unit testing. <a href=\"http://www.djangoproject.com/\" target=\"_blank\">Django</a>, my current web framework of preference, has built-in testing mechanisms. Yet, here I am, not using them.</p>\r\n<p>I resolve to learn how to use these tests effectively. I also resolve to <em>actually use them</em>.</p>", 
+               "date": "2011-01-07 00:00:00", 
+               "thumbnail": "blog/img/thumbnails/my-resolutions-as-a-web-professional.jpg", 
+               "blurb": "<p>My 2011 New Year Resolutions. Trite, perhaps. Hackneyed, definitely. I'm going to write them up anyway.</p>"
+          }
+     }, 
+     {
+          "pk": 11, 
+          "model": "blog.entry", 
+          "fields": {
+               "category": 1, 
+               "title": "Adding Akismet to Django Comments", 
+               "content": "<p>Despite Django's best efforts to use a honeypot-style spam filter, I have still had problems with spam entries using Django's built-in comment system. With a little poking around, I was able to find <a href=\"http://docs.djangoproject.com/en/1.2/ref/contrib/comments/signals/#comment-will-be-posted\" target=\"_blank\">Django's documentation on the signals sent by their comments app</a>. I've always had a good experience with Akismet when using WordPress and I'm quite fond of the service they provide. So, I figured I'd get Akismet hooked into my Django comments.</p>\r\n<p>First, I used <a href=\"http://kemayo.wordpress.com/2005/12/02/akismet-py/\" target=\"_blank\">David Lynch's Akismet Python Library</a>, which I found linked in <a href=\"http://akismet.com/development/\" target=\"_blank\">Akismet's plugins and libraries</a>. Then, I just modified his example to fit the Django framework.</p>\r\n<p>I stuck the following code in my models:</p>\r\n<pre><code class=\"python\">from django.contrib.comments.signals import comment_will_be_posted\r\nimport akismet\r\n\r\ndef spam_check(sender, comment, request, **kwargs):\r\n\takismet.USERAGENT = \"David Lynch's Python library/1.0\"\r\n\r\n\tmy_api_key = \"API KEY GOES HERE\"    \r\n\r\n\ttry:\r\n\t\treal_key = akismet.verify_key(my_api_key,\"http://www.example.com\")\r\n\t\tif real_key:\r\n\t\t\tis_spam = akismet.comment_check(my_api_key,\"http://www.example.com\",request.META['REMOTE_ADDR'], request.META['HTTP_USER_AGENT'],comment_content=comment.comment)\r\n\t\t\tif is_spam:\r\n\t\t\t\treturn False\r\n\t\t\telse:\r\n\t\t\t\treturn True\r\n\texcept akismet.AkismetError, e:\r\n\t\tprint 'Something went wrong, allowing comment'\r\n\t\tprint e.response, e.statuscode\r\n\t\treturn True\r\n    \r\ncomment_will_be_posted.connect(spam_check,sender=Comment,dispatch_uid=\"comment_spam_check_akismet\")\r\n</code>\r\n</pre>\r\n<p>There are a couple things to note here. First, if the whole mechanism fails, I allow the comment to be posted. That way, if Akismet changes their API or something, the comments will still post (allowing spam) until i can get in there to update the code. Second, in practice, things like the API key should be placed in your settings file, then referenced as normal (settings.AKISMET_KEY or something).</p>\r\n<p>If you are using a <a href=\"http://docs.djangoproject.com/en/dev/ref/contrib/comments/custom/#customizing-the-comments-framework\" target=\"_blank\">customized comments app</a>, with Django's suggested mechanisms, you simply change the signal connection a little...</p>\r\n<pre><code class=\"python\">comment_will_be_posted.connect(spam_check,sender=CustomCommentModel,dispatch_uid=\"comment_spam_check_akismet\")</code>\r\n</pre>\r\n<p>I should mention that I didn't spend any time looking around to see if there was already a Django snippet out there to accomplish this. It was an easy enough implementation that it seemed like it was worth just writing it out myself.</p>\r\n<p>If there's a more robust Akismet snippet for Django, I'd love to see it. Just post a link in the comments below (Now, with Akismet spam filter!).</p>", 
+               "date": "2010-12-20 09:02:56", 
+               "thumbnail": "blog/img/thumbnails/adding-akismet-to-django-comments.jpg", 
+               "blurb": "<p>How to add an Akismet spam filter to Django's comments app.</p>"
+          }
+     }, 
+     {
+          "pk": 7, 
+          "model": "blog.entry", 
+          "fields": {
+               "category": 1, 
+               "title": "Ruby, Sinatra, and haml on OSX Snow Leopard", 
+               "content": "<p>After reading this <a href=\"http://net.tutsplus.com/tutorials/ruby/an-introduction-to-haml-and-sinatra/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed:+nettuts-summary+(NETTUTS+Summary)\" target=\"_blank\">article on getting started with Sinatra/haml</a>, I've been itching to try it out. I think it's always important to try different technologies that are out there, even if you don't end up using them on a regular basis. For whatever reason, though, I had a hell of a time getting this setup on my Mac, which has become my main work computer.</p>\r\n<p>Finally, I found a <a href=\"http://hivelogic.com/articles/ruby-rails-leopard\" target=\"_blank\">good walk through</a> of getting ruby and gems setup, which then enabled me to get Sinatra and haml installed. The walkthrough itself ends up stepping you through installing rails but you can just stop before it goes into that and do \"gem install sinatra\" and \"gem install haml\".</p>\r\n<p>I have no idea why I had such a hard time getting this to work in the past but I figured I'd post up the resources that helped me through it, in case anyone else has had the same issues.</p>", 
+               "date": "2010-11-30 09:08:12", 
+               "thumbnail": "blog/img/thumbnails/ruby-sinatra-and-haml-on-osx-snow-leopard.jpg", 
+               "blurb": "<p>I had a hard time getting ruby/gems/sinatra/haml installed on my Mac. Here's a couple resources for anyone else having a similar problem.</p>"
+          }
+     }, 
+     {
+          "pk": 5, 
+          "model": "blog.entry", 
+          "fields": {
+               "category": 4, 
+               "title": "Microsoft Removes IE from Spoon Browser Sandbox", 
+               "content": "<p>Despite the fact that I have recently discovered certain pleasures in the world of Apple, I do not plan to get in the habit of&nbsp;senselessly&nbsp;bashing Microsoft. I firmly believe that all sorts of industries (web, software, general computing) would never have developed as quickly without them. There is even an argument to be made that without Internet Explorer, other browsers wouldn't be nearly as innovative. With all of that said, this sort of thing pisses me off...</p>\r\n<p>I may be a little late to the punch on this one but it would appear that Microsoft has requested that their browser no longer be available through <a href=\"http://spoon.net/browsers/\" target=\"_blank\">Spoon&nbsp;Browse Sandbox</a>. For those not in the know, Spoon offers a cloud service where people can use many versions (current and older) of all popular browsers. It's a service only available to PC users, as it requires a small plugin to be installed. I have relied on their service to test using a IE6 and a <em>real</em>&nbsp;IE7 (there are some major differences between real IE7 and the \"emulated IE7\" packaged inside IE8) for some time now.</p>\r\n<p>Seems like a double blow... now it's going to be even more difficult testing in older IE versions <em>and</em>&nbsp;Spoon has become significantly less useful as a service. Admittedly, I haven't spent any time looking into why Microsoft has requested Spoon removing their browsers but I have a really hard time thinking of what a <em>good </em>reason for this would have been...</p>", 
+               "date": "2010-11-23 18:40:43", 
+               "thumbnail": "blog/img/thumbnails/microsoft-removes-ie-from-spoon-browser-sandbox.jpg", 
+               "blurb": "<p>Microsoft has requested that Spoon remove IE browsers from its browser selection.</p>"
+          }
+     }, 
+     {
+          "pk": 4, 
+          "model": "blog.entry", 
+          "fields": {
+               "category": 1, 
+               "title": "Django Quick Tip: Using Django's Redirects Middleware", 
+               "content": "<p>If you are going to make use of <a href=\"http://docs.djangoproject.com/en/1.2/ref/contrib/redirects/\" target=\"_blank\">Django's redirects middleware</a>, make sure you have a 404.html inside the root of your templates directory.</p>\r\n<p>If you don't, once you turn DEBUG to False (for use in a live environment), you'll end up with any redirects you have setup causing 500 internal server errors.</p>\r\n<p>The reason for this is that the redirects middleware only triggers when a 404 is raised after mulling through url patterns. Part of raising that 404 is that Django looks for 404.html. If it doesn't find it and DEBUG=False, you'll end up with a 500 internal server error. However, the redirects will work find as long as DEBUG=True, which can cause quite a headache when moving a website live.</p>\r\n<p>&nbsp;</p>", 
+               "date": "2010-11-19 10:14:11", 
+               "thumbnail": "blog/img/thumbnails/djang-redirects.jpg", 
+               "blurb": "<p>A quick tip for using Django's redirects middleware in a live environment.</p>"
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "blog.entry", 
+          "fields": {
+               "category": 1, 
+               "title": "Django: Adding inline formset rows without JavaScript", 
+               "content": "<p>Django&rsquo;s <a href=\"http://docs.djangoproject.com/en/dev/topics/forms/modelforms/#inline-formsets\">inline formsets</a> are really quite powerful little things. In true Django-style, a few lines of code enables a user to edit multiple one-to-many relationships on a single page.</p>\r\n<p>I am all about enhancing pages with JavaScript, don&rsquo;t get me wrong. The keyword in that sentance, though, is &ldquo;enhancing&rdquo;. Pages should work <em>without</em> JavaScript enabled. This is hardly a revolutionary idea. More commonly it goes by the name of &ldquo;Graceful Degredation&rdquo; or &ldquo;Progressive Enhancement&rdquo;.</p>\r\n<p>So, I was shocked when I found a complete lack of support when trying to add inline formsets without using JavaScript. There are many tutorials and ways to add them dynamically using JS (<a href=\"http://www.djangosnippets.org/snippets/1389/\">example</a>, <a href=\"http://stackoverflow.com/questions/520421/add-row-to-inlines-dynamically-in-django-admin\">another example</a>, <a href=\"http://elo80ka.wordpress.com/2009/10/10/jquery-plugin-django-dynamic-formset/\">a third example</a>) but really nothing I was able to find giving a clear walkthrough of adding inline formset rows without it.</p>\r\n<p>So, this tutorial is for people who want to add inline formset rows after incurring a page-reload while keeping the form&rsquo;s entered data intact.</p>\r\n<p>Well, as it turns out, it&rsquo;s quite easy. Basically, you just modify the -TOTAL_FORMS field (a hidden field contained in the inline formset management_form) when the page is reloaded. The only tricky part is that request.POST data cannot be edited directly. Instead, we simply make a copy of that data, then use it for repopulating the page.</p>\r\n<p>Lets say that we have a CarManufacturer that can make many CarModels. On that page, you have an &lsquo;add&rsquo; button, which is actually a submit button for the form (there can be additional submit buttons with different names).</p>\r\n<p>The template might look something like this:</p>\r\n<pre><code class=\"html\">&lt;form method='post' action='{{request.path}}'&gt;\r\n  &lt;fieldset&gt;\r\n    &lt;legend&gt;Car Models&lt;/legend&gt;\r\n      {{ car.management_form }}\r\n      {% for form in car.forms %}\r\n        &lt;div&gt;{{form.as_p}}&lt;/div&gt;\r\n      {% endfor %}\r\n      &lt;input title='Add a new car model' type='submit' name='add_car' value='Add' /&gt;\r\n    &lt;/fieldset&gt;\r\n    &lt;input title='Submit this form' type='submit' name='submit' value='Submit' /&gt;\r\n&lt;/form&gt;\r\n</code>\r\n</pre>\r\n<p>Then, the view will look something like this:</p>\r\n<pre><code class=\"python\"># do whatever you need to get the car manufacturer\r\nthe_manufacturer = CarManufacturer.objects.get(pk=1)\r\n \r\n# create the factory\r\nAddCarFormset = inlineformset_factory(CarManufacturer,CarModel,extra=0)\r\n \r\n# if this form has been submitted...\r\nif request.method=='POST':\r\n  if 'add_car' in request.POST:\r\n    cp = request.POST.copy()\r\n    cp['car-TOTAL_FORMS'] = int(cp['car-TOTAL_FORMS'])+ 1\r\n    new_car = AddCarFormset(cp,prefix='car',instance=the_manufacturer)\r\n  elif 'submit' in request.POST:\r\n    # Do whatever you need to do on the actual form submission\r\n    pass\r\n \r\n# if this is a fresh form...\r\nelse:\r\n    new_car = AddCarFormset (prefix='car',instance=the_manufacturer)\r\n \r\n# return the rendered template\r\nreturn render_to_response('the_template.html',{'car':new_car},context_instance=RequestContext(request))\r\n</code>\r\n</pre>\r\n<p>That&rsquo;s it. Just pass new_car to your template and use it as any other inline formset.</p>\r\n<p>Don&rsquo;t forget to leave a comment!</p>", 
+               "date": "2010-10-29 11:24:04", 
+               "thumbnail": "blog/img/thumbnails/django-adding-inline-formset-rows-without-javascript.jpg", 
+               "blurb": "<p>Django's inline formsets are really quite powerful little things. This tutorial is for people who want to add inline formset rows after incurring a page-reload while keeping the form's entered data intact.</p>"
+          }
+     }, 
+     {
+          "pk": 7, 
+          "model": "blog.category", 
+          "fields": {
+               "date": "2011-03-06 12:16:35", 
+               "slug": "musings", 
+               "title": "Musings"
+          }
+     }, 
+     {
+          "pk": 4, 
+          "model": "blog.category", 
+          "fields": {
+               "date": "2011-03-06 12:16:35", 
+               "slug": "news", 
+               "title": "News"
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "blog.category", 
+          "fields": {
+               "date": "2011-03-06 12:16:35", 
+               "slug": "tutorials", 
+               "title": "Tutorials"
+          }
+     }, 
+     {
+          "pk": 6, 
+          "model": "folio.piece", 
+          "fields": {
+               "confidential": false, 
+               "title": "WTF are we doing?", 
+               "slug": "wtf-are-we-doing", 
+               "link": "http://www.wtfawd.com/", 
+               "date": "2011-03-10 12:48:57", 
+               "thumbnail": "folio/img/thumbnails/wtfawd.jpg", 
+               "blurb": "Design and development work for my podcast, including a Django app for managing podcast episodes (can be found on my github)"
+          }
+     }, 
+     {
+          "pk": 2, 
+          "model": "folio.piece", 
+          "fields": {
+               "confidential": true, 
+               "title": "Crothall", 
+               "slug": "crothall", 
+               "link": "", 
+               "date": "2010-11-17 12:43:24", 
+               "thumbnail": "folio/img/thumbnails/con1.jpg", 
+               "blurb": "Subcontracted through a marketing firm, I did the development work for their client along with a little backend server consulting"
+          }
+     }, 
+     {
+          "pk": 5, 
+          "model": "folio.piece", 
+          "fields": {
+               "confidential": false, 
+               "title": "Final Form Games", 
+               "slug": "final-form-games", 
+               "link": "http://www.finalformgames.com/", 
+               "date": "2010-10-12 12:47:50", 
+               "thumbnail": "folio/img/thumbnails/ffg.jpg", 
+               "blurb": "A Philadelphia-based video game company needed a little server consulting work"
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "folio.piece", 
+          "fields": {
+               "confidential": false, 
+               "title": "Jennisodes Podcast", 
+               "slug": "jennisodes-podcast", 
+               "link": "http://www.jennisodes.com/", 
+               "date": "2010-10-12 12:39:15", 
+               "thumbnail": "folio/img/thumbnails/jennisodes.jpg", 
+               "blurb": "Jennisodes is a weekly hobby podcast, featuring interviews with gaming industry leaders"
+          }
+     }, 
+     {
+          "pk": 7, 
+          "model": "folio.piece", 
+          "fields": {
+               "confidential": false, 
+               "title": "Synergetic Consulting", 
+               "slug": "synergetic-consulting", 
+               "link": "http://www.scincorporated.com/", 
+               "date": "2010-09-07 12:52:39", 
+               "thumbnail": "folio/img/thumbnails/syn.jpg", 
+               "blurb": "Implementation of a clean, minimalist design created by a small marketing and branding firm"
+          }
+     }, 
+     {
+          "pk": 3, 
+          "model": "folio.piece", 
+          "fields": {
+               "confidential": true, 
+               "title": "Eurest", 
+               "slug": "eurest", 
+               "link": "", 
+               "date": "2009-12-08 12:44:49", 
+               "thumbnail": "folio/img/thumbnails/con2.jpg", 
+               "blurb": "Subcontracted through a marketing firm, I did the development work for their client's website"
+          }
+     }, 
+     {
+          "pk": 4, 
+          "model": "folio.piece", 
+          "fields": {
+               "confidential": false, 
+               "title": "God's Love Lutheran", 
+               "slug": "gods-love-lutheran", 
+               "link": "http://www.godslovenewtown.org/", 
+               "date": "2009-10-12 12:46:38", 
+               "thumbnail": "folio/img/thumbnails/lcgl.jpg", 
+               "blurb": "Web design and development for a local church with distributed content management"
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "taggit.tag", 
+          "fields": {
+               "name": "osx", 
+               "slug": "osx"
+          }
+     }, 
+     {
+          "pk": 2, 
+          "model": "taggit.tag", 
+          "fields": {
+               "name": "django", 
+               "slug": "django"
+          }
+     }, 
+     {
+          "pk": 3, 
+          "model": "taggit.tag", 
+          "fields": {
+               "name": "python", 
+               "slug": "python"
+          }
+     }, 
+     {
+          "pk": 4, 
+          "model": "taggit.tag", 
+          "fields": {
+               "name": "html5", 
+               "slug": "html5"
+          }
+     }, 
+     {
+          "pk": 5, 
+          "model": "taggit.tag", 
+          "fields": {
+               "name": "ruby", 
+               "slug": "ruby"
+          }
+     }, 
+     {
+          "pk": 6, 
+          "model": "taggit.tag", 
+          "fields": {
+               "name": "development", 
+               "slug": "development"
+          }
+     }, 
+     {
+          "pk": 7, 
+          "model": "taggit.tag", 
+          "fields": {
+               "name": "design", 
+               "slug": "design"
+          }
+     }, 
+     {
+          "pk": 8, 
+          "model": "taggit.tag", 
+          "fields": {
+               "name": "consulting", 
+               "slug": "consulting"
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 1, 
+               "content_type": 10, 
+               "object_id": 20
+          }
+     }, 
+     {
+          "pk": 2, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 2, 
+               "content_type": 10, 
+               "object_id": 20
+          }
+     }, 
+     {
+          "pk": 3, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 3, 
+               "content_type": 10, 
+               "object_id": 15
+          }
+     }, 
+     {
+          "pk": 4, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 4, 
+               "content_type": 10, 
+               "object_id": 13
+          }
+     }, 
+     {
+          "pk": 5, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 2, 
+               "content_type": 10, 
+               "object_id": 11
+          }
+     }, 
+     {
+          "pk": 6, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 1, 
+               "content_type": 10, 
+               "object_id": 7
+          }
+     }, 
+     {
+          "pk": 7, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 5, 
+               "content_type": 10, 
+               "object_id": 7
+          }
+     }, 
+     {
+          "pk": 8, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 2, 
+               "content_type": 10, 
+               "object_id": 4
+          }
+     }, 
+     {
+          "pk": 9, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 2, 
+               "content_type": 10, 
+               "object_id": 1
+          }
+     }, 
+     {
+          "pk": 10, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 6, 
+               "content_type": 14, 
+               "object_id": 1
+          }
+     }, 
+     {
+          "pk": 11, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 7, 
+               "content_type": 14, 
+               "object_id": 1
+          }
+     }, 
+     {
+          "pk": 15, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 8, 
+               "content_type": 14, 
+               "object_id": 2
+          }
+     }, 
+     {
+          "pk": 16, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 6, 
+               "content_type": 14, 
+               "object_id": 2
+          }
+     }, 
+     {
+          "pk": 17, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 6, 
+               "content_type": 14, 
+               "object_id": 3
+          }
+     }, 
+     {
+          "pk": 18, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 6, 
+               "content_type": 14, 
+               "object_id": 4
+          }
+     }, 
+     {
+          "pk": 19, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 7, 
+               "content_type": 14, 
+               "object_id": 4
+          }
+     }, 
+     {
+          "pk": 20, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 8, 
+               "content_type": 14, 
+               "object_id": 5
+          }
+     }, 
+     {
+          "pk": 21, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 6, 
+               "content_type": 14, 
+               "object_id": 6
+          }
+     }, 
+     {
+          "pk": 22, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 7, 
+               "content_type": 14, 
+               "object_id": 6
+          }
+     }, 
+     {
+          "pk": 23, 
+          "model": "taggit.taggeditem", 
+          "fields": {
+               "tag": 6, 
+               "content_type": 14, 
+               "object_id": 7
+          }
+     }, 
+     {
+          "pk": 22, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_logentry", 
+               "name": "Can add log entry", 
+               "content_type": 8
+          }
+     }, 
+     {
+          "pk": 23, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_logentry", 
+               "name": "Can change log entry", 
+               "content_type": 8
+          }
+     }, 
+     {
+          "pk": 24, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_logentry", 
+               "name": "Can delete log entry", 
+               "content_type": 8
+          }
+     }, 
+     {
+          "pk": 4, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_group", 
+               "name": "Can add group", 
+               "content_type": 2
+          }
+     }, 
+     {
+          "pk": 5, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_group", 
+               "name": "Can change group", 
+               "content_type": 2
+          }
+     }, 
+     {
+          "pk": 6, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_group", 
+               "name": "Can delete group", 
+               "content_type": 2
+          }
+     }, 
+     {
+          "pk": 10, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_message", 
+               "name": "Can add message", 
+               "content_type": 4
+          }
+     }, 
+     {
+          "pk": 11, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_message", 
+               "name": "Can change message", 
+               "content_type": 4
+          }
+     }, 
+     {
+          "pk": 12, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_message", 
+               "name": "Can delete message", 
+               "content_type": 4
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_permission", 
+               "name": "Can add permission", 
+               "content_type": 1
+          }
+     }, 
+     {
+          "pk": 2, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_permission", 
+               "name": "Can change permission", 
+               "content_type": 1
+          }
+     }, 
+     {
+          "pk": 3, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_permission", 
+               "name": "Can delete permission", 
+               "content_type": 1
+          }
+     }, 
+     {
+          "pk": 7, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_user", 
+               "name": "Can add user", 
+               "content_type": 3
+          }
+     }, 
+     {
+          "pk": 8, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_user", 
+               "name": "Can change user", 
+               "content_type": 3
+          }
+     }, 
+     {
+          "pk": 9, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_user", 
+               "name": "Can delete user", 
+               "content_type": 3
+          }
+     }, 
+     {
+          "pk": 31, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_category", 
+               "name": "Can add category", 
+               "content_type": 11
+          }
+     }, 
+     {
+          "pk": 32, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_category", 
+               "name": "Can change category", 
+               "content_type": 11
+          }
+     }, 
+     {
+          "pk": 33, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_category", 
+               "name": "Can delete category", 
+               "content_type": 11
+          }
+     }, 
+     {
+          "pk": 28, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_entry", 
+               "name": "Can add entry", 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 29, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_entry", 
+               "name": "Can change entry", 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 30, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_entry", 
+               "name": "Can delete entry", 
+               "content_type": 10
+          }
+     }, 
+     {
+          "pk": 13, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_contenttype", 
+               "name": "Can add content type", 
+               "content_type": 5
+          }
+     }, 
+     {
+          "pk": 14, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_contenttype", 
+               "name": "Can change content type", 
+               "content_type": 5
+          }
+     }, 
+     {
+          "pk": 15, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_contenttype", 
+               "name": "Can delete content type", 
+               "content_type": 5
+          }
+     }, 
+     {
+          "pk": 40, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_piece", 
+               "name": "Can add Portfolio Piece", 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 41, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_piece", 
+               "name": "Can change Portfolio Piece", 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 42, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_piece", 
+               "name": "Can delete Portfolio Piece", 
+               "content_type": 14
+          }
+     }, 
+     {
+          "pk": 43, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_contactsubmission", 
+               "name": "Can add contact submission", 
+               "content_type": 15
+          }
+     }, 
+     {
+          "pk": 44, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_contactsubmission", 
+               "name": "Can change contact submission", 
+               "content_type": 15
+          }
+     }, 
+     {
+          "pk": 45, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_contactsubmission", 
+               "name": "Can delete contact submission", 
+               "content_type": 15
+          }
+     }, 
+     {
+          "pk": 25, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_sitemeta", 
+               "name": "Can add site meta", 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 26, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_sitemeta", 
+               "name": "Can change site meta", 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 27, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_sitemeta", 
+               "name": "Can delete site meta", 
+               "content_type": 9
+          }
+     }, 
+     {
+          "pk": 16, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_session", 
+               "name": "Can add session", 
+               "content_type": 6
+          }
+     }, 
+     {
+          "pk": 17, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_session", 
+               "name": "Can change session", 
+               "content_type": 6
+          }
+     }, 
+     {
+          "pk": 18, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_session", 
+               "name": "Can delete session", 
+               "content_type": 6
+          }
+     }, 
+     {
+          "pk": 19, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_site", 
+               "name": "Can add site", 
+               "content_type": 7
+          }
+     }, 
+     {
+          "pk": 20, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_site", 
+               "name": "Can change site", 
+               "content_type": 7
+          }
+     }, 
+     {
+          "pk": 21, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_site", 
+               "name": "Can delete site", 
+               "content_type": 7
+          }
+     }, 
+     {
+          "pk": 34, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_tag", 
+               "name": "Can add Tag", 
+               "content_type": 12
+          }
+     }, 
+     {
+          "pk": 35, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_tag", 
+               "name": "Can change Tag", 
+               "content_type": 12
+          }
+     }, 
+     {
+          "pk": 36, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_tag", 
+               "name": "Can delete Tag", 
+               "content_type": 12
+          }
+     }, 
+     {
+          "pk": 37, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "add_taggeditem", 
+               "name": "Can add Tagged Item", 
+               "content_type": 13
+          }
+     }, 
+     {
+          "pk": 38, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "change_taggeditem", 
+               "name": "Can change Tagged Item", 
+               "content_type": 13
+          }
+     }, 
+     {
+          "pk": 39, 
+          "model": "auth.permission", 
+          "fields": {
+               "codename": "delete_taggeditem", 
+               "name": "Can delete Tagged Item", 
+               "content_type": 13
+          }
+     }, 
+     {
+          "pk": 1, 
+          "model": "auth.user", 
+          "fields": {
+               "username": "admin", 
+               "first_name": "", 
+               "last_name": "", 
+               "is_active": true, 
+               "is_superuser": true, 
+               "is_staff": true, 
+               "last_login": "2011-10-06 14:39:10", 
+               "groups": [], 
+               "user_permissions": [], 
+               "password": "sha1$81610$56f199cddbbcf59cd854c99ff86fb49a3ee05139", 
+               "email": "admin@admin.admin", 
+               "date_joined": "2011-10-01 12:27:51"
+          }
+     }
+]

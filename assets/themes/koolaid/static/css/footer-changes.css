@@ -1,0 +1,12 @@
+.wtfawd .pg-foot-wrap,
+.home .pg-foot-wrap{
+	box-shadow:none;
+	position: static;
+	z-index: auto; 
+}
+
+.wtfawd .pg-wrap,
+.home .pg-wrap{
+	border-bottom:solid 1px #d8d8d8;
+	background:#f2f2f2;
+}

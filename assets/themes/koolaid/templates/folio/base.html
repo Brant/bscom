@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Portfolio | {{ block.super }}{% endblock %}
+
+{% block body_class %} folio {% endblock %}
+
+{% block page_title %}portfolio{% endblock %}
+
+{% block tangential %}
+	<a target="_blank" href="{{ SITE_META.github }}"><span class="hide-on-small">See my </span><img src="{{ STATIC_URL }}img/github.png" alt="github"/> projects</a>
+{% endblock %}

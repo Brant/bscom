@@ -1,0 +1,56 @@
+.folio-piece{
+	position: relative;
+	height: 150px;
+	padding:50px 150px 50px 0;
+	border-bottom:solid 1px #ddd;
+}
+.folio-piece:last-of-type{
+	border-bottom:none;
+}
+.folio-piece img{
+	position: absolute;
+	border:solid 1px #ddd;
+	padding:3px;
+	left:0;
+	top:40px;
+	max-width:250px;
+		
+}
+.folio-piece h1{
+	margin:0 0 0 285px;
+	padding:0 0 10px 0;
+}
+.folio-piece p{
+	margin:0 0 0 285px;
+	padding:0 0 20px 0;
+}
+.folio-piece a,
+.folio-piece a:link,
+.folio-piece a:visited{
+	text-decoration:none;	
+}
+.folio-piece a:hover{
+	text-decoration: underline;
+}
+
+.folio-piece aside{
+	position: absolute;
+	right:-55px;
+	top:45px;
+}
+.folio-piece aside .ribbon{
+	padding:5px;
+	width:150px;
+	margin:0 0 15px;
+}
+.ribbon-development{
+	background:#3F0316;
+} 
+.ribbon-design{
+	background:#115D72;
+	
+}
+.ribbon-consulting{
+	background:#4C470B;
+	
+}

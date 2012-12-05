@@ -1,0 +1,416 @@
+/*
+ * Small sized screens
+ * 
+ * e.g. phones
+ * 
+ * high: 650px
+ */
+@media all and (max-width:650px){
+	
+	.hide-on-small{
+		display:none;
+	}
+	
+	/*
+	 * specific shows
+	 */
+	.show-on-medium-only{
+		display:none;
+	}
+	.show-on-small-only{
+		display:block;
+	}
+	body{
+		line-height:1.6em;
+		font-size:14px;
+	}
+	h1,
+	.permalink:visited,
+	.permalink:link,
+	.permalink:active,
+	.permalink{
+		padding:20px 0 0 0;
+		font-size:15px;
+	}
+	
+	.logo{
+		height:50px;
+		letter-spacing: 0px;
+		color:#fff;
+		font-size:40px;
+		line-height:40px;
+	}
+	.logo-smallerize{
+		font-size:28px;
+	}
+	.pg-head-wrap{
+		height:50px;
+	}
+	.pg-head-content{
+		bottom:-18px;
+	}
+	.pg-raised{
+		padding:0px 10px 20px;
+		margin-top:-20px;
+		box-shadow:none;
+	}
+	.blog-index .pg-raised{
+		padding-top:20px;
+	}
+	
+	/*
+	 * section titles
+	 */
+	.section-title{
+		left:5px;
+		bottom:auto;
+		top:0px;
+	}
+	.section-title h1{
+		font-size:14px;
+	}
+	
+	/*
+	 * section navigation
+	 */
+	.section-nav{
+		display: none;
+	}
+	
+	/*
+	 * Blog
+	 */
+	.blog-index-article{
+		position: relative;
+		padding:0px 110px 15px 0;
+		margin: 0 0 20px 0;
+		border-bottom:solid 1px #e7e7e7;
+	}
+	.blog-index-article h1,
+	.blog-index-article p{
+		margin-left:0;
+	}	
+	.blog-index-article img{
+		position: absolute;
+		right:0;
+		top:0;
+		left:auto;
+	}
+	.blog-entry-thumb{
+		width:75px;
+		margin:0;
+		padding:2px;
+	}
+	.blog-entry-first-of-month{
+		border-top:none;
+	}
+	
+	/*
+	 * Blog single entry
+	 */
+	.blog-single article header{
+		padding:0 0 15px 0;
+		margin:0 0 15px 0;
+		position: static;
+	}
+	.blog-single article header img{
+		float:right;
+		width:75px;
+		position: static;
+		left:auto;
+		top:auto;
+		margin:30px 0 15px 15px;
+	}
+	.blog-single-header-text{
+		margin-left:0;
+	}
+	
+	/*
+	 * sidebar stuff
+	 */
+	.content-with-sidebar{
+		/*
+		 * class for the content portion of the page
+		 */
+		float:none;
+		width:auto;
+	}
+	.sidebar{
+		display:none;
+	}
+	
+	/*
+	 * tangentials
+	 */
+	.tangential{
+		width:150px;
+		display: none;
+	}
+	.tangential nav a{
+		width: 150px;
+		padding:5px;
+	}
+	
+	/*
+	 * folio
+	 */
+	.folio-piece{
+		position: static;
+		padding:20px 0;
+		height:auto;
+	}
+	.folio-piece img{
+		position: static;
+		top:auto;
+		left:auto;
+		width: auto;
+		margin:15px 0;
+	}
+	.folio-piece h1,
+	.folio-piece p{
+		margin-left:0;
+		
+		
+	}
+	.folio-piece .ribbon{
+		position: static;
+	}
+	.folio-piece aside{
+		position: static;
+		display:none;
+	}
+	
+	
+	/*
+	 * Footer stuff
+	 */
+	.foot-section{
+		padding:0 0 20px 0;
+	}
+	/*
+	 * social footer
+	 */
+	.social{
+		float:none;
+		width:auto;
+		display: block;
+	}
+	.social ul{
+		float:left;
+		width:100%;
+		padding:0 0 30px 0;
+	}
+	.social li{
+		margin-right:8px;
+		width:32px;
+	}
+	.social a{
+		
+	}
+	.contact-page .pg-raised .two-col-right{
+		padding-top:20px;
+	} 
+	.contact{
+		width:auto;
+		float:none;
+		padding-left:0;
+	}
+	.contact input,
+	.contact textarea{
+		width:100%;
+	}
+	.contact .contact-submit{
+		width:80px;
+	}
+	.profile{
+		float:none;
+		width:auto;
+	}
+	.profile figure{
+		padding:0;
+	}
+	.profile img{
+		
+	}
+	.contact-form textarea{
+		max-width:100%;
+	}
+	/*
+	 * Two column
+	 */
+	.two-col{
+	
+	}
+	.two-col section{
+		float:none;
+		width:auto;
+	}
+	.two-col .two-col-left{
+		float:none;
+		width:auto;
+		padding:0 0;
+	}
+	.two-col .two-col-right{
+		float:none;
+		padding:0;
+	}
+	/*
+	 * wtfawd
+	 */
+	.wtfawd .content{
+		background:url(img/shrug-white.png) right bottom no-repeat;
+		background:none;
+	}
+	.wtf-host{
+		padding-right:20px;
+		float:left;
+	}
+	.wtf-host img{
+		border:solid 1px #d8d8d8;
+		padding:3px;
+		width:100px;
+	}
+	.wtfawd-latest-episodes{
+		margin:0;
+	}
+	.wtfawd-latest-episodes h2{
+		padding:25px 0 0 0;
+	}
+	.wtfawd-latest-episodes hgroup h2{
+		padding:0;
+	}
+	.wtfawd .pg-wrap{
+		padding-top:0;
+		background:#fdfdfd;
+	}
+	/*
+	 * Alternating layout for a page
+	 */
+	.alternate{
+		
+	}
+	.alternate section{
+		position: static;
+	}
+	.alternate .alternate-left,
+	.alternate .alternate-right{
+		padding:30px 0 0px 0;
+	}
+	.alternate section:last-of-type{
+		padding-bottom:20px;
+		
+	}
+	.alternate .ribbon{
+		position: static;
+		top:auto;
+		width:auto;	
+		margin-right:-10px;
+	}
+	.alternate .ribbon-left{
+		left:auto;
+	}
+	.alternate .ribbon{
+		right:auto;
+		
+	}
+	/*
+	 * about me page
+	 */
+	.about .me-strip{
+		display:none;
+	}
+	.about #education,
+	.about #web-geek,
+	.about #what-i-do,
+	.about #day-job,
+	.about #resume{
+		background:none;
+	}
+	/*
+	 * ribbons
+	 */
+	.ribbon{
+		padding:5px 10px;
+		text-align: right;
+	}
+	
+	/*
+	 * Back Link
+	 */
+	.back-link{
+		right:0px;
+		border-radius:0;
+		top:0px;
+		left:auto;
+		z-index: 1;
+		height:27px;
+		padding-top:13px;
+	}
+	.back-link:before{
+		border-width: 24px;
+		left:-48px;
+	}
+	
+	/*
+	 * Homepage
+	 */
+	
+	.home-link{
+		position: relative;
+		margin:20px 0;
+	}
+	.home-link h2{
+		position: static;
+		left:auto;
+		top:auto;
+		margin:0;
+		padding:0 0 10px;
+		font-size:25px;
+		line-height: 1.3em;
+		
+	}
+	.hire-me{
+		top:-70px;
+		right:10px;
+		height:80px;
+		width:50px;
+		padding:30px 5px 0;
+		font-size:20px;
+	}
+	.hire-me:before{
+		border:solid 30px transparent;
+		bottom:-30px;
+		border-left-color:#006c8b;
+		border-right-color:#006c8b;
+	
+	
+	}
+	.home-link h2 a{
+		
+	}
+	/*
+	.home-folio-image-container img{
+		left:5px;
+		z-index:1;
+	}
+	.home-folio-image-container a:nth-of-type(2) img{
+		left:45px;
+		z-index:2
+	}
+	.home-folio-image-container a:nth-of-type(3) img{
+		left:85px;
+		z-index:3;
+	}
+	*/
+	.home .content hgroup{
+		padding:0 80px 0 0;
+		
+		
+	}
+	.home .content{
+		padding:0px 10px 50px;
+		
+	}
+	
+}
+

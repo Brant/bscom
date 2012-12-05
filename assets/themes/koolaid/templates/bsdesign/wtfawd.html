@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% load bs_tags %}
+
+{% block title %}WTF Are We Doing? | Podcast | {{ block.super }}{% endblock %}
+
+{% block back_link %}<a href="{% url home %}">Home</a>{% endblock %}
+
+{% block body_class %}{{ block.super }} wtfawd {% endblock %}
+{% block page_title %}podcast{% endblock %}
+
+{% block tangential %}
+	<a target="_blank"  href="{{ SITE_META.wtfawd_itunes }}">Subscribe <img src="{{ STATIC_URL }}img/itunes.png" alt="iTunes logo"/><Br/>on iTunes</a>
+{% endblock %}
+
+{% block pg_raised_wrap %}
+	{% block content %}
+		<div id="content" class="content two-col clearfix">
+			<hgroup>
+				<h1>WTFAWD?</h1>
+				<h2>A web design and development podcast</h2>
+			</hgroup>
+
+			<section class="two-col-left clearfix">
+								
+				<p>WTFAWD (WTF are we doing) is a twice-monthly podcast where Tim and I discuss web design and development topics.</p>
+				
+				<h2>With your hosts</h2>
+				<figure class="wtf-host">
+					<img src="{{ STATIC_URL }}img/brant-steen.jpg" alt="Picture of Brant Steen"/>
+					<figcaption>Brant Steen<br/>Thats me!</figcaption>
+				</figure>
+				<figure class="wtf-host">
+					<img src="{{ STATIC_URL }}img/tim-white.jpg" alt="Picture of Brant Steen"/>
+					<figcaption>Tim White<br/><a target="_blank" href="{{ SITE_META.tim_website }}"><span class="hide-on-small">www.</span>timlwhite.com</a></figcaption>
+				</figure>
+				
+			</section>
+			<section class="two-col-right clearfix">
+				<div class="wtfawd-latest-episodes">
+					<h2>Latest Episodes</h2>
+				
+					{% wtfawd_latest_episodes %}
+					<a class="big-orange-button" href="http://www.wtfawd.com/podcast/">Listen now</a>
+				</div>
+				
+				
+			</section>
+		</div>
+	{% endblock %}
+{% endblock %}

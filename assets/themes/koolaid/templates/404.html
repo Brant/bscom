@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{%  block title %}Page not found | {{ block.super }}{% endblock %}}
+
+{% block body_class %}{{ block.super }} 404 {% endblock %}
+{% block page_title %}404 page{% endblock %}
+
+{% block back_link %}<a href="{% url home %}">Home</a>{% endblock %}
+
+{% block tangential_wrap %}{% endblock %}
+
+{% block content %}
+	<h1>Page not found</h1>
+	<p>Sorry, couldn't find that. Try again!</p>
+{% endblock %}

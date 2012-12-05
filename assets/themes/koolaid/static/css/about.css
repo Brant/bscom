@@ -1,0 +1,21 @@
+.about .me-strip{
+	margin:20px 0 0;
+	padding:5px;
+	border:solid 1px #ddd;
+	float:right;
+}
+.about #education{
+	background:url(img/about/scholar.png) right 70% no-repeat;
+}
+.about #web-geek{
+	background:url(img/about/html5.png) 98% 70% no-repeat;
+}
+.about #background{
+	background:url(img/about/globe.png) left center no-repeat;
+}
+.about #day-job{
+	background:url(img/about/bucks.png) 100% 85% no-repeat;
+}
+.about #resume{
+	background:url(img/about/resume.png) 1% 25% no-repeat;
+}

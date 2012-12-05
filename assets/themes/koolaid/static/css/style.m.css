@@ -1,0 +1,217 @@
+/*
+ * Medium sized screens
+ * 
+ * e.g. tablets in portrait
+ * 
+ * high: 959px
+ * low: 651px
+ */
+@media all and (max-width:959px){
+	
+	.show-on-small-only{
+		display:none;
+	}
+	.show-on-medium-only{
+		display:block;
+	}
+	.width{
+		width:auto;
+		max-width:959px;
+	}
+	.nav{
+		display:none;
+	}
+	
+	.pg-head-wrap{
+		height:150px;
+	}
+	.pg{
+		padding:0;
+	}
+	.pg-raised{
+		padding:30px 20px;
+	}
+	
+	/*
+	 * Blog
+	 */
+	.blog-index-article{
+		position: relative;
+		margin-right:220px;
+		padding:40px 0 60px;
+	}
+	.blog-month-tracker{
+		right:-240px;
+		width:180px;
+	}
+	
+	/*
+	 * ribbons
+	 */
+	.ribbon{
+		padding:70px 0px 70px 0px;
+			
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		-o-box-shadow:none;
+		box-shadow:none;
+		
+		-webkit-border-radius:0;
+		-moz-border-radius:0;
+		-o-border-radius:0;
+		border-radius:0px;
+	}
+	
+	.sidebar .ribbon{
+		margin-right:-20px;
+	}
+	
+	.ribbon:before{
+		display:none;
+	}
+	
+	/*
+	 * Tangentials
+	 */
+	.tangential{
+		z-index: 1;
+	}
+	.tangential nav{
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		-o-box-shadow:none;
+		box-shadow:none;
+		
+		z-index:1;
+	}
+	.tangential nav a{
+		background:#006C8B;
+		height:150px;
+		z-index: 1;
+	}
+	.tangential nav:before,
+	.tangential nav:after{
+		display:none;
+	}
+	.tangential-rss nav a{
+		background:#ed832d;
+		
+	}.tangential-rss{
+		right:96px;
+	}
+	
+	/*
+	 * folio
+	 */
+	.folio-piece aside{
+		right:-20px;
+		
+		width:auto;
+	}
+	.folio-piece{
+		padding:50px 180px 50px 0;
+	}
+	.folio-piece img{
+		width:180px;
+		top:50px;
+	}
+	.folio-piece h1,
+	.folio-piece p{
+		margin-left:210px;
+	}
+	
+	/*
+	 * Footer stuff
+	 */
+	/*
+	 * social footer
+	 */
+	.social{
+		float:left;
+		width:100%;
+		position: static;
+		padding:0 0 40px;
+	}
+	.social li{
+		float:left;
+		margin-right:25px;
+		overflow:hidden;
+		width:32px;
+	}
+	.social a{
+		display: inline;
+		width:auto;
+		color:transparent;
+	}
+	.contact{
+		width:50%;
+		float:right;
+		padding-left:10%;
+		
+	}
+	.profile{
+		width:35%;
+	}
+	.profile img{
+		max-width:100%;
+	}
+	/*
+	 * Alternating layout for a page
+	 */
+	
+	.alternate .alternate-left{
+		padding:40px 0px 20px 190px;
+	}
+	
+	.alternate .alternate-right{
+			
+		padding:40px 190px 20px 0px;
+	}
+	.alternate .ribbon{
+		position: absolute;
+		top:65px;
+		width:180px;	
+	}
+	.alternate .ribbon-left{
+		left:-20px;
+	}
+	.alternate .ribbon{
+		right:-20px;
+	}
+	/*
+	 * wtfawd
+	 */
+	.wtf-host{
+		padding-right:20px;
+	}
+	.wtf-host img{
+		width:105px;
+	}
+	
+	/*
+	 * Back Link
+	 */
+	.back-link{
+		display: block;
+		
+	}
+	
+	/*
+	 * Sction nav
+	 */
+	.section-nav{
+		margin:21px 0 0 120px;
+	}
+	.section-nav a{
+		padding:8px 25px;
+	}
+	/*
+	 * Home
+	 */
+	.hire-me{
+		top:-170px;
+		right:10px;
+		height:110px;
+		padding:60px 10px 0;
+	}
+}

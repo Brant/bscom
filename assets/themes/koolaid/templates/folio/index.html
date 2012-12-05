@@ -1,0 +1,33 @@
+{% extends "folio/base.html" %}
+{% load markup %}}
+
+{% block back_link %}<a href="{% url home %}">Home</a>{% endblock %}
+
+{% block content %}
+	<!--<h1 class="hide-on-small">Client Work</h1>-->
+	{% for piece in pieces %}
+		<article id="{{ piece.slug }}" class="folio-piece">
+			<h1>
+				{% if piece.confidential %}
+					{{ SITE_META.confidential_client_title }}
+				{% else %}
+					{{ piece }}
+				{% endif %}
+			</h1>
+			
+			<img src="{{ piece.thumbnail.url }}" alt="{% if piece.confidential %}{{ SITE_META.confidential_client_title }}{% else %}{{ piece }}{% endif %} thumbnail" />
+			
+			{{ piece.blurb|markdown }}
+			
+			{% if not piece.confidential and piece.link %}
+				<p><a target="_blank" href="{{ piece.link }}">Visit {{ piece }}</a></p>
+			{% endif %}
+			
+			<aside>
+				{% for tag in piece.tags.all %}
+					<p class="ribbon-{{ tag|slugify }} ribbon">{{ tag }}</p>
+				{% endfor %}
+			</aside>
+		</article>
+	{% endfor %}
+{% endblock %}

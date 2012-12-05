@@ -1,0 +1,3 @@
+"""
+bscom Project Module
+"""

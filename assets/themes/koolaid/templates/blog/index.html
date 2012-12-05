@@ -1,0 +1,63 @@
+{% load jaxy %}
+
+{% jaxtends "blog/base.html" is_ajax "noodles/jaxy.html" %}
+
+{% block body_class %} {{ block.super }} blog-index {% endblock %}
+
+{% load markup %}
+{% load blog_tags %}
+
+{% block back_link %}<a href="{% url home %}">Home</a>{% endblock %}
+
+{% block jaxy_content %}
+	
+	{% for entry in entries.object_list %}
+		{% new_month entry NEWMONTH %}
+		
+		<article class="{% if NEWMONTH %}blog-entry-first-of-month {% endif %}blog-index-article clearfix">
+			
+			{% if NEWMONTH %}
+				<aside class="blog-month-tracker ribbon">
+					<a href="{% url blog_archive month=entry.date|date:"m" year=entry.date|date:"Y" %}">{{ entry.date|date:"F Y"}}</a>
+				</aside>
+			{% endif %}
+			
+			<div class="blog-index-entry">
+				
+				<a class="img-permalink" href="{{ entry.get_absolute_url }}">
+					<img class="blog-entry-thumb" src="{{ entry.thumbnail.url}}" />
+				</a>
+				
+				<h1><a class="permalink" href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h1>
+				
+				
+				<p>{{ entry.date|date:"F j, Y" }}</p>
+				
+				<div class="hide-on-small">
+				{{ entry.blurb|markdown }}
+				{% load disqus_tags %}
+				</div>
+				
+				<p>
+					<a href="{{ entry.get_absolute_url }}">Read more</a> | <a href="{{ entry.get_absolute_url }}#disqus_thread" data-disqus-identifier="{{ entry.id }}">View Comments</a>
+					{% disqus_num_replies %}
+				</p>
+				
+			</div>
+		</article>
+	{% endfor %}
+	
+	<p class="jaxy-paginator">
+		{% if entries.has_previous %}
+			{% if entries.previous_page_number != 1 %}
+	            <a class='jaxy-newer' href="{{ request.path }}?page={{ entries.previous_page_number }}">Newer</a>
+			{% else %}
+				<a class='jaxy-newer' href="{% url blog.views.index %}">Newer</a>
+			{% endif %}
+	    {% endif %}
+		
+	    {% if entries.has_next %}
+	        <a class='jaxy-older' href="{{ request.path }}?page={{ entries.next_page_number }}">Older</a>
+	    {% endif %}
+	</p>
+{% endblock %}

@@ -1,0 +1,22 @@
+.has-sidebar{
+	/*
+	 * body class to be added to pages with a sidebar
+	 */
+}
+.content-with-sidebar{
+	/*
+	 * class for the content portion of the page
+	 */
+	float:left;
+	width:77%;
+	
+}
+
+.sidebar{
+	width:17%;
+	float:right;
+	padding:40px 0;
+}
+.sidebar .ribbon{
+	margin-right:-55px;
+}

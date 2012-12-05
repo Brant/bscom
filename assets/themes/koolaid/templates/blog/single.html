@@ -1,0 +1,76 @@
+{% extends "blog/base.html" %}
+
+{% load disqus_tags %}
+{% load markup %}
+{% load blog_tags %}
+	
+{% block back_link %}<a href="{% url blog_index %}">Blog</a>{% endblock %}
+
+{% block body_class %}{{ block.super }} blog-single has-sidebar{% endblock %}
+
+{% block title %}{{ entry.title }} | {{ block.super }}{% endblock %}
+
+{% block extra_head %}
+	<meta itemprop="name" content="{{ entry.title }}">
+	<meta itemprop="description" content="{{ entry.blurb|striptags }}">
+	
+	<meta name="description" content="{{ entry.blurb|striptags }}" /> 
+{% endblock %}
+
+{% block content %}
+	{% set_disqus_identifier entry.id %}
+	
+	<article class="content-with-sidebar" id="content">
+		
+		<header class="clearfix">
+			<img class="blog-entry-thumb" src="{{ entry.thumbnail.url }}" />
+			
+			<div class="blog-single-header-text">
+				<h1>{{ entry.title }}</h1>
+				<p>{{ entry.date|date:"F j, Y" }}</p>
+				
+				{{entry.blurb|markdown}}
+				
+				{% include "blog/includes/social.html" %}
+			</div>
+			
+		</header>
+		
+		{{entry.content|markdown }}
+		
+		<footer>
+			{# disqus_dev #}
+			<!-- Comments go here -->
+			{% disqus_show_comments %}	
+		</footer>
+	</article>
+	
+{% endblock %}
+
+{% block extra_foot %}
+	<script src="http://yandex.st/highlightjs/5.16/highlight.min.js"></script>
+{% endblock %}
+
+{% block sidebar %}
+	<aside class="sidebar">
+		<section class="blog-archives">
+			{% blog_archives %}
+		</section>
+		{% with entry|get_related:3 as RELATED_LIST %}
+			{% if RELATED_LIST %}
+				<section class="related-entries">
+					
+					<h1 class="ribbon">Related Articles</h1>
+					
+					{% for related in RELATED_LIST %}
+						<figure class="related-entry"><a href="{{ related.get_absolute_url }}"><img src="{{ related.thumbnail.url }}" alt="{{ related }} thumbnail" /><figcaption>{{ related }}</figcaption></a></figure>
+					{% endfor %}
+					
+				</section>
+			{% endif %}
+		{% endwith %}
+		
+		
+		
+	</aside>
+{% endblock %}

@@ -1,0 +1,77 @@
+
+.wtfawd .content{
+	background:url(img/shrug-white.png) right bottom no-repeat;
+}
+
+.wtf-host{
+	padding-right:40px;
+	
+	float:left;
+}
+.wtf-host img{
+	border:solid 1px #d8d8d8;
+	padding:3px;
+	width:150px;
+}
+.wtfawd .two-col{
+	
+}
+.wtfawd .big-orange-button{
+	
+}
+/*
+ * Latest Episode List
+ */
+.wtfawd-latest-episodes{
+	
+}
+.wtfawd-latest-episodes .big-orange-button{
+	margin-top:20px;
+}
+.wtfawd-latest-episodes h2{
+	padding:0 0 15px;
+}
+.wtfawd-episode{
+	position: relative;
+	min-height:50px;
+	padding:5px;
+	margin:5px 0;	
+}
+.wtfawd-episode:last-of-type{
+	
+}
+.wtfawd-episode a,
+.wtfawd-episode a:visited,
+.wtfawd-episode a:link{
+	text-decoration: none;
+	color:#222;
+}
+.wtfawd-episode:hover{
+	background:#d8d8d8;
+}
+.wtfawd-episode hgroup{
+	
+	margin:0 0 0 70px;
+	padding:0;
+}
+.wtfawd-episode h1{
+	color:#222;
+	margin:0;
+	padding:0;
+	font-weight: normal;
+	font-size:15px;
+}
+.wtfawd-episode h2{
+	margin:0;
+	padding:0;
+	color:#6f6f6f;
+	font-weight: normal;
+	font-size:12px;
+}
+.wtfawd-episode img{
+	height:50px;
+	position: absolute;
+	left: 5px;
+	top:5px;
+	
+}

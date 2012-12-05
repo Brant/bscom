@@ -1,0 +1,261 @@
+/*
+ * Big orange button
+ */
+.big-orange-button:visited,
+.big-orange-button,
+.big-orange-button:link{
+	display:inline-block;
+	padding:20px 50px;
+	font-size: 22px;
+	
+	color:#fff;
+	
+	text-decoration: none;
+	
+	background:#F48F3F;
+	
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	-o-border-radius:15px;
+	border-radius:15px;
+	
+	border:solid 1px #DA8038;
+	background-image: linear-gradient(bottom, rgb(237,131,45) 8%, rgb(255,165,92) 54%);
+	background-image: -o-linear-gradient(bottom, rgb(237,131,45) 8%, rgb(255,165,92) 54%);
+	background-image: -moz-linear-gradient(bottom, rgb(237,131,45) 8%, rgb(255,165,92) 54%);
+	background-image: -webkit-linear-gradient(bottom, rgb(237,131,45) 8%, rgb(255,165,92) 54%);
+	background-image: -ms-linear-gradient(bottom, rgb(237,131,45) 8%, rgb(255,165,92) 54%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.08, rgb(237,131,45)),
+		color-stop(0.54, rgb(255,165,92))
+	);
+}
+.big-orange-button:hover{
+	background-image: linear-gradient(bottom, rgb(247,142,62) 8%, rgb(255,165,92) 54%);
+	background-image: -o-linear-gradient(bottom, rgb(247,142,62) 8%, rgb(255,165,92) 54%);
+	background-image: -moz-linear-gradient(bottom, rgb(247,142,62) 8%, rgb(255,165,92) 54%);
+	background-image: -webkit-linear-gradient(bottom, rgb(247,142,62) 8%, rgb(255,165,92) 54%);
+	background-image: -ms-linear-gradient(bottom, rgb(247,142,62) 8%, rgb(255,165,92) 54%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.08, rgb(247,142,62)),
+		color-stop(0.54, rgb(255,165,92))
+	);
+}
+
+/*
+ * Tangential ribbon
+ */
+.tangential{
+	position: absolute;
+	right:0;
+	z-index: 5;
+	top:0;
+}
+
+.tangential nav{
+	-webkit-box-shadow:0 5px 60px 10px rgba(17,92,114,.5);
+	-moz-box-shadow:0 5px 60px 10px rgba(17,92,114,.5);
+	-o-box-shadow:0 5px 60px 10px rgba(17,92,114,.5);
+	box-shadow:0 5px 60px 10px rgba(17,92,114,.5);
+	
+	position: relative;
+	z-index:7;
+	
+	-webkit-transition: box-shadow .15s ease-in-out;
+	-moz-transition: box-shadow .15s ease-in-out;
+	-o-transition: box-shadow .15s ease-in-out;
+	transition: box-shadow .15s ease-in-out;
+
+}
+.tangential nav:hover{
+	-webkit-box-shadow:0 5px 60px 10px rgba(17,92,114,.7);
+	-moz-box-shadow:0 5px 60px 10px rgba(17,92,114,.7);
+	-o-box-shadow:0 5px 60px 10px rgba(17,92,114,.7);
+	box-shadow:0 5px 60px 10px rgba(17,92,114,.7);
+	
+}
+.tangential nav img{
+	padding:5px 0;
+}
+
+.tangential nav a{
+	
+	display:block;
+	
+	width:70px;
+	text-align:center;
+	padding:10px 5px;
+	
+	background:#006C8B;	
+	background-image: linear-gradient(bottom, rgb(0,109,139) 57%, rgb(10,139,168) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(0,109,139) 57%, rgb(10,139,168) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(0,109,139) 57%, rgb(10,139,168) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(0,109,139) 57%, rgb(10,139,168) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(0,109,139) 57%, rgb(10,139,168) 100%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.57, rgb(0,109,139)),
+		color-stop(1, rgb(10,139,168))
+	);
+	
+	color:#000;
+	text-decoration:none;
+	position: relative;
+	z-index: 5;
+	font-weight: bold;
+	
+	text-shadow:0px 0px 2px #000;
+	
+	color:#fff;
+}
+/*
+.tangential nav:after{
+	height:5px;
+	width:80px;
+	position: absolute;
+	z-index: 6;
+	background:#0c0d00;
+	content: " ";
+	left:0px;
+	bottom:-44px;
+	
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius:10px;
+}
+*/
+
+.tangential nav:before{
+	content:" ";
+	border:solid 40px transparent;
+	border-right-color:#006C8B;
+	border-left-color:#006C8B;
+	position: absolute;
+	bottom:-40px;
+	left:0;
+	z-index:-1;
+}
+
+/*
+ * Page headings
+ */
+.page-heading{
+	position: relative;
+	z-index: 3;
+	
+}
+.page-heading h1{
+	position: relative;
+	color:#333;
+	background:#fff;
+	padding:0;
+	margin:0;
+	height:36px;
+	padding:4px 60px 0 50px;
+	float:left;
+	
+	background-image: linear-gradient(left , rgb(252,252,252) 11%, rgb(255,255,255) 49%, rgb(252,252,252) 90%);
+	background-image: -o-linear-gradient(left , rgb(252,252,252) 11%, rgb(255,255,255) 49%, rgb(252,252,252) 90%);
+	background-image: -moz-linear-gradient(left , rgb(252,252,252) 11%, rgb(255,255,255) 49%, rgb(252,252,252) 90%);
+	background-image: -webkit-linear-gradient(left , rgb(252,252,252) 11%, rgb(255,255,255) 49%, rgb(252,252,252) 90%);
+	background-image: -ms-linear-gradient(left , rgb(252,252,252) 11%, rgb(255,255,255) 49%, rgb(252,252,252) 90%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0.11, rgb(252,252,252)),
+		color-stop(0.49, rgb(255,255,255)),
+		color-stop(0.9, rgb(252,252,252))
+	);
+	
+}
+.page-heading h1:before{
+	position: absolute;
+	z-index: -1;
+	content:"";
+	top:3px;
+	left:10px;
+	width:85%;
+	height:33px;
+	background:transparent;
+	
+	-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);
+	-moz-box-shadow:0 0 10px rgba(0,0,0,.5);
+	-o-box-shadow:0 0 10px rgba(0,0,0,.5);
+	box-shadow:0 0 10px rgba(0,0,0,.5);
+	
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+}
+
+
+/*
+ * Ribbons
+ * 
+ * All styling handled
+ * 
+ * Positioning and Width must be handled separately
+ * 
+ * Default to a right-side ribbon - add .ribbon-left for left page side styling
+ * 
+ */
+.ribbon{
+	color:#fff;
+	background:#3f0316;
+	padding:10px 0px;
+	
+	text-align:center;
+	font-size:18px;
+	
+	-webkit-box-shadow:0 2px 5px rgba(0,0,0,.4);
+	-moz-box-shadow:0 2px 5px rgba(0,0,0,.4);
+	-o-box-shadow:0 2px 5px rgba(0,0,0,.4);
+	box-shadow:0 2px 5px rgba(0,0,0,.4);
+	
+	border-radius: 5px;
+	position: relative;
+	
+	line-height:1.5em;
+}
+
+.ribbon a,
+.ribbon a:visited,
+.ribbon a:link{
+	color:#fff;
+	text-decoration: none;
+}
+.ribbon a.cur,
+.ribbon a:hover{
+	color:#fff;
+	text-decoration: underline;
+}
+.ribbon:before{
+	position:absolute;
+	content:" ";
+	border:solid 15px transparent;
+	border-left-color:#333;
+	right:-13px;
+	bottom:-13px;
+	z-index:-1;
+}
+.ribbon-left:before{
+	right:auto;
+	left:-13px;
+	border-left-color:transparent;
+	border-right-color:#333;
+}

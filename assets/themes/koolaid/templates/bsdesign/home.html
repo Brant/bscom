@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load bs_tags %}
+{% block title %}{{ block.super }} | Web Design, Development, Consulting, Geek{% endblock %}
+
+{% block extra_head %}
+	<meta name="description" content="Web designer, developer, and consultant. Newtown, Pennsylvania (Suburban Philadelphia)." /> 
+{% endblock %}
+
+{% block body_class %} home {% endblock %}
+
+{% block tangential_wrap %}{% endblock %}
+{% block page_title_wrap %}{% endblock %}
+
+{% block pg_raised_wrap %}
+	{% block content %}
+		<div class="content" id="content">
+			
+			<div class="hire-me">
+				<nav>
+					<a href="{% url contact %}">Hire me</a>
+				</nav>
+			</div>
+			
+			<hgroup><h1>Web Designer, Developer, Consultant</h1></hgroup>
+			
+			<section id="home-folio" class="home-folio home-link">
+				<h2><a href="{% url folio_index %}">Client Work</a></h2>
+			</section>
+			
+			<section id="home-podcast" class="home-podcast home-link">
+				<h2><a href="{% url podcast %}">Podcast</a></h2>
+				
+				<div class="home-podcast-image-container home-image-container">
+					<a href="{% url podcast %}"><img src="{{ STATIC_URL }}img/podcast.png" /></a>
+				</div>
+				
+			</section>
+			<!--
+			<section id="home-blog" class="home-blog home-link">
+				
+				<h2><a href="{% url blog_index %}">Writing</a></h2>
+				
+				<div class="home-blog-image-container home-image-container">
+					<a href="{% url blog_index %}"><img src="{% latest_blog_thumbnail %}" /></a>
+				</div>
+				
+			</section>-->
+			<section id="home-about" class="show-on-small-only show-on-medium-only home-about home-link">
+				
+				<h2><a href="{% url about %}">More about me</a></h2>
+				
+				<div class="home-about-image-container home-image-container">
+					<a href="{% url about %}"><img src="{{ STATIC_URL }}img/about.jpg" /></a>
+				</div>
+				
+			</section>
+			
+		</div>
+	{% endblock %}
+{% endblock %}

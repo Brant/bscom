@@ -1,0 +1,7 @@
+<ul class="clearfix">
+	{% for category in categories %}
+		{% with category.get_absolute_url as CAT_URL %}
+			<li><a{% if request.path == CAT_URL %} class="cur"{% endif %} href="{{ CAT_URL }}">{{ category }}</a></li>
+		{% endwith %}
+	{% endfor %}
+</ul>	

@@ -1,0 +1,33 @@
+/*
+ * Alternating layout for a page
+ * 
+ * Titles can appear on left or right of a center column of content
+ */
+.alternate{
+	
+}
+.alternate section{
+	position: relative;
+}
+.alternate .alternate-left{
+	padding:40px 190px 20px 190px;
+}
+
+.alternate .alternate-right{
+		
+	padding:40px 190px 20px 190px;
+}
+/*
+ * ribbons
+ */
+.alternate .ribbon{
+	position: absolute;
+	top:65px;
+	width:180px;	
+}
+.alternate .ribbon-left{
+	left:-55px;
+}
+.alternate .ribbon{
+	right:-55px;
+}

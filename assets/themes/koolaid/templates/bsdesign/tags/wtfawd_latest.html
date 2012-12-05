@@ -1,0 +1,11 @@
+{% for sode in episodes %}
+	<article class="wtfawd-episode">
+		<a target="_blank" href="http://www.wtfawd.com/podcast/episode/{{ sode.chronology }}/">
+			<img src="{{ sode.image }}" />
+			<hgroup>
+				<h1>Episode {{ sode.chronology }}: {{ sode.title }}</h1>
+				<h2>{{ sode.date|date:"F j, Y" }}</h2>
+			</hgroup>
+		</a>
+	</article>
+{% endfor %}

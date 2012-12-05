@@ -1,0 +1,7 @@
+.ie .ribbon-left:before,
+.ie .ribbon:before{
+	display:none;
+}
+.ie .pg-raised{
+	border-top:solid 1px #eee;
+}
