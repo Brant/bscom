@@ -1,12 +1,16 @@
 """
 
 """
-from django import template
 from datetime import datetime
-from blog.models import Entry, Category
+
+from django import template
 from django.db.models import Q
 
+from bscom.blog.models import Entry, Category
+
+
 register = template.Library()
+
 
 @register.filter
 def get_related(entry, count=5):
@@ -29,23 +33,24 @@ def blog_categories(context):
     return {"categories": categories, "request": context["request"]}
 register.inclusion_tag('blog/tags/category_list.html', takes_context=True)(blog_categories)
     
+    
 def blog_archives(context):
     """
     Renders list of archives, by month/year
     """
     entries = Entry.objects.filter(date__lte=datetime.now()).dates('date', 'month', order='DESC')
     return {'archives': entries, 'request': context['request']}
-
 register.inclusion_tag('blog/tags/archive_list.html', takes_context=True)(blog_archives)
 
+
 def do_new_month(parser, token):
-    
     try:
         tag_name, entry, true_false = token.split_contents()
     except ValueError:
         raise template.TemplateSyntaxError("%s tag should be '%s ENTRY VAR_NAME'" % (token.contents.split()[0], token.contents.split()[0]))
 
     return NewMonth(entry, true_false)
+
 
 class NewMonth(template.Node):
     def __init__(self, entry, true_false):

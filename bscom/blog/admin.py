@@ -1,4 +1,5 @@
 from django.contrib import admin
+
 from bscom.blog.models import Entry, Category
 
 class EntryAdmin(admin.ModelAdmin):

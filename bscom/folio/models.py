@@ -1,8 +1,12 @@
+"""
+Portfolio Models
+"""
 from django.db import models
 
 from noodles.models import TitleDateSlug
 
 from taggit.managers import TaggableManager
+
 
 class Piece(TitleDateSlug):
     """
@@ -18,7 +22,6 @@ class Piece(TitleDateSlug):
     confidential = models.BooleanField(default=False)
     
     tags = TaggableManager()
-    
     
     class Meta:
         """ Django Metadata """

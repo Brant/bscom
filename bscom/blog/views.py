@@ -1,7 +1,6 @@
 """
 Blog views
 """
-
 from datetime import datetime
 
 from django.shortcuts import render_to_response, get_object_or_404
@@ -13,6 +12,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from bscom.blog.models import Entry, Category
 
 from noodles.util import make_paginator
+
 
 def single(request, slug):
     """
@@ -28,7 +28,8 @@ def single(request, slug):
     }
     
     return render_to_response("blog/single.html", response_data, RequestContext(request))
-    
+
+
 def category(request, category_slug):
     """
     All entries belonging to a given category
@@ -40,7 +41,8 @@ def category(request, category_slug):
     response_data = {"entries": entries, "category": category}
     
     return render_to_response("blog/category.html", response_data, context_instance=RequestContext(request))
-    
+
+
 def archive(request, month, year):
     """
     A month of a year of entries

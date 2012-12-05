@@ -7,10 +7,10 @@ from datetime import datetime
 from django.contrib.syndication.views import Feed
 from django.utils import feedgenerator
 from django.contrib.sites.models import Site
+from django.contrib.markup.templatetags.markup import markdown
 
 from bscom.blog.models import Entry
 
-from django.contrib.markup.templatetags.markup import markdown
 
 class ExtendedRSSFeed(feedgenerator.Rss201rev2Feed):
     """
