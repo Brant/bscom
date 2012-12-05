@@ -1,9 +1,0 @@
-Images refered to in the stylesheets go here
-
-so....
-
-body{
-	background:url(img/home.jpg);
-}
-
-Will access "home.jpg" in this directory

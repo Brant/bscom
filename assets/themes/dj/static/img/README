@@ -1,3 +1,0 @@
-Images refered to in <img> tags should go here
-
-In templates, {{ IMG }} gets you to this directory
