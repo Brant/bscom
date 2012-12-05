@@ -25,6 +25,7 @@ settings_test_local.py
 .DS_Store
 .svn
 env/
+*-env/
 build/
 mediabrute_usefile
 dist/

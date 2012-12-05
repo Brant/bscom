@@ -9,3 +9,4 @@ django-taggit
 mimeparse
 python-dateutil
 django-tastypie
+django-disqus

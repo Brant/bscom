@@ -158,6 +158,7 @@ INSTALLED_APPS = (
     "noodles",
     "south",
     "taggit",
+    "disqus",
     
     "bscom.website",
     "bscom.blog",
