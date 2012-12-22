@@ -1,6 +1,4 @@
-{% load jaxy %}
-
-{% jaxtends "blog/base.html" is_ajax "noodles/jaxy.html" %}
+{% extends "blog/base.html" %}
 
 {% block body_class %} {{ block.super }} blog-index {% endblock %}
 
