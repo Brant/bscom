@@ -104,8 +104,7 @@
 							{% url about as ABOUT %}
 							{% url podcast as PODCAST %}
 							{% url folio.views.index as FOLIO %}
-							<!---<li><a class="nav-blog" href="{{ BLOG }}"><span {% if request.path|insidenav:BLOG %}class="cur" {% endif %}>Blog</span></a></li>-->
-							
+							<li><a class="nav-blog" href="{{ BLOG }}"><span {% if request.path|insidenav:BLOG %}class="cur" {% endif %}>Blog</span></a></li>
 							<li><a class="nav-folio" href="{{ FOLIO }}"><span {% if request.path|insidenav:FOLIO %}class="cur" {% endif %}>Portfolio</span></a></li>
 							<li><a class="nav-me" href="{{ ABOUT }}"><span {% if request.path|insidenav:ABOUT %}class="cur" {% endif %}>Me</span></a></li>
 							<li><a class="nav-podcast" href="{{ PODCAST }}"><span {% if request.path|insidenav:PODCAST %}class="cur" {% endif %}>Podcast</span></a></li>
