@@ -389,7 +389,7 @@ hgroup h3{
 }
 .foot-section h1{
 	color:#666;
-	text-shadow:-1px -1px 1px #fff;
+	text-shadow:1px 1px 1px #fefefe;
 	padding:0 0 7px 0;
 	margin:0;
 }
