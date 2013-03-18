@@ -99,6 +99,10 @@ hgroup h3{
 	background:#0c0d00 url(img/dark.png) left top repeat;
 	height:208px;
 	padding:0px 0px 0;
+	-webkit-transition: height .4s ease-in-out;
+	-o-transition: height .4s ease-in-out;
+	-moz-transition: height .4s ease-in-out;
+	transition: height .4s ease-in-out;
 }
 .pg-foot-wrap{
 	background:#d8d8d8 url(img/foot.png) left top repeat;
