@@ -1,13 +1,17 @@
 /*
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 */
-pre code {
-  display: block; padding: 0.5em;
+
+code{
+	display: inline-block; padding: 0.5em;
   color: #000;
   background: #fff;
   font-size:12px;
   line-height:1.2em;
   border:solid 1px #d8d8d8;
+}
+pre code {
+  display: block;
 }
 
 pre .comment,
