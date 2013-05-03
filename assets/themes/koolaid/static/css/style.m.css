@@ -64,6 +64,9 @@
 	
 	.sidebar .ribbon{
 		margin-right:-20px;
+	}	
+	.sidebar-ad{
+		margin-left:0;
 	}
 	
 	.ribbon:before{
