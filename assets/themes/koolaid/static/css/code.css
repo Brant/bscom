@@ -3,7 +3,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 */
 
 code{
-	display: inline-block; padding: 0.5em;
+	display: inline-block; 
+	padding: 0.2em 0.5em;
   color: #000;
   background: #fff;
   font-size:12px;
