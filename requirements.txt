@@ -1,6 +1,6 @@
-django>=1.4
+django<1.5
 django-debug-toolbar
-git+git://github.com/Brant/django-mediabrute.git
+git+git://github.com/Brant/django-mub.git
 git+git://github.com/Brant/django-noodles.git
 South
 git+git://github.com/Brant/project_dj.git

@@ -18,11 +18,8 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Nobile:regular,bold&subset=latin' rel='stylesheet' type='text/css'/>
 		
-		{% for SHEET in MINI_CSS %}
-			<link rel="stylesheet" href="{{ SHEET }}" />
-		{% endfor %}
-		
-		
+		{% load mub_tags %}
+		{% add_static "css" %}		
 		
 		{% block extra_head %}{% endblock %}
 		
@@ -170,9 +167,7 @@
 		</footer>
 			
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-		{% for SCRIPT in MINI_JS %}
-			<script type="text/javascript" src="{{ SCRIPT }}"></script>
-		{% endfor %}
+		{% add_static "js" %}
 		{% block extra_foot %}{% endblock %}
 	</body>
 </html>

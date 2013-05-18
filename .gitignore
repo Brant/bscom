@@ -31,3 +31,4 @@ mediabrute_usefile
 dist/
 */conf/my_settings.py
 assets/uploads/*/
+assets/collectstatic/

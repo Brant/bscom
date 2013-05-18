@@ -14,11 +14,10 @@ PROJECT_PATH = os.path.dirname(os.path.dirname(
     )
 ))
 
-
 THE_THEME = "themes/koolaid"
 
 MEDIA_ROOT = PROJECT_PATH + "/assets/uploads/"
-STATIC_ROOT = PROJECT_PATH + "/assets/" + THE_THEME + "/static/"
+STATIC_ROOT = PROJECT_PATH + "/assets/collectstatic/"
 
 MEDIA_URL = "/media/"
 STATIC_URL = '/static/'
@@ -87,6 +86,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(PROJECT_PATH, "assets", THE_THEME, "static"),
 )
 
 # List of finder classes that know how to find static files in
@@ -122,7 +122,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.static",
     "django.contrib.messages.context_processors.messages",
     'django.core.context_processors.request',
-    "mediabrute.context_processors.mini_media",
+    #"mediabrute.context_processors.mini_media",
     "noodles.context_processors.static_paths",
     "noodles.context_processors.site_meta",
     "noodles.context_processors.site",
@@ -154,12 +154,12 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
-    "mediabrute",
+    #"mediabrute",
     "noodles",
     "south",
     "taggit",
     "disqus",
-    
+    "mub",
     "bscom.website",
     "bscom.blog",
     "bscom.folio",
@@ -215,9 +215,5 @@ LOGGING = {
     }
 }
 
-JS_SETTINGS_TEMPLATE = "mediabrute/js/config.txt"
-
-
-CSS_TOP_FILES = ["base.css", "style.l.css", "design-elements.css"]
-CSS_BOTTOM_FILES = ["folio.css", "style.m.css", "style.s.css", "style.xl.css", ]
+MUB_CSS_ORDER = (("base.css", "style.l.css", "design-elements.css"), ("folio.css", "style.m.css", "style.s.css", "style.xl.css"))
 
