@@ -22,7 +22,7 @@ def get_related(entry, count=5):
     except ValueError:
         raise template.TemplateSyntaxError("The get_related template filter was passed '%s' as the 'count' argument, which needs to be an integer" % count)
     
-    return Entry.objects.filter(~Q(pk=entry.pk), date__lte=datetime.now(), tags__name__in=[t for t in entry.tags.all()]).distinct()[:5]
+    return Entry.objects.filter(~Q(pk=entry.pk), external_link__isnull=True, date__lte=datetime.now(), tags__name__in=[t for t in entry.tags.all()]).distinct()[:5]
     
 
 def blog_categories(context):
