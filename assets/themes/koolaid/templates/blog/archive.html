@@ -19,10 +19,10 @@
 				
 				<div class="blog-index-entry">
 					
-						<a class="img-permalink" href="{{ entry.get_absolute_url }}">
+						<a class="img-permalink" href="{% if entry.external_link %}{{ entry.external_link }}{% else %}{{ entry.get_absolute_url }}{% endif %}">
 						<img class="blog-entry-thumb" src="{% if entry.thumbnail %}{{ entry.thumbnail.url }}{% else %}{{ entry.category.default_thumbnail.url }}{% endif %}" />
 						</a>
-						<h1><a class="permalink" href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h1>
+						<h1><a class="permalink" href="{% if entry.external_link %}{{ entry.external_link }}{% else %}{{ entry.get_absolute_url }}{% endif %}">{{ entry.title }}</a></h1>
 						
 					
 					
