@@ -15,7 +15,7 @@ register = template.Library()
 
 @register.simple_tag
 def latest_blog_thumbnail():
-    return Entry.objects.filter(date__lte=datetime.now()).latest().thumbnail.url
+    return Entry.objects.filter(date__lte=datetime.now(), thumbnail__isnull=False).latest().thumbnail.url
 
 @register.inclusion_tag("bsdesign/tags/wtfawd_latest.html")
 def wtfawd_latest_episodes():
