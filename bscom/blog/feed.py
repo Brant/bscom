@@ -52,7 +52,7 @@ class AllFeed(Feed):
         """
         Short, base-RSS supported description
         """
-        return item.blurb
+        return markdown(item.blurb)
     
     def item_pubdate(self,item):
         """
