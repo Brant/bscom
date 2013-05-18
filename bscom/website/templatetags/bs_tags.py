@@ -3,9 +3,10 @@ Template tags used to render/filter various things for the wesbite
 """
 import urllib
 import json
-
 from datetime import datetime, time
+
 from django import template
+from django.db.models import Q
 
 from bscom.blog.models import Entry
 
@@ -15,7 +16,10 @@ register = template.Library()
 
 @register.simple_tag
 def latest_blog_thumbnail():
-    return Entry.objects.filter(date__lte=datetime.now(), thumbnail__isnull=False).latest().thumbnail.url
+    """
+    Return the URL of the latest blog entry's thumbnail
+    """
+    return Entry.objects.filter(~Q(thumbnail__exact=''), date__lte=datetime.now(), thumbnail__isnull=False).latest().thumbnail.url
 
 @register.inclusion_tag("bsdesign/tags/wtfawd_latest.html")
 def wtfawd_latest_episodes():
