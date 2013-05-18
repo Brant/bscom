@@ -42,6 +42,15 @@ class AllFeed(Feed):
         """
         return Entry.objects.filter(date__lte=datetime.now()).order_by("-date")
     
+    def item_link(self, item):
+        """
+        Figure out where the link should go 
+            might goto an external source
+        """
+        if item.external_link:
+            return item.external_link
+        return item.get_absolute_url()
+    
     def item_title(self,item):
         """
         Title of each item in feed
@@ -60,8 +69,7 @@ class AllFeed(Feed):
         """
         return item.date
     
-    def item_extra_kwargs(self, item):
-        
+    def item_extra_kwargs(self, item):        
         return {'content_encoded': self.item_content_encoded(item)}
     
     def item_content_encoded(self, item):

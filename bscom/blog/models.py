@@ -17,8 +17,10 @@ class Entry(TitleDateSlug):
     category = models.ForeignKey('Category')
     thumbnail = models.ImageField(null=True, blank=True, upload_to="blog/img/thumbnails", help_text="150x150 px")
     
-    content = models.TextField()
+    content = models.TextField(null=True, blank=True)
     blurb = models.TextField()
+    
+    external_link = models.CharField(max_length=200, null=True, blank=True)
     
     @models.permalink
     def get_absolute_url(self):
