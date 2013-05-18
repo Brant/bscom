@@ -41,6 +41,7 @@ class Category(TitleDateSlug):
     Inherits title, date, and slug from TitleDateSlug
     Date can be ignored
     """
+    default_thumbnail = models.ImageField(null=True, blank=True, upload_to="blog/img/thumbnails/default", help_text="150x150px")
     
     @models.permalink
     def get_absolute_url(self):

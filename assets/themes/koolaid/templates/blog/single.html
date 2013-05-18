@@ -23,7 +23,7 @@
 	<article class="content-with-sidebar" id="content">
 		
 		<header class="clearfix">
-			<img class="blog-entry-thumb" src="{{ entry.thumbnail.url }}" />
+			<img class="blog-entry-thumb" src="{% if entry.thumbnail %}{{ entry.thumbnail.url }}{% else %}{{ entry.category.default_thumbnail.url }}{% endif %}" />
 			
 			<div class="blog-single-header-text">
 				<h1>{{ entry.title }}</h1>

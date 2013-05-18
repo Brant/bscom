@@ -23,7 +23,7 @@
 			<div class="blog-index-entry">
 				
 				<a class="img-permalink" href="{{ entry.get_absolute_url }}">
-					<img class="blog-entry-thumb" src="{{ entry.thumbnail.url}}" />
+					<img class="blog-entry-thumb" src="{% if entry.thumbnail %}{{ entry.thumbnail.url }}{% else %}{{ entry.category.default_thumbnail.url }}{% endif %}" />
 				</a>
 				
 				<h1><a class="permalink" href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h1>
