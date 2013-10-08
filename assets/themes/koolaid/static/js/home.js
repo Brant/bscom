@@ -1,4 +1,4 @@
-$(function(){
+$(window).load(function(){
 	if ($("body").hasClass("home")){
 		
 		var slideReveal = function(container, num){
