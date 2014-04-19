@@ -2,40 +2,40 @@
 
 {% block body_class %} {{ blog.super }} blog-index has-sidebar {% endblock %}
 
-{% block back_link %}<a href="{% url blog_index %}">Blog</a>{% endblock %}
+{% block back_link %}<a href="{% url 'blog_index' %}">Blog</a>{% endblock %}
 
 {% block title %}{{ archive|date:"F Y" }} | {{ block.super }}{% endblock %}
 
-{% load markup %}
+{% load bs_tags %}
 {% load blog_tags %}
 
 {% block content %}
 
 	<div class="content-with-sidebar clearfix" id="content">
 		<h1>Entries from {{ archive|date:"F Y" }}</h1>
-	
+
 		{% for entry in entries %}
 			<article class="blog-index-article clearfix">
-				
+
 				<div class="blog-index-entry">
-					
+
 						<a class="img-permalink" href="{% if entry.external_link %}{{ entry.external_link }}{% else %}{{ entry.get_absolute_url }}{% endif %}">
 						<img class="blog-entry-thumb" src="{% if entry.thumbnail %}{{ entry.thumbnail.url }}{% else %}{{ entry.category.default_thumbnail.url }}{% endif %}" />
 						</a>
 						<h1><a class="permalink" href="{% if entry.external_link %}{{ entry.external_link }}{% else %}{{ entry.get_absolute_url }}{% endif %}">{{ entry.title }}</a></h1>
-						
-					
-					
+
+
+
 					<p>{{ entry.date|date:"F j, Y" }}</p>
-					
+
 					{{ entry.blurb|markdown }}
 					{% load disqus_tags %}
-					
+
 					<p>
 						<a href="{{ entry.get_absolute_url }}">Read more</a> | <a href="{{ entry.get_absolute_url }}#disqus_thread" data-disqus-identifier="{{ entry.id }}">View Comments</a>
 						{% disqus_num_replies %}
 					</p>
-					
+
 				</div>
 			</article>
 		{% endfor %}
@@ -44,7 +44,7 @@
 
 {% block sidebar %}
 	<aside class="sidebar">
-		
+
 		{% blog_archives %}
 	</aside>
 {% endblock %}

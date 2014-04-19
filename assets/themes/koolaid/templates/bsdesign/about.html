@@ -5,7 +5,7 @@
 {% block body_class %}{{ block.super }} about {% endblock %}
 {% block page_title_wrap %}<div class="section-title"><h1>all about me</h1></div>{% endblock %}
 
-{% block back_link %}<a href="{% url home %}">Home</a>{% endblock %}
+{% block back_link %}<a href="{% url 'home' %}">Home</a>{% endblock %}
 
 {% block tangential %}
 	<a target="_blank" href="{{ SITE_META.twitter }}"><span class="hide-on-small">Follow<br/></span><img src="{{ STATIC_URL }}img/twitter_newbird_white.png" alt="twitter"/><span class="hide-on-small"><br/>along</span></a>
@@ -13,31 +13,31 @@
 
 {% block content %}
 	<div class="alternate" id="content">
-		
+
 		<div class="clearfix">
 			<img class="me-strip" alt="Brant faces" src="{{ STATIC_URL }}img/mestrip.jpg" />
 			<h1>More than you'll ever need to know</h1>
-				
+
 		</div>
-		
+
 		<section id="web-geek" class="alternate-left">
 			<h2 class="ribbon ribbon-left">Web Geek</h2>
 			<h3>I'm the guy you want to handle your web work</h3>
-			<p>I work on and with the web as a full time job and as a freelancer. My <a href="{% url podcast %}">podcast</a> is about working on the web. My <a href="{{ SITE_META.github }}" target="_blank">side projects</a> are for the web.</p>
+			<p>I work on and with the web as a full time job and as a freelancer. My <a href="{% url 'podcast' %}">podcast</a> is about working on the web. My <a href="{{ SITE_META.github }}" target="_blank">side projects</a> are for the web.</p>
 			<p>Basically, I spend the vast majority of my time doing work for the web, learning about the latest trends, and thinking about how to create awesome stuff with all sorts of web technologies.</p>
-			<p>The web moves fast. I take the time and have the right career and resources to keep up.</p>			
+			<p>The web moves fast. I take the time and have the right career and resources to keep up.</p>
 		</section>
-		
+
 		<section id="background" class="alternate-right">
 			<h2 class="ribbon ribbon">Background</h2>
 			<h3>I love the web</h3>
-			<p>I've been working with the web for a long time.</p> 
+			<p>I've been working with the web for a long time.</p>
 			<p>One of the wonderful things about the web is that it's young enough where I can say I've been around it since the beginning.</p>
 			<p>I was very young when I began. I clearly remember signing up for things like Angelfire and Geocities in order to begin fiddling around with HTML.</p>
 			<p>By the end of my undergraduate studies, I was running small website for friends which we used as a hub for posting random, amusing things and keeping in touch. There was a web comic there too.</p>
 			<p>At some point during my graduate work, I decided to make the web into a career path for myself. I've never looked back.</p>
 		</section>
-		
+
 		<!--
 		<section id="details" class="alternate-left">
 			<h2 class="ribbon">Other Details</h2>
@@ -48,34 +48,34 @@
 		-->
 		<!--
 		<section id="day-job" class="alternate-left">
-			
+
 			<h2 class="ribbon ribbon-left">Day Job</h2>
-			
+
 			<h3>Director, Web Systems</h3>
 			<p>By day, I work as the Director of Web Systems for <a href="http://www.bucks.edu">Bucks County Community College</a>.</p>
 			<p>Aside from the public website, I am responsible for overseeing a number of backbone and backoffice web systems for the college, as well as web integrations with other enterprise systems.</p>
-			
+
 		</section>
 		-->
 		<section id="education" class="alternate-left">
 			<h2 class="ribbon ribbon-left">Education</h2>
-			
+
 			<h3>M.S., Computer Information Science</h3>
 			<p>My Graduate studies were geared toward learning practical skills in computing technologies, combined with keeping a keen eye to business processes and requirements.</p>
 			<h3>B.A., Psychology</h3>
 			<p>My undergraduate studies focused on employing research methods and relating well with other people.</p>
 			<h3>Overall</h3>
 			<p>In sum, my education has taught me the skills needed to research business needs, communicate effectively, and work with end-to-end computer technology stacks.</p>
-			
+
 		</section>
-		
+
 		<section id="resume" class="alternate-right">
 			<h2 class="ribbon ribbon">Résumé</h2>
 			<h3>Upon request</h3>
 			<p>If your interested in hiring me for some freelance work, I'm happy to send you a copy of my resume.</p>
-			<p>Just drop me a line using the <a href="{% url contact %}">contact form</a>.</p>
+			<p>Just drop me a line using the <a href="{% url 'contact' %}">contact form</a>.</p>
 			<p>I'll get back to you as soon as I can.</p>
 		</section>
-		
+
 	</div>
 {% endblock %}

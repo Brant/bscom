@@ -2,7 +2,7 @@
 
 {% block title %}Contact me | {{ block.super }}{% endblock %}
 
-{% block back_link %}<a href="{% url home %}">Home</a>{% endblock %}
+{% block back_link %}<a href="{% url 'home' %}">Home</a>{% endblock %}
 
 {% block tangential_wrap %}{% endblock %}
 {% block page_title_wrap %}<div class="section-title"><h1>Contact me</h1></div>{% endblock %}
@@ -10,20 +10,20 @@
 {% block body_class %}{{ block.super }} contact-page {% endblock %}
 
 {% block content %}
-	
+
 	<div id="content" class="two-col">
 		<section class="two-col-left hide-on-small">
 			<hgroup>
 				<h1>I'm available for work</h1>
 				<h2>Get a quote for</h2>
 			</hgroup>
-			
+
 			<ul>
 				<li>Site or app design and/or development</li>
 				<li>Design implementation</li>
 				<li>Web Consulting</li>
 			</ul>
-			
+
 			<p>I'm always looking for top-notch clients with interesting projects!</p>
 			<h2>Always happy to chat</h2>
 			<p>Besides client work, I'm always open to talk about other things too, such as:</p>
@@ -31,7 +31,7 @@
 				<li>Guest blogging</li>
 				<li>Podcasting opportunities</li>
 			</ul>
-			
+
 				<h2>Feel free to reach out elsewhere</h2>
 				<ul class="contact-social clearfix">
 					<li class="social-twitter"><a href="{{ SITE_META.twitter}}">Twitter</a></li>
@@ -55,8 +55,8 @@
 			{% endif %}
 			{% include "noodles/contact_form.html" %}
 		</section>
-		
-	</div>	
-	
-	
+
+	</div>
+
+
 {% endblock %}

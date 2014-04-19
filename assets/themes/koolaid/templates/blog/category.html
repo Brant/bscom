@@ -2,7 +2,7 @@
 
 {% block title %}Categorized "{{ category }}" | {{ block.super }}{% endblock %}
 
-{% block back_link %}<a href="{% url blog_index %}">Blog</a>{% endblock %}
+{% block back_link %}<a href="{% url 'blog_index' %}">Blog</a>{% endblock %}
 
 {% block jaxy_content %}
 	<h1>Entries categorized as "{{ category }}"</h1>

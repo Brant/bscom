@@ -1,0 +1,7 @@
+# Things needed specifically for a fully-fledged testing suite
+django<1.6
+coverage
+django_nose
+nose
+nose_exclude
+nosexcover

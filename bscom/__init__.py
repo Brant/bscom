@@ -1,3 +1,3 @@
 """
-bscom Project Module
+bscom - A Django project
 """
