@@ -32,3 +32,4 @@ dist/
 */conf/my_settings.py
 assets/uploads/*/
 assets/collectstatic/
+*.sql

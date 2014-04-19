@@ -34,7 +34,7 @@ DATABASES = {
     }
 }
 
-# Uncomment the next two lines 
+# Uncomment the next two lines
 # to see your current python path
 # when runserver fires up
 #for p in os.sys.path:

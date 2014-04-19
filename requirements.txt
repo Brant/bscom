@@ -8,5 +8,7 @@ markdown
 django-taggit
 mimeparse
 python-dateutil
-django-tastypie
+django-tastypie==0.9.15
 django-disqus
+psycopg2
+pil
