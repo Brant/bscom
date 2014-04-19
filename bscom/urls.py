@@ -32,7 +32,7 @@ urlpatterns = patterns('',
     (r'^admin/', include(admin.site.urls)),
     (r'^blog/', include("bscom.blog.urls")),
     (r'^portfolio/', include("bscom.folio.urls")),
-
+    (r'^mub/', include('mub.urls')),
     (r'^', include("noodles.urls")),
 
     (r'^api/', include(v1_api.urls)),
