@@ -24,7 +24,7 @@ def markdown(value):
     """
     Markdown tag to replace depricated markdown from contrib
     """
-    return mark_safe(markdown2.markdown(force_unicode(value), safe_mode=True))
+    return mark_safe(markdown2.markdown(force_unicode(value)))
 
 
 @register.simple_tag

@@ -36,7 +36,6 @@ urlpatterns = patterns('',
     (r'^', include("noodles.urls")),
 
     (r'^api/', include(v1_api.urls)),
-
 )
 
 
