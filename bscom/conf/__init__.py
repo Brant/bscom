@@ -1,3 +1,0 @@
-"""
-BSCOM configurations
-"""

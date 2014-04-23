@@ -3,8 +3,12 @@ Template tags used to render/filter various things for the wesbite
 """
 import urllib
 import json
+import markdown2
 from datetime import datetime, time
 
+from django.utils.encoding import force_unicode
+from django.utils.safestring import mark_safe
+from django.template.defaultfilters import stringfilter
 from django import template
 from django.db.models import Q
 
@@ -12,6 +16,15 @@ from bscom.blog.models import Entry
 
 
 register = template.Library()
+
+
+@register.filter(is_safe=True)
+@stringfilter
+def markdown(value):
+    """
+    Markdown tag to replace depricated markdown from contrib
+    """
+    return mark_safe(markdown2.markdown(force_unicode(value)))
 
 
 @register.simple_tag
@@ -29,8 +42,8 @@ def wtfawd_latest_episodes():
     file_like = urllib.urlopen(url)
     data = file_like.read()
     data = json.loads(data)
-    
+
     for ep in data["objects"]:
         ep["date"] = datetime.strptime(ep["date"], "%Y-%m-%dT%H:%M:%S")
-    
+
     return {"episodes": data["objects"]}

@@ -1,7 +1,7 @@
 <nav class="ribbon">
 	<ul>
 		{% for archive in archives %}
-			{% url blog_archive month=archive|date:"m", year=archive|date:"Y" as ARCHIVE_URL %}
+			{% url 'blog_archive' month=archive|date:"m" year=archive|date:"Y" as ARCHIVE_URL %}
 			<li><a {% if request.path == ARCHIVE_URL %}class="cur"{% endif %} href="{{ ARCHIVE_URL }}">{{ archive|date:"F Y" }}</a></li>
 		{% endfor %}
 	</ul>
