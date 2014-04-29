@@ -1,25 +1,25 @@
-<!--[if lt IE 9]> <html class="ie" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html>
 	<head>
+		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
 		<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 		{% load noodles_tags %}
+
 		<title>{% block title %}Brant Steen{% endblock %}</title>
 
-		<link href='http://fonts.googleapis.com/css?family=Nobile:regular,bold&subset=latin' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Nobile:regular,bold&amp;subset=latin' rel='stylesheet' type='text/css'/>
 
 		{% load mub_tags %}
 		{% add_static "css" %}
 
 		{% block extra_head %}{% endblock %}
-
 
 		<script type="text/javascript">
 
@@ -102,7 +102,6 @@
 							<li><a class="nav-folio" href="{{ FOLIO }}"><span {% if request.path|insidenav:FOLIO %}class="cur" {% endif %}>Portfolio</span></a></li>
 							<li><a class="nav-me" href="{{ ABOUT }}"><span {% if request.path|insidenav:ABOUT %}class="cur" {% endif %}>Me</span></a></li>
 							<li><a class="nav-podcast" href="{{ PODCAST }}"><span {% if request.path|insidenav:PODCAST %}class="cur" {% endif %}>Podcast</span></a></li>
-
 						</ul>
 					</nav>
 					<{% if request.path == HOME %}h1{% else %}p{% endif %} class="logo"><a href="{{ HOME }}">B<span class="logo-smallerize">RANT</span> S<span class="logo-smallerize">TEEN</span></a></{% if request.path == HOME %}h1{% else %}p{% endif %}>
@@ -163,7 +162,7 @@
 			</div>
 		</footer>
 
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		{% add_static "js" %}
 		{% block extra_foot %}{% endblock %}
 	</body>
