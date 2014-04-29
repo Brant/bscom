@@ -29,7 +29,7 @@
 				<h1>{{ entry.title }}</h1>
 				<p>{{ entry.date|date:"F j, Y" }}</p>
 
-				{{entry.blurb|markdown}}
+				{{ entry.blurb|markdown }}
 
 				{% include "blog/includes/social.html" %}
 			</div>
