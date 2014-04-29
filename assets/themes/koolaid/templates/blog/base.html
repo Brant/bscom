@@ -7,41 +7,33 @@
 {% block page_title %}blog{% endblock %}
 
 {% block section_nav %}
-	
+
 	{% blog_categories %}
 
 {% endblock %}
 
 
-{% block tangential_wrap %}					
-	
-		<aside class="tangential">
-			<nav>
-	
-			<a target="_blank" href="{{ SITE_META.tumblr }}">For more, I'm on <img src="{{ STATIC_URL }}img/tumblr_logo.png" alt="tumblr" /> too</a>
-	
-	
-		</nav></aside>
-		
-		
+{% block tangential_wrap %}
+
+
 		<aside class="tangential tangential-rss">
 			<nav>
-	
+
 			<a target="_blank" href="{{ SITE_META.rss }}"><img src="{{ STATIC_URL }}img/rss_alt_32x32.png" alt="subscribe" />Subscribe</a>
-	
+
 		</nav></aside>
-		
+
 {% endblock %}
 
 
 {% block content %}
 
 	<div id="content">
-		
-		
+
+
 		{% block jaxy_content %}
 		{% endblock %}
-		
+
 	</div>
-	
+
 {% endblock %}

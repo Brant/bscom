@@ -86,8 +86,6 @@
  */
 .related-entries{
 	text-align: right;
-	padding:60px 0 0;
-	
 }
 .related-entry{
 	font-size:11px;
@@ -115,9 +113,6 @@
 /*
  * rss tangential
  */
-.tangential-rss{
-	right:100px;
-}
 
 .tangential-rss nav a{
 	padding-bottom:15px;
