@@ -5,22 +5,21 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 code{
 	display: inline-block; 
 	padding: 0.2em 0.5em;
-  color: #000;
-  background: #fff;
-  font-size:12px;
-  line-height:1.2em;
-  border:solid 1px #d8d8d8;
+	color: #000;
+	background: #fff;
+	line-height:1.2em;
+	border:solid 1px #d8d8d8;
 }
 pre code {
-  display: block;
+	display: block;
 }
 
 pre .comment,
 pre .template_comment,
 pre .diff .header,
 pre .javadoc {
-  color: #998;
-  font-style: italic
+	color: #998;
+	font-style: italic
 }
 
 pre .keyword,
@@ -29,38 +28,38 @@ pre .winutils,
 pre .javascript .title,
 pre .lisp .title,
 pre .subst {
-  color: #000;
-  font-weight: bold
+	color: #000;
+	font-weight: bold
 }
 
 pre .number,
 pre .hexcolor {
-  color: #40a070
+	color: #40a070
 }
 
 pre .string,
 pre .tag .value,
 pre .phpdoc,
 pre .tex .formula {
-  color: #d14
+	color: #d14
 }
 
 pre .title,
 pre .id {
-  color: #900;
-  font-weight: bold
+	color: #900;
+	font-weight: bold
 }
 
 pre .javascript .title,
 pre .lisp .title,
 pre .subst {
-  font-weight: normal
+	font-weight: normal
 }
 
 pre .class .title,
 pre .tex .command {
-  color: #458;
-  font-weight: bold
+	color: #458;
+	font-weight: bold
 }
 
 pre .tag,
@@ -68,24 +67,24 @@ pre .css .keyword,
 pre .html .keyword,
 pre .tag .title,
 pre .django .tag .keyword {
-  color: #000080;
-  font-weight: normal
+	color: #000080;
+	font-weight: normal
 }
 
 pre .attribute,
 pre .variable,
 pre .instancevar,
 pre .lisp .body {
-  color: #008080
+	color: #008080
 }
 
 pre .regexp {
-  color: #009926
+	color: #009926
 }
 
 pre .class {
-  color: #458;
-  font-weight: bold
+	color: #458;
+	font-weight: bold
 }
 
 pre .symbol,
@@ -94,13 +93,13 @@ pre .ruby .symbol .keyword,
 pre .ruby .symbol .keymethods,
 pre .lisp .keyword,
 pre .tex .special {
-  color: #990073
+	color: #990073
 }
 
 pre .builtin,
 pre .built_in,
 pre .lisp .title {
-  color: #0086b3
+	color: #0086b3
 }
 
 pre .preprocessor,
@@ -108,26 +107,26 @@ pre .pi,
 pre .doctype,
 pre .shebang,
 pre .cdata {
-  color: #999;
-  font-weight: bold
+	color: #999;
+	font-weight: bold
 }
 
 pre .deletion {
-  background: #fdd
+	background: #fdd
 }
 
 pre .addition {
-  background: #dfd
+	background: #dfd
 }
 
 pre .diff .change {
-  background: #0086b3
+	background: #0086b3
 }
 
 pre .chunk {
-  color: #aaa
+	color: #aaa
 }
 
 pre .tex .formula {
-  opacity: 0.5;
+	opacity: 0.5;
 }

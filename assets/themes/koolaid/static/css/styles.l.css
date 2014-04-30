@@ -10,10 +10,11 @@ html{
 	background:#d8d8d8 url(img/foot.png) left top repeat;
 }
 body{
-	line-height:1.4em;
+	line-height:1.5em;
 	overflow-x:hidden;
 	font-family:Verdana;	
 }
+
 h1,h2,h3,h4,h5,h6{
 	margin:0;
 	padding:0;
@@ -24,17 +25,17 @@ h1,
 .permalink:link,
 .permalink:active,
 .permalink{
-	font-size:19px;
+	font-size:1.2em;
 	color:#3f0316;
 	padding:30px 0 0 0;
 	
 }
 h2{
-	font-size:16px;
+	font-size:1.1em;
 	padding:25px 0 0 0;
 }
 h3{
-	font-size:13px;
+	font-size:1em;
 	padding:20px 0 0 0;
 }
 
@@ -175,7 +176,7 @@ hgroup h3{
 	background:transparent;
 }
 .logo-smallerize{
-	font-size:70px;
+	font-size:.7em;
 }
 
 .logo a,
@@ -358,7 +359,7 @@ hgroup h3{
 	padding:10px 2px 10px 23px;
 	margin:-10px 0px 0 -20px;
 	width:100%;
-	font-size:12px;
+	font-size:.9em;
 	text-shadow:-1px 1px 1px #fff;
 	color:#979797;
 	
@@ -378,7 +379,7 @@ hgroup h3{
 	margin:0;
 	padding:0;
 	color:#fff;
-	font-size:19px;
+	font-size:1.2em;
 	line-height:30px;
 }
 
@@ -411,7 +412,7 @@ hgroup h3{
 	margin:0;
 }
 .social li{
-	font-size:16px;
+	font-size:1em;
 	padding:6px 0;
 	float:left;
 	width:100%;
@@ -486,7 +487,7 @@ hgroup h3{
 .contact textarea{
 	width:75%;
 	border:none;
-	font-size:18px;
+	font-size:1.1em;
 	height:30px;
 	background:#f2f2f2;
 }
