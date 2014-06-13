@@ -30,8 +30,9 @@
 				<p>{{ entry.date|date:"F j, Y" }}</p>
 
 				{{ entry.blurb|markdown }}
+
 				{% if entry.external_link %}
-				<p><a href="{{ entry.external_link">Read Original Source</a></p>
+					<p><a href="{{ entry.external_link }}">Read Original Source</a></p>
 				{% endif %}
 			</div>
 
