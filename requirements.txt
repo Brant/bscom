@@ -1,7 +1,7 @@
 django<1.7
 django-debug-toolbar
-git+git://github.com/Brant/django-mub.git
-git+git://github.com/Brant/django-noodles.git
+git+git://github.com/Brant/django-mub.git@master
+git+git://github.com/Brant/django-noodles.git@master
 South
 markdown2
 django-taggit
