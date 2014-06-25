@@ -207,12 +207,12 @@ except ImportError:
 
 if DEBUG:
     MIDDLEWARE_CLASSES = (
-        'django.middleware.common.CommonMiddleware',
+        'django.middleware.csrf.CsrfViewMiddleware',
         'django.contrib.sessions.middleware.SessionMiddleware',
+        'django.contrib.auth.middleware.AuthenticationMiddleware',
         'django.middleware.gzip.GZipMiddleware',
         'debug_toolbar.middleware.DebugToolbarMiddleware',
-        'django.middleware.csrf.CsrfViewMiddleware',
-        'django.contrib.auth.middleware.AuthenticationMiddleware',
+        'django.middleware.common.CommonMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
         'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     )
