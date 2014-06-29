@@ -66,6 +66,7 @@
 .home-blog-image-container img{
 	position:absolute;
 	left:90px;
+	box-shadow:0 0 5px rgba(0,0,0,.3);
 }
 
 .home-podcast-image-container{
