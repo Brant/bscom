@@ -15,17 +15,7 @@
 	{% block content %}
 		<div class="content" id="content">
 
-			<div class="hire-me">
-				<nav>
-					<a href="{% url 'contact' %}">Hire me</a>
-				</nav>
-			</div>
-
 			<hgroup><h1>Web Designer, Developer, Consultant</h1></hgroup>
-
-			<section id="home-folio" class="home-folio home-link">
-				<h2><a href="{% url 'folio_index' %}">Portfolio</a></h2>
-			</section>
 
 			<section id="home-blog" class="home-blog home-link">
 
@@ -35,6 +25,10 @@
 					<a href="{% url 'blog_index' %}"><img src="{% latest_blog_thumbnail %}" /></a>
 				</div>
 
+			</section>
+
+			<section id="home-folio" class="home-folio home-link">
+				<h2><a href="{% url 'folio_index' %}">Portfolio</a></h2>
 			</section>
 
 			<section id="home-podcast" class="home-podcast home-link">
