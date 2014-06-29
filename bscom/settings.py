@@ -200,6 +200,8 @@ SOUTH_MIGRATION_MODULES = {
     'taggit': 'taggit.south_migrations',
 }
 
+EMAIL_SUBJECT_PREFIX = "[BrantSteen.com]"
+
 try:
     from bscom.local_settings import *
 except ImportError:
