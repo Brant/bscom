@@ -15,7 +15,7 @@
 				{% endif %}
 			</h1>
 
-			<img src="{{ piece.thumbnail.url }}" alt="{% if piece.confidential %}{{ SITE_META.confidential_client_title }}{% else %}{{ piece }}{% endif %} thumbnail" />
+			<a href="{{ piece.link }}"><img src="{{ piece.thumbnail.url }}" alt="{% if piece.confidential %}{{ SITE_META.confidential_client_title }}{% else %}{{ piece }}{% endif %} thumbnail" /></a>
 
 			{{ piece.blurb|markdown }}
 
