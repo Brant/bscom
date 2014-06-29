@@ -240,17 +240,33 @@ hgroup h3{
 	border-top:solid 2px #fff;
 	
 }
+.svg .nav a{
+	background-size:auto 19px;
+}
+
 .nav-podcast{
 	background:url(img/icons/white/mic_12x16.png) center top no-repeat;
+}
+.svg .nav-podcast{
+	background: url(img/icons/white/svg/mic.svg) center top no-repeat;
 }
 .nav-blog{
 	background:url(img/icons/white/pen_alt_stroke_16x16.png) center top no-repeat;
 }
+.svg .nav-blog{
+	background: url(img/icons/white/svg/pencil.svg) center top no-repeat;
+}
 .nav-me{
 	background:url(img/icons/white/user_12x16.png) center top no-repeat;
 }
+.svg .nav-me{
+	background:url(img/icons/white/svg/person.svg) center top no-repeat;
+}
 .nav-folio{
 	background:url(img/icons/white/book_16x16.png) center top no-repeat;
+}
+.svg .nav-folio{
+	background:url(img/icons/white/svg/folio.svg) center top no-repeat;
 }
 /*
  * Section navigation
