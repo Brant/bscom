@@ -220,6 +220,7 @@
 	.contact input,
 	.contact textarea{
 		width:100%;
+		box-sizing: border-box;
 	}
 	.contact .contact-submit{
 		width:80px;

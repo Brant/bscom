@@ -492,6 +492,10 @@ hgroup h3{
 .contact-form{
 	margin-top:-10px;
 }
+.contact-loading{
+	width:128px;	
+	margin:2em 0;	
+}
 .contact-form p{
 	padding:0 0 5px 0;
 }
@@ -506,6 +510,7 @@ hgroup h3{
 	font-size:1.1em;
 	height:30px;
 	background:#f2f2f2;
+	
 }
 .contact textarea{
 	height:100px;

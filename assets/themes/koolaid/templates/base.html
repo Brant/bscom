@@ -147,7 +147,8 @@
 				</section>
 				<section class="foot-section contact">
 					<h1>Get in touch</h1>
-					{% contact_form %}
+					<aside id="contactFormWrap" data-url="{% url 'bscom_contact_form' %}"></aside>
+					{# contact_form #}
 				</section>
 				<section class="foot-section profile">
 					<h1>Brant Steen</h1>
@@ -163,7 +164,7 @@
 			</div>
 		</footer>
 
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		{% add_static "js" %}
 		{% block extra_foot %}{% endblock %}
 	</body>

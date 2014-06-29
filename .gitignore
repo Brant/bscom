@@ -33,3 +33,4 @@ dist/
 assets/uploads/*/
 assets/collectstatic/
 *.sql
+.codeintel

@@ -1,0 +1,5 @@
+<form class="contact-form" action="{% url 'bscom_contact_form' %}">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<p  class="contact-submit"><input type="submit" value="Send" /></p>
+</form>
