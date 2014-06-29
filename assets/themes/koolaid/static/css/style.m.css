@@ -7,7 +7,13 @@
  * low: 651px
  */
 @media all and (max-width:959px){
-	
+	.logo{
+		font-size:60px;
+		height:85px;
+	}
+	.pg-head-wrap{
+		height:100px;
+	}
 	.show-on-small-only{
 		display:none;
 	}
@@ -19,17 +25,18 @@
 		max-width:959px;
 	}
 	.nav{
-		display:none;
-	}
-	
-	.pg-head-wrap{
-		height:150px;
+		/*display:none;*/
 	}
 	.pg{
 		padding:0;
 	}
 	.pg-raised{
 		padding:30px 20px;
+		margin:-20px 0 0;
+	}
+	.section-title{
+		left:5px;
+		bottom:40px;
 	}
 	
 	/*
@@ -99,9 +106,8 @@
 	.tangential-rss nav a{
 		background:#ed832d;
 		
-	}.tangential-rss{
-		right:96px;
 	}
+
 	
 	/*
 	 * folio
@@ -195,15 +201,17 @@
 	 * Back Link
 	 */
 	.back-link{
-		display: block;
+		/*display: block;*/
 		
 	}
 	
 	/*
 	 * Sction nav
 	 */
+	
 	.section-nav{
 		margin:21px 0 0 120px;
+		display: none;
 	}
 	.section-nav a{
 		padding:8px 25px;

@@ -11,6 +11,9 @@
 		display:none;
 	}
 	
+	.nav{
+		display: none;
+	}
 	/*
 	 * specific shows
 	 */
