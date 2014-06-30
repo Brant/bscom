@@ -1,5 +1,10 @@
 $(function(){
 
+	function csrfSafeMethod(method) {
+		// these HTTP methods do not require CSRF protection
+		return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+	}
+
 	var loader = $("<img src='" + siteVars("img") + "loading.gif' alt='loading' class='contact-loading' />").hide().appendTo("body");
 
 	var handleForm = function(form){
@@ -15,6 +20,17 @@ $(function(){
 
 			form.hide();
 			loader.appendTo(formWrap).fadeIn();
+
+			$.ajaxSetup({
+				beforeSend: function(xhr, settings) {
+					if (!csrfSafeMethod(settings.type) && sameOrigin(settings.url)) {
+						// Send the token to same-origin, relative URLs only.
+						// Send the token only if the method warrants CSRF protection
+						// Using the CSRFToken value acquired earlier
+						xhr.setRequestHeader("X-CSRFToken", csrftoken);
+					}
+				}
+			});
 
 			$.ajax({
 				url: submitUrl,
