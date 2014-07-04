@@ -6,7 +6,7 @@ from datetime import datetime
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
 from django.core.urlresolvers import reverse
-from django.http import HttpResponseRedirect, Http404
+from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.core.exceptions import ObjectDoesNotExist
 
 from bscom.blog.models import Entry, Category
@@ -17,6 +17,11 @@ from noodles.views import json_response
 
 
 def import_drafts(request):
+    challenge = request.GET.get("challenge", None)
+
+    if challenge:
+        return HttpResponse(challenge)
+
     import_drafts_from_dropbox()
     return json_response(request, {"success": True})
 
