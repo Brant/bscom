@@ -27,7 +27,7 @@ def import_drafts(request):
         return HttpResponse(challenge)
 
     if request.method == "POST":
-        import_drafts_from_dropbox()
+        import_drafts_from_dropbox(request)
         return json_response(request, {"success": True})
 
     return json_response(request, {"success": False})
