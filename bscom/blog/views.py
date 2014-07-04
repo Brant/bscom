@@ -27,6 +27,9 @@ def import_drafts(request):
         return HttpResponse(challenge)
 
     if request.method == "POST":
+
+        # request.META['HTTP_X_DROPBOX_SIGNATURE']
+
         import_drafts_from_dropbox(request)
         return json_response(request, {"success": True})
 
