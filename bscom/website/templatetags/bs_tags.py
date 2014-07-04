@@ -32,11 +32,16 @@ def latest_blog_thumbnail():
     """
     Return the URL of the latest blog entry's thumbnail
     """
-    return Entry.objects.filter(
+    entry = Entry.objects.filter(
         ~Q(thumbnail__exact=''),
         date__lte=datetime.now(),
         thumbnail__isnull=False,
-        draft=False).latest().thumbnail.url
+        draft=False).latest()
+
+    try:
+        return entry.thumbnail_200.url
+    except AttributeError:
+        return entry.thumbnail.url
 
 
 @register.inclusion_tag("bsdesign/tags/wtfawd_latest.html")
