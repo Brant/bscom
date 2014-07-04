@@ -8,6 +8,6 @@ django-taggit
 django-tastypie
 django-disqus
 psycopg2
-pil
+pillow
 python-memcached
 djangorestframework
