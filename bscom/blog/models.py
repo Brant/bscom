@@ -25,9 +25,7 @@ class Entry(DefinedWidthsAssetsFromImagesMixin, TitleDateSlug):
 
     @models.permalink
     def get_absolute_url(self):
-        """
-        permalink
-        """
+        """ permalink """
         return ("blog_single", [str(self.slug)])
 
     class Meta:
@@ -35,6 +33,10 @@ class Entry(DefinedWidthsAssetsFromImagesMixin, TitleDateSlug):
         ordering = ["-date"]
         verbose_name_plural = "Entries"
         get_latest_by = "date"
+
+    def get_dimensions(self):
+        """ asset widths """
+        return [100, 200, 300, 500]
 
 
 class Category(TitleDateSlug):

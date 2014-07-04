@@ -10,3 +10,4 @@ django-disqus
 psycopg2
 pil
 python-memcached
+djangorestframework
