@@ -17,7 +17,8 @@ def import_drafts_from_dropbox(request):
     with open("/home/brant/task.log", "a") as f:
         f.write("Updated... %s\n" % datetime.now())
         f.write("%s" % request.body)
-        f.write("%s" % request.META['X-Dropbox-Signature'])
-        dig = hmac.new(settings.DROPBOX_SECRET, msg=request.body, digestmod=hashlib.sha256).digest()
-        f.write("%s" % dig)
+        f.write("%s" % request.META)
+        # f.write("%s" % request.META['X-Dropbox-Signature'])
+        # dig = hmac.new(settings.DROPBOX_SECRET, msg=request.body, digestmod=hashlib.sha256).digest()
+        # f.write("%s" % dig)
         # base64.b64encode(dig).decode()
