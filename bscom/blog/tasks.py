@@ -16,9 +16,8 @@ from celery import shared_task
 def import_drafts_from_dropbox(request):
     with open("/home/brant/task.log", "a") as f:
         f.write("Updated... %s\n" % datetime.now())
-        f.write("%s" % request.body)
+        f.write("%s\n" % request.body)
         # f.write("%s" % request.META)
-        f.write("%s" % request.META['HTTP_X_DROPBOX_SIGNATURE'])
+        f.write("%s\n" % request.META['HTTP_X_DROPBOX_SIGNATURE'])
         dig = hmac.new(settings.DROPBOX_SECRET, msg=request.body, digestmod=hashlib.sha256).digest()
-        f.write("%s" % dig)
-        # base64.b64encode(dig).decode()
+        f.write("%s\n" % base64.b64encode(dig).decode())
