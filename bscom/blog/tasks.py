@@ -11,4 +11,4 @@ from celery import shared_task
 @shared_task
 def import_drafts_from_dropbox():
     with open("/home/brant/task.log", "a") as f:
-        f.write("Updated... %s" % datetime.now())
+        f.write("Updated... %s\n" % datetime.now())
