@@ -8,6 +8,7 @@ from django.template import RequestContext
 from django.core.urlresolvers import reverse
 from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.core.exceptions import ObjectDoesNotExist
+from django.views.decorators.cache import never_cache
 
 from bscom.blog.models import Entry, Category
 from bscom.blog.tasks import import_drafts_from_dropbox
@@ -16,6 +17,7 @@ from noodles.util import make_paginator
 from noodles.views import json_response
 
 
+@never_cache
 def import_drafts(request):
     challenge = request.GET.get("challenge", None)
 
