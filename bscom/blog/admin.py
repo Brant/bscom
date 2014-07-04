@@ -54,7 +54,7 @@ class EntryAdmin(admin.ModelAdmin):
             "fields": ["external_link"]
         }),
         ("Metadata", {
-            "fields": ["date", "category", "tags", ]
+            "fields": ["date", "draft", "category", "tags", ]
         })
     )
 
