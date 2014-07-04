@@ -20,9 +20,9 @@ def import_drafts_from_dropbox(request):
 
         f.write("%s\n" % request.META['HTTP_X_DROPBOX_SIGNATURE'])
 
-        message = bytes(request.body).encode('utf-8')
-        secret = bytes(settings.DROPBOX_SECRET).encode('utf-8')
+        # message = bytes(request.body).encode('utf-8')
+        # secret = bytes(settings.DROPBOX_SECRET).encode('utf-8')
 
-        signature = base64.b64encode(hmac.new(secret, message, digestmod=hashlib.sha256).hexdigest())
+        signature = hmac.new(settings.DROPBOX_SECRET, request.body, digestmod=hashlib.sha256).hexdigest()
         f.write("%s\n" % signature)
 
