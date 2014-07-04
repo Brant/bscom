@@ -10,8 +10,15 @@ from django.http import HttpResponseRedirect, Http404
 from django.core.exceptions import ObjectDoesNotExist
 
 from bscom.blog.models import Entry, Category
+from bscom.blog.tasks import import_drafts_from_dropbox
 
 from noodles.util import make_paginator
+from noodles.views import json_response
+
+
+def import_drafts(request):
+    import_drafts_from_dropbox()
+    return json_response(request, {"success": True})
 
 
 def single(request, slug):
