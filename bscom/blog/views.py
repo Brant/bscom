@@ -24,8 +24,11 @@ def import_drafts(request):
     if challenge:
         return HttpResponse(challenge)
 
-    import_drafts_from_dropbox()
-    return json_response(request, {"success": True})
+    if request.method == "POST":
+        import_drafts_from_dropbox()
+        return json_response(request, {"success": True})
+
+    return json_response(request, {"success": False})
 
 
 def single(request, slug):
