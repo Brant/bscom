@@ -14,11 +14,14 @@ from celery import shared_task
 
 @shared_task
 def import_drafts_from_dropbox(request):
-    with open("/home/brant/bscom16/task.log", "a") as f:
+    with open("/home/brant/task.log", "a") as f:
         f.write("Updated... %s\n" % datetime.now())
         f.write("%s\n" % request.body)
+
+        f.write("%s\n" % request.META['HTTP_X_DROPBOX_SIGNATURE'])
 
         message = bytes(request.body).encode('utf-8')
         secret = bytes(settings.DROPBOX_SECRET).encode('utf-8')
         signature = base64.b64encode(hmac.new(secret, message, digestmod=hashlib.sha256).digest())
         f.write("%s\n" % signature)
+
