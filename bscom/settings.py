@@ -6,8 +6,10 @@ PROJECT_PATH = os.path.dirname(
         os.path.abspath(os.path.dirname(__file__)
     )
 )
+
 THE_THEME = "themes/koolaid"
-THEME_PATH = PROJECT_PATH + "/assets/" + THE_THEME
+ASSETS_ROOT = os.path.join(PROJECT_PATH, "assets")
+THEME_PATH = os.path.join(ASSETS_ROOT, THE_THEME)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
