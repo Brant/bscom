@@ -39,7 +39,7 @@ class AllFeed(Feed):
         """
         All entries that are published before datetime.now
         """
-        return Entry.objects.filter(date__lte=datetime.now()).order_by("-date")
+        return Entry.objects.filter(date__lte=datetime.now(), draft=False).order_by("-date")
 
     def item_link(self, item):
         """
@@ -50,19 +50,19 @@ class AllFeed(Feed):
             return item.external_link
         return item.get_absolute_url()
 
-    def item_title(self,item):
+    def item_title(self, item):
         """
         Title of each item in feed
         """
         return item.title
 
-    def item_description(self,item):
+    def item_description(self, item):
         """
         Short, base-RSS supported description
         """
         return markdown(item.blurb)
 
-    def item_pubdate(self,item):
+    def item_pubdate(self, item):
         """
         Publish date
         """

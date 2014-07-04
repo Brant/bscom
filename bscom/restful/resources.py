@@ -15,15 +15,16 @@ class BlogEntryNoContentResource(ModelResource):
     Rest API resource for blog entries
     """
     class Meta:
-        queryset = Entry.objects.filter(date__lte=datetime.now()).order_by("-date")
+        queryset = Entry.objects.filter(date__lte=datetime.now(), draft=False).order_by("-date")
         allowed_methods = ['get']
         excludes = ["content"]
-        
+
+
 class PortfolioImageResource(ModelResource):
     """
     """
     class Meta:
         queryset = Piece.objects.filter(date__lte=datetime.now()).order_by("-date")
         allowed_methods = ['get']
-        #excludes = ["content"]
+        # excludes = ["content"]
         fields = ["thumbnail"]

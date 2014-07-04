@@ -4,7 +4,7 @@ Template tags used to render/filter various things for the wesbite
 import urllib
 import json
 import markdown2
-from datetime import datetime, time
+from datetime import datetime
 
 from django.utils.encoding import force_unicode
 from django.utils.safestring import mark_safe
@@ -32,7 +32,12 @@ def latest_blog_thumbnail():
     """
     Return the URL of the latest blog entry's thumbnail
     """
-    return Entry.objects.filter(~Q(thumbnail__exact=''), date__lte=datetime.now(), thumbnail__isnull=False).latest().thumbnail.url
+    return Entry.objects.filter(
+        ~Q(thumbnail__exact=''),
+        date__lte=datetime.now(),
+        thumbnail__isnull=False,
+        draft=False).latest().thumbnail.url
+
 
 @register.inclusion_tag("bsdesign/tags/wtfawd_latest.html")
 def wtfawd_latest_episodes():
