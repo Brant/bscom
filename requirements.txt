@@ -10,4 +10,4 @@ django-disqus
 psycopg2
 pillow
 python-memcached
-djangorestframework
+dropbox
