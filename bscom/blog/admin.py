@@ -6,6 +6,8 @@ from django.contrib.redirects.models import Redirect
 from django.contrib.sites.models import get_current_site
 from django.core.exceptions import ObjectDoesNotExist
 
+from noodles.admin.actions import re_create_assets
+
 from bscom.blog.models import Entry, Category
 
 
@@ -45,7 +47,7 @@ class EntryAdmin(admin.ModelAdmin):
     """
     Blog Entry admin configuration
     """
-    actions = [reslug, ]
+    actions = [reslug, re_create_assets]
     fieldsets = (
         (None, {
             "fields": ["title", "slug", "content", "blurb", "thumbnail", ]
