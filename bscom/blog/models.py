@@ -2,10 +2,10 @@ from django.db import models
 
 from taggit.managers import TaggableManager
 
-from noodles.models import TitleDateSlug
+from noodles.models import TitleDateSlug, DefinedWidthsAssetsFromImagesMixin
 
 
-class Entry(TitleDateSlug):
+class Entry(DefinedWidthsAssetsFromImagesMixin, TitleDateSlug):
     """
     A blog entry
 
