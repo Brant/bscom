@@ -25,4 +25,15 @@ def import_drafts_from_dropbox(request):
         # f.write("%s\n" % signature)
 
         client = dropbox.client.DropboxClient(settings.DROPBOX_TOKEN)
-        f.write("%s\n" % client.metadata(settings.DROPBOX_DRAFTS_PATH))
+        has_more = True
+
+        while has_more:
+            result = client.delta(None)
+            for path, metadata in result['entries']:
+                f.write("%s\n" % path)
+                f.write("%s\n" % metadata)
+            has_more = result['has_more']
+
+        # if (metadata is None or metadata['is_dir'] or not path.endswith('.md')):
+        # f.write("%s\n" % client.metadata(settings.DROPBOX_DRAFTS_PATH))
+
