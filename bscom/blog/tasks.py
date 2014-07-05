@@ -32,7 +32,7 @@ def import_drafts_from_dropbox(request):
         while has_more:
             result = client.delta(None)
             for path, metadata in result['entries']:
-                if path.startswith(settings.DROPBOX_DRAFTS_PATH):
+                # if path.startswith(settings.DROPBOX_DRAFTS_PATH):
                     f.write("%s\n" % path)
                     # f.write("%s\n" % metadata)
             has_more = result['has_more']
