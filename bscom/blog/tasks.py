@@ -17,18 +17,19 @@ from celery import shared_task
 
 @shared_task
 def import_drafts_from_dropbox(request):
-    with open("/home/brant/bscom16/task.log", "a") as f:
+    signature = hmac.new(settings.DROPBOX_SECRET, request.body, digestmod=hashlib.sha256).hexdigest()
+    if request.META['HTTP_X_DROPBOX_SIGNATURE'] == signature:
+        client = dropbox.client.DropboxClient(settings.DROPBOX_TOKEN)
+        with open("/home/brant/bscom16/task.log", "a") as f:
+            f.write("Updated... %s\n" % datetime.now())
+            f.write("%s\n" % client.metadata(settings.DROPBOX_DRAFTS_PATH))
         # f.write("Updated... %s\n" % datetime.now())
         # f.write("%s\n" % request.body)
 
         # f.write("%s\n" % request.META['HTTP_X_DROPBOX_SIGNATURE'])
-
-        signature = hmac.new(settings.DROPBOX_SECRET, request.body, digestmod=hashlib.sha256).hexdigest()
-        if request.META['HTTP_X_DROPBOX_SIGNATURE'] == signature:
-            f.write("Updated... %s\n" % datetime.now())
         # f.write("%s\n" % signature)
 
-        # client = dropbox.client.DropboxClient(settings.DROPBOX_TOKEN)
+        #
         # has_more = True
 
         # while has_more:
