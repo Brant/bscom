@@ -1,6 +1,8 @@
 from __future__ import absolute_import
 
 from datetime import datetime
+from dateutil import parser
+
 import hmac
 import hashlib
 import base64
@@ -13,17 +15,44 @@ from django.utils.timezone import utc
 
 from celery import shared_task
 
+from bscom.blog.models import Entry
+
 # from baseline.queue.celery import app
 
 
 @shared_task
-def import_drafts_from_dropbox(request):
-    signature = hmac.new(settings.DROPBOX_SECRET, request.body, digestmod=hashlib.sha256).hexdigest()
-    if request.META['HTTP_X_DROPBOX_SIGNATURE'] == signature:
-        client = dropbox.client.DropboxClient(settings.DROPBOX_TOKEN)
-        with open("/home/brant/bscom16/task.log", "a") as f:
-            f.write("Updated... %s\n" % datetime.utcnow().replace(tzinfo=utc))
-            f.write("%s\n" % client.metadata(settings.DROPBOX_DRAFTS_PATH))
+def import_drafts_from_dropbox():
+
+    client = dropbox.client.DropboxClient(settings.DROPBOX_TOKEN)
+
+    for item in client.metadata(settings.DROPBOX_DRAFTS_PATH)['contents']:
+        mod_time = parser.parse(item['modified'])
+
+        try:
+            entry = Entry.objects.get(draft_file=item['path'])
+        except ObjectDoesNotExist:
+            entry = Entry(draft_file=item['path'], draft=True)
+
+        if entry.draft and (not entry.date_modified or entry.date_modified < mod_time):
+            f, metadata = client.get_file_and_metadata(item['path'])
+            lines = f.readlines()
+            title = lines[0].strip().replace("#", "")
+            body = "".join(lines[1:])
+            entry.content = body.strip()
+            entry.title = title
+            entry.save()
+
+
+
+        # f, metadata = client.get_file_and_metadata(item['path'])
+        # lines = f.readlines()
+        # print lines
+
+    # with open("/home/brant/bscom16/task.log", "a") as f:
+    #     f.write("Updated... %s\n" % datetime.utcnow().replace(tzinfo=utc))
+    #     f.write("%s\n" % client.metadata(settings.DROPBOX_DRAFTS_PATH))
+
+
         # f.write("Updated... %s\n" % datetime.now())
         # f.write("%s\n" % request.body)
 

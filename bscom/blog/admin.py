@@ -48,6 +48,7 @@ class EntryAdmin(admin.ModelAdmin):
     Blog Entry admin configuration
     """
     actions = [reslug, re_create_assets]
+
     fieldsets = (
         (None, {
             "fields": ["title", "slug", "content", "blurb", "thumbnail", ]
@@ -55,14 +56,18 @@ class EntryAdmin(admin.ModelAdmin):
         ("For Links", {
             "fields": ["external_link"]
         }),
+        ("Draft Info", {
+            "fields": ["draft", "draft_file",  'date_modified']
+        }),
         ("Metadata", {
-            "fields": ["date", "draft", "category", "tags", ]
+            "fields": ["date", "category", "tags", ]
         })
     )
 
     list_display = ["title", "slug", "date", "category"]
-    list_filter = ["category"]
-    readonly_fields = ["slug", ]
+    list_filter = ["category", "draft", ]
+    readonly_fields = ['draft_file', 'date_modified', 'slug', ]
+
 
 admin.site.register(Category)
 admin.site.register(Entry, EntryAdmin)

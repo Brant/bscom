@@ -1,4 +1,6 @@
+from datetime import datetime
 from django.db import models
+from django.utils.timezone import utc
 
 from taggit.managers import TaggableManager
 
@@ -19,7 +21,10 @@ class Entry(DefinedWidthsAssetsFromImagesMixin, TitleDateSlug):
 
     content = models.TextField(null=True, blank=True)
     blurb = models.TextField(null=True, blank=True)
+
     draft = models.BooleanField(default=False, help_text="While in draft status, the entry will never show up on a live site")
+    draft_file = models.CharField(max_length=1000, null=True, blank=True)
+    date_modified = models.DateTimeField(null=True, blank=True, auto_now=True)
 
     external_link = models.CharField(max_length=200, null=True, blank=True)
 
@@ -59,5 +64,3 @@ class Category(TitleDateSlug):
         """ Django Metadata """
         ordering = ["title"]
         verbose_name_plural = "Categories"
-
-

@@ -2,6 +2,10 @@
 Blog views
 """
 from datetime import datetime
+import hmac
+import hashlib
+import base64
+import dropbox
 
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
@@ -11,6 +15,7 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_exempt
 from django.utils.timezone import utc
+from django.conf import settings
 
 from bscom.blog.models import Entry, Category
 from bscom.blog.tasks import import_drafts_from_dropbox
@@ -28,10 +33,10 @@ def import_drafts(request):
         return HttpResponse(challenge)
 
     if request.method == "POST":
+        signature = hmac.new(settings.DROPBOX_SECRET, request.body, digestmod=hashlib.sha256).hexdigest()
+        if request.META['HTTP_X_DROPBOX_SIGNATURE'] == signature:
+            import_drafts_from_dropbox()
 
-        # request.META['HTTP_X_DROPBOX_SIGNATURE']
-
-        import_drafts_from_dropbox(request)
         return json_response(request, {"success": True})
 
     return json_response(request, {"success": False})
