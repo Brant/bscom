@@ -5,6 +5,7 @@ from datetime import datetime
 
 from django import template
 from django.db.models import Q
+from django.utils.timezone import utc
 
 from bscom.blog.models import Entry, Category
 
@@ -25,7 +26,7 @@ def get_related(entry, count=5):
     return Entry.objects.filter(
         ~Q(pk=entry.pk),
         external_link__isnull=True,
-        date__lte=datetime.now(),
+        date__lte=datetime.utcnow().replace(tzinfo=utc),
         draft=False,
         tags__name__in=[t for t in entry.tags.all()]
     ).distinct()[:5]
@@ -44,7 +45,7 @@ def blog_archives(context):
     """
     Renders list of archives, by month/year
     """
-    entries = Entry.objects.filter(date__lte=datetime.now(), draft=False).dates('date', 'month', order='DESC')
+    entries = Entry.objects.filter(date__lte=datetime.utcnow().replace(tzinfo=utc), draft=False).datetimes('date', 'month', order='DESC')
     return {'archives': entries, 'request': context['request']}
 register.inclusion_tag('blog/tags/archive_list.html', takes_context=True)(blog_archives)
 

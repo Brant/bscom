@@ -11,6 +11,7 @@ from django.utils.safestring import mark_safe
 from django.template.defaultfilters import stringfilter
 from django import template
 from django.db.models import Q
+from django.utils.timezone import utc
 
 from bscom.blog.models import Entry
 
@@ -34,7 +35,7 @@ def latest_blog_thumbnail():
     """
     entry = Entry.objects.filter(
         ~Q(thumbnail__exact=''),
-        date__lte=datetime.now(),
+        date__lte=datetime.utcnow().replace(tzinfo=utc),
         thumbnail__isnull=False,
         draft=False).latest()
 

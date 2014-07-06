@@ -10,6 +10,7 @@ from django.http import HttpResponseRedirect, Http404, HttpResponse
 from django.core.exceptions import ObjectDoesNotExist
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_exempt
+from django.utils.timezone import utc
 
 from bscom.blog.models import Entry, Category
 from bscom.blog.tasks import import_drafts_from_dropbox
@@ -57,7 +58,7 @@ def category(request, category_slug):
     All entries belonging to a given category
     """
     category = get_object_or_404(Category, slug=category_slug)
-    entries = Entry.objects.filter(date__lte=datetime.now(), category=category, draft=False)
+    entries = Entry.objects.filter(date__lte=datetime.utcnow().replace(tzinfo=utc), category=category, draft=False)
     entries = make_paginator(request, entries)
 
     response_data = {"entries": entries, "category": category}
@@ -71,13 +72,12 @@ def archive(request, month, year):
 
     Not paginated
     """
-    entries = Entry.objects.filter(date__month=month, date__year=year, date__lte=datetime.now(), draft=False)
+    entries = Entry.objects.filter(date__month=month, date__year=year, date__lte=datetime.utcnow().replace(tzinfo=utc), draft=False)
 
     try:
-        archive = entries.dates('date', 'month')[0]
+        archive = entries.datetimes('date', 'month')[0]
     except IndexError:
         return HttpResponseRedirect(reverse("blog_index"))
-
 
     response_data = {"entries": entries, "archive": archive}
 
@@ -91,7 +91,7 @@ def index(request):
     Must be published, according to its date
     """
 
-    entries = Entry.objects.prefetch_related('category').filter(date__lte=datetime.now(), draft=False)
+    entries = Entry.objects.prefetch_related('category').filter(date__lte=datetime.utcnow().replace(tzinfo=utc), draft=False)
     entries = make_paginator(request, entries)
 
     response_data = {

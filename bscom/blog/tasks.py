@@ -9,6 +9,7 @@ import dropbox
 from django.conf import settings
 from django.contrib.auth.models import User
 from django.core.exceptions import ObjectDoesNotExist
+from django.utils.timezone import utc
 
 from celery import shared_task
 
@@ -21,7 +22,7 @@ def import_drafts_from_dropbox(request):
     if request.META['HTTP_X_DROPBOX_SIGNATURE'] == signature:
         client = dropbox.client.DropboxClient(settings.DROPBOX_TOKEN)
         with open("/home/brant/bscom16/task.log", "a") as f:
-            f.write("Updated... %s\n" % datetime.now())
+            f.write("Updated... %s\n" % datetime.utcnow().replace(tzinfo=utc))
             f.write("%s\n" % client.metadata(settings.DROPBOX_DRAFTS_PATH))
         # f.write("Updated... %s\n" % datetime.now())
         # f.write("%s\n" % request.body)

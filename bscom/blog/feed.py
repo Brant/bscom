@@ -6,6 +6,8 @@ from datetime import datetime
 from django.contrib.syndication.views import Feed
 from django.utils import feedgenerator
 from django.contrib.sites.models import Site
+from django.utils.timezone import utc
+
 from bscom.website.templatetags.bs_tags import markdown
 
 from bscom.blog.models import Entry
@@ -26,9 +28,7 @@ class ExtendedRSSFeed(feedgenerator.Rss201rev2Feed):
 
 
 class AllFeed(Feed):
-    """
-    RSS Feed Declaration, based on Extended Feed
-    """
+    """ RSS Feed Declaration, based on Extended Feed """
     feed_type = ExtendedRSSFeed
 
     title = "Brant Steen Web Design"
@@ -36,16 +36,13 @@ class AllFeed(Feed):
     link = "http://%s/" % (Site.objects.get_current().domain)
 
     def items(self):
-        """
-        All entries that are published before datetime.now
-        """
-        return Entry.objects.filter(date__lte=datetime.now(), draft=False).order_by("-date")
+        """ All entries that are published before datetime.now
+        Corrected for timezone """
+        return Entry.objects.filter(date__lte=datetime.utcnow().replace(tzinfo=utc), draft=False).order_by("-date")
 
     def item_link(self, item):
-        """
-        Figure out where the link should go
-            might goto an external source
-        """
+        """ Figure out where the link should go
+        might goto an external source """
         if item.external_link:
             return item.external_link
         return item.get_absolute_url()
