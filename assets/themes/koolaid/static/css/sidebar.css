@@ -9,13 +9,11 @@
 	 */
 	float:left;
 	width:77%;
-	
 }
 
 .sidebar{
 	width:17%;
 	float:right;
-	padding:40px 0;
 }
 .sidebar .ribbon{
 	margin-right:-55px;

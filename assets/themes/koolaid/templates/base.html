@@ -37,20 +37,20 @@
 			<div class="pg-head width">
 
 				{% if not request.path == HOME %}
-					<nav class="back-link">{% block back_link %}{% endblock %}</nav>
+					<span class="back-link">{% block back_link %}{% endblock %}</span>
 				{% endif %}
 
 				{############}
 				{% block tangential_wrap %}
 					{% if not request.path == HOME %}
 						<aside class="tangential">
-							<nav>
+							<span>
 					{% endif %}
 
 					{% block tangential %}{% endblock %}
 
 					{% if not request.path == HOME %}
-						</nav></aside>
+						</span></aside>
 					{% endif %}
 				{% endblock %}
 				{############}
@@ -73,13 +73,13 @@
 
 				{############}
 				{% if not request.path == HOME %}
-					<nav class="section-nav clearfix">
+					<span class="section-nav clearfix">
 				{% endif %}
 
 				{% block section_nav %}{% endblock %}
 
 				{% if not request.path == HOME %}
-					</nav>
+					</span>
 				{% endif %}
 				{############}
 
@@ -93,8 +93,7 @@
 							{% url 'folio.views.index' as FOLIO %}
 							<li><a class="nav-blog" href="{{ BLOG }}"><span {% if request.path|insidenav:BLOG %}class="cur" {% endif %}>Blog</span></a></li>
 							<li><a class="nav-folio" href="{{ FOLIO }}"><span {% if request.path|insidenav:FOLIO %}class="cur" {% endif %}>Portfolio</span></a></li>
-							<li><a class="nav-me" href="{{ ABOUT }}"><span {% if request.path|insidenav:ABOUT %}class="cur" {% endif %}>Me</span></a></li>
-							<li><a class="nav-podcast" href="{{ PODCAST }}"><span {% if request.path|insidenav:PODCAST %}class="cur" {% endif %}>Podcast</span></a></li>
+							<li><a class="nav-projects" href="#"><span >Projects</span></a></li>
 						</ul>
 					</nav>
 					<{% if request.path == HOME %}h1{% else %}p{% endif %} class="logo"><a href="{{ HOME }}">B<span class="logo-smallerize">RANT</span> S<span class="logo-smallerize">TEEN</span></a></{% if request.path == HOME %}h1{% else %}p{% endif %}>

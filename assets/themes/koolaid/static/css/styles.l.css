@@ -20,23 +20,28 @@ h1,h2,h3,h4,h5,h6{
 	padding:0;
 	line-height: 1.6em;
 }
-h1,
-.permalink:visited,
-.permalink:link,
-.permalink:active,
-.permalink{
-	font-size:1.2em;
+h1{
+	font-size:1.4em;
 	color:#3f0316;
-	padding:30px 0 0 0;
-	
+	margin:1.8em 0 1em 0;
+	text-decoration: none;
+}
+h1 a,
+h1 a:hover,
+h1 a:visited,
+h1 a:link,
+h1 a:active{
+	color:#3f0316;
+	margin:1.8em 0 1em 0;
+	text-decoration: none;
 }
 h2{
-	font-size:1.1em;
-	padding:25px 0 0 0;
+	font-size:1.3em;
+	margin:1.5em 0 .5em 0;
 }
 h3{
-	font-size:1em;
-	padding:20px 0 0 0;
+	font-size:1.1em;
+	margin: 1.5em 0 .5em 0;
 }
 
 a, a:active, a:visited, a:link { color:#006B8B; }
@@ -123,7 +128,7 @@ hgroup h3{
 	box-shadow:0 -2px 3px rgba(13,12,0,.3);
 	z-index:2;
 	position: relative;
-	padding:20px 0 0;
+	padding:10px 0 0;
 	
 }
 .pg{
@@ -134,11 +139,11 @@ hgroup h3{
 .pg-raised{
 	background:#fdfdfd;
 	min-height:400px;
-	margin-top:-37px;
+	margin-top:-27px;
 	box-shadow:0 -2px 5px rgba(13,12,0,.3);
 	
 	
-	padding:30px 40px;
+	padding:20px 40px;
 	
 }
 .pg-raised figure,
@@ -185,6 +190,7 @@ hgroup h3{
 .logo a:hover{
 	color:#fff;
 	text-decoration: none;
+	font-size:1em;
 }
 
 
@@ -267,6 +273,12 @@ hgroup h3{
 }
 .svg .nav-folio{
 	background:url(img/icons/white/svg/folio.svg) center top no-repeat;
+}
+.nav-projects{
+	background:url(img/icons/white/cloud_26x16.png) center top no-repeat;
+}
+.svg .nav-projects{
+	background:url(img/icons/white/svg/projects.svg) center top no-repeat;
 }
 /*
  * Section navigation

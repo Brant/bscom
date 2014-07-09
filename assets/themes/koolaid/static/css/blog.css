@@ -1,7 +1,10 @@
+.blog-index-entry h1{
+	margin:0;
+}
 .blog-index-article{
 	position: relative;
 	margin-right:200px;
-	padding:40px 0 60px;
+	padding:30px 0 40px;
 }
 .has-sidebar .blog-index-article{
 	margin-right:0;
@@ -18,7 +21,7 @@
 .blog-index-article img{
 	position: absolute;
 	left:0;
-	top:40px;
+	top:35px;
 }
 .blog-index-article p{
 	margin-left:185px;
@@ -49,22 +52,26 @@
  * Single entry
  */
 .blog-single article header{
-	padding:0 0 45px 0;
-	margin:0 0 15px 0;
+	padding:0 0 30px 0;
+	margin:30px 0 15px 0;
 	border-bottom:solid 1px #ddd;
 	position: relative;
 }
 .blog-single article header img{
 	width:150px;
-	margin-top:30px;
 	float:left;
+	margin:5px 0 0;
 }
+
 .blog-single-header-text{
-	margin-left:185px;
-	font-size:1.1em;
+	margin:0 0 0 185px;
 	color:#777;
 	line-height: 1.5em;
 }
+.blog-single-header-text h1{
+	margin:0;
+}
+
 .blog-single article footer{
 	border-top:solid 1px #ddd;
 	padding-top:15px;
@@ -113,7 +120,7 @@
 /*
  * rss tangential
  */
-.tangential-rss nav a{
+.tangential-rss span a{
 	padding-bottom:15px;
 	background:#ed832d;
 	background-image: linear-gradient(bottom, rgb(237,131,45) 68%, rgb(242,140,63) 84%);
@@ -130,26 +137,26 @@
 		color-stop(0.84, rgb(242,140,63))
 	);
 }
-.blog .tangential nav img{
+.blog .tangential span img{
 	padding:8px 0;
 }
-.blog .tangential-rss nav a img{
+.blog .tangential-rss span a img{
 	margin-top:0px;
 	padding-bottom:10px;
 }
-.tangential-rss nav{
+.tangential-rss span{
 	-webkit-box-shadow:0 5px 60px 5px rgba(17,92,114,.3);
 	-moz-box-shadow:0 5px 60px 5px rgba(17,92,114,.3);
 	-o-box-shadow:0 5px 60px 5px rgba(17,92,114,.3);
 	box-shadow:0 5px 60px 5px rgba(237,131,45,.3);
 }
-.tangential-rss nav:hover{
+.tangential-rss span:hover{
 	-webkit-box-shadow:0 5px 60px 6px rgba(17,92,114,.45);
 	-moz-box-shadow:0 5px 60px 6px rgba(17,92,114,.45);
 	-o-box-shadow:0 5px 60px 6px rgba(17,92,114,.45);
 	box-shadow:0 5px 60px 6px rgba(237,131,45,.45);
 }
-.tangential-rss nav:before{
+.tangential-rss span:before{
 	border-left-color:#ed832d;
 	border-right-color:#ed832d;
 }

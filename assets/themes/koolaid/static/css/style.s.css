@@ -6,7 +6,12 @@
  * high: 650px
  */
 @media all and (max-width:650px){
-	
+	h1{
+		font-size:1.3em;
+	}
+	h2{
+		font-size:1.2em;
+	}
 	.hide-on-small{
 		display:none;
 	}
@@ -26,15 +31,7 @@
 	body{
 		
 	}
-	h1,
-	.permalink:visited,
-	.permalink:link,
-	.permalink:active,
-	.permalink{
-		padding:20px 0 0 0;
-		font-size:1em;
-	}
-	
+
 	.logo{
 		height:50px;
 		letter-spacing: 0px;
@@ -53,7 +50,7 @@
 	}
 	.pg-raised{
 		padding:0px 10px 20px;
-		margin-top:-20px;
+		margin-top:-10px;
 		box-shadow:none;
 	}
 	.blog-index .pg-raised{
@@ -111,9 +108,9 @@
 	 * Blog single entry
 	 */
 	.blog-single article header{
-		padding:0 0 15px 0;
-		margin:0 0 15px 0;
+		margin:20px 0 0;
 		position: static;
+		padding:0;
 	}
 	.blog-single article header img{
 		float:right;
@@ -121,7 +118,6 @@
 		position: static;
 		left:auto;
 		top:auto;
-		margin:30px 0 15px 15px;
 	}
 	.blog-single-header-text{
 		margin-left:0;
@@ -341,6 +337,7 @@
 	 * Back Link
 	 */
 	.back-link{
+		display: block;
 		right:0px;
 		border-radius:0;
 		top:0px;

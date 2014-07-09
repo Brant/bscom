@@ -26,7 +26,7 @@
 					<img class="blog-entry-thumb" src="{% if entry.thumbnail %}{{ entry.thumbnail.url }}{% else %}{{ entry.category.default_thumbnail.url }}{% endif %}" />
 				</a>
 
-				<h1><a class="permalink" href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h1>
+				<h1><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h1>
 
 
 				<p>{{ entry.date|date:"F j, Y" }}</p>
