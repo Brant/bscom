@@ -7,9 +7,7 @@
  * low: 651px
  */
 @media all and (max-width:959px){
-	h1{
-		margin:1em 0 .6em;
-	}
+
 	.logo{
 		font-size:60px;
 		height:85px;
@@ -34,8 +32,9 @@
 		padding:0;
 	}
 	.pg-raised{
-		padding:30px 20px;
-		margin:-10px 0 0;
+		padding:20px;
+		margin:-10px;	
+		/*margin:-10px 0 0;*/
 	}
 	.section-title{
 		left:5px;
@@ -121,11 +120,10 @@
 		width:auto;
 	}
 	.folio-piece{
-		padding:50px 180px 50px 0;
+		
 	}
 	.folio-piece img{
 		width:180px;
-		top:50px;
 	}
 	.folio-piece h1,
 	.folio-piece p{
