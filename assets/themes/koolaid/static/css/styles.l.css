@@ -129,10 +129,9 @@ hgroup h3{
 	z-index:2;
 	position: relative;
 	padding:10px 0 0;
-	
 }
 .pg{
-	padding:0px;
+	padding:0;
 	min-height:400px;
 	position: relative;
 }
