@@ -320,7 +320,7 @@ hgroup h3{
 	-o-transition: .2s ease-out;
 	transition: .2s ease-out;
 	
-	background:#f2f2f2 url(img/f2bg.jpg) left top repeat;
+	background:#f2f2f2;
 	
 	border-radius:25px;
 	
