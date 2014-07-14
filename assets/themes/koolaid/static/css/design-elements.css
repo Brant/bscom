@@ -249,3 +249,14 @@
 	border-left-color:transparent;
 	border-right-color:#333;
 }
+
+
+/**
+ * embossed letters
+ */
+.embossed-body{
+	color:#d8d8d8;
+	text-shadow:-1px -1px 1px #b7b7b7, 1px 1px 1px #fefefe;	
+	font-size:4em;
+	line-height: 70px;
+}

@@ -3,9 +3,8 @@
 {% block pg_raised_wrap %}
 	{% block content %}
 		<div id="content" class="content clearfix">
-
 			<section class="projects-current">
-				<h2>Current Projects</h2>
+				<h2 class="embossed-body">Current Projects</h2>
 				<h3><a href="http://podiobooks.com/">Podiobooks</a></h3>
 				<h3><a href="http://brant.github.io/django-noodles/">Noodles for Django</a></h3>
 				<h3><a href="http://brant.github.io/django-mub/">Monster Under the Bed</a></h3>
@@ -13,9 +12,9 @@
 			</section>
 
 			<section class="projects-past">
-				<h2>Past Projects</h2>
+				<h2 class="embossed-body">Past Projects</h2>
 				<h3><a href="http://hateandnut.com/">Hate and NuT</a></h3>
-				<h3><a href="http://wtfawd.com/">wtfawd?</a></h3>
+				<h3><a href="{% url 'podcast' %}">wtfawd?</a></h3>
 			</section>
 		</div>
 	{% endblock %}

@@ -27,8 +27,10 @@ urlpatterns = patterns('',
     (r'^feed/$', AllFeed()),
     # url(r'^$', TemplateView.as_view(template_name="bsdesign/home.html"), name="home"),
     url(r'^projects/$', TemplateView.as_view(template_name="projects/index.html"), name="projects"),
+    url(r'^projects/wtfawd/$', TemplateView.as_view(template_name="bsdesign/wtfawd.html"), name="podcast"),
+
     url(r'^about/$', TemplateView.as_view(template_name="bsdesign/about.html"), name="about"),
-    url(r'^podcast/$', TemplateView.as_view(template_name="bsdesign/wtfawd.html"), name="podcast"),
+
 
     (r'^admin/', include(admin.site.urls)),
     (r'^blog/', include("bscom.blog.urls")),

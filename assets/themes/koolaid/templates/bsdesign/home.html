@@ -19,7 +19,7 @@
 
 			<section id="home-blog" class="home-blog home-link">
 
-				<h2><a href="{% url 'blog_index' %}">Writing</a></h2>
+				<h2 class="embossed-body"><a href="{% url 'blog_index' %}">Writing</a></h2>
 
 				<div class="home-blog-image-container home-image-container">
 					<a href="{% url 'blog_index' %}"><img src="{% latest_blog_thumbnail %}" /></a>
@@ -28,24 +28,14 @@
 			</section>
 
 			<section id="home-folio" class="home-folio home-link">
-				<h2><a href="{% url 'folio_index' %}">Portfolio</a></h2>
+				<h2 class="embossed-body"><a href="{% url 'folio_index' %}">Portfolio</a></h2>
 			</section>
 
 			<section id="home-podcast" class="home-podcast home-link">
-				<h2><a href="{% url 'podcast' %}">Podcast</a></h2>
+				<h2 class="embossed-body"><a href="{% url 'podcast' %}">Podcast</a></h2>
 
 				<div class="home-podcast-image-container home-image-container">
 					<a href="{% url 'podcast' %}"><img src="{{ STATIC_URL }}img/podcast.png" /></a>
-				</div>
-
-			</section>
-
-			<section id="home-about" class="show-on-small-only show-on-medium-only home-about home-link">
-
-				<h2><a href="{% url 'about' %}">More about me</a></h2>
-
-				<div class="home-about-image-container home-image-container">
-					<a href="{% url 'about' %}"><img src="{{ STATIC_URL }}img/about.jpg" /></a>
 				</div>
 
 			</section>
