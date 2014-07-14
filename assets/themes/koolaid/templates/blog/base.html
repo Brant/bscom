@@ -1,15 +1,13 @@
 {% extends "base.html" %}
+{% load static from staticfiles %}
 {% load blog_tags %}
+
 {% block title %}Blog | {{ block.super }}{% endblock %}
-
 {% block body_class %} blog {% endblock %}
-
-{% block page_title %}blog{% endblock %}
+{% block page_title %}writings{% endblock %}
 
 {% block section_nav %}
-
 	{% blog_categories %}
-
 {% endblock %}
 
 
@@ -19,7 +17,7 @@
 		<aside class="tangential tangential-rss">
 			<span>
 
-			<a target="_blank" href="{{ SITE_META.rss }}"><img src="{{ STATIC_URL }}img/rss_alt_32x32.png" alt="subscribe" />Subscribe</a>
+			<a href="{{ SITE_META.rss }}"><img src="{% static 'img/rss_alt_32x32.png' %}" alt="subscribe" />Subscribe</a>
 
 		</span></aside>
 

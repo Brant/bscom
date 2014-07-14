@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% load static from staticfiles %}
+
+{% block title %}Projects | {{ block.super }}{% endblock %}
+{% block body_class %} projects {% endblock %}
+{% block page_title %}projects{% endblock %}
+
+{% block tangential %}
+	<a href="{{ SITE_META.github }}">View my<img src="{% static 'img/svg/github.svg' %}" onerror="this.src={% static 'img/github.png' %}" alt="github"> projects</a>
+{% endblock %}

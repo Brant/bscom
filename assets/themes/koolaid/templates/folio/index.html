@@ -15,12 +15,15 @@
 				{% endif %}
 			</h1>
 
-			<a href="{{ piece.link }}"><img src="{{ piece.thumbnail.url }}" alt="{% if piece.confidential %}{{ SITE_META.confidential_client_title }}{% else %}{{ piece }}{% endif %} thumbnail" /></a>
-
+			{% if not piece.confidential and piece.link %}
+				<a href="{{ piece.link }}"><img src="{{ piece.thumbnail.url }}" alt="{% if piece.confidential %}{{ SITE_META.confidential_client_title }}{% else %}{{ piece }}{% endif %} thumbnail" /></a>
+			{% else %}
+				<img src="{{ piece.thumbnail.url }}" alt="{% if piece.confidential %}{{ SITE_META.confidential_client_title }}{% else %}{{ piece }}{% endif %} thumbnail" />
+			{% endif %}
 			{{ piece.blurb|markdown }}
 
 			{% if not piece.confidential and piece.link %}
-				<p><a target="_blank" href="{{ piece.link }}">Visit {{ piece }}</a></p>
+				<p><a href="{{ piece.link }}">Visit {{ piece }}</a></p>
 			{% endif %}
 
 			<aside>

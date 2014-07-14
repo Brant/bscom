@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load static from staticfiles %}
+
 {%  block title %}About | {{ block.super }}{% endblock %}}
 
 {% block body_class %}{{ block.super }} about {% endblock %}
@@ -8,7 +10,7 @@
 {% block back_link %}<a href="{% url 'home' %}">Home</a>{% endblock %}
 
 {% block tangential %}
-	<a target="_blank" href="{{ SITE_META.twitter }}"><span class="hide-on-small">Follow<br/></span><img src="{{ STATIC_URL }}img/twitter_newbird_white.png" alt="twitter"/><span class="hide-on-small"><br/>along</span></a>
+	<a href="{{ SITE_META.twitter }}">Follow<br/><img src="{% static 'img/twitter_newbird_white.png' %}" alt="twitter"/><br/>along</a>
 {% endblock %}
 
 {% block content %}

@@ -88,6 +88,9 @@
 	padding:5px 0;
 }
 
+.tangential img{
+	max-width: 80%;
+}
 .tangential span a{
 	
 	display:block;
