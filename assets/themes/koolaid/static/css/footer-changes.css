@@ -1,10 +1,12 @@
 .wtfawd .pg-foot-wrap,
+.projects .pg-foot-wrap,
 .home .pg-foot-wrap{
 	box-shadow:none;
 	position: static;
 	z-index: auto; 
 }
 
+.projects .pg-wrap,
 .wtfawd .pg-wrap,
 .home .pg-wrap{
 	border-bottom:solid 1px #d8d8d8;
