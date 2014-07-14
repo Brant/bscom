@@ -12,3 +12,4 @@ pillow
 python-memcached
 dropbox
 python-dateutil
+django-htmlmin

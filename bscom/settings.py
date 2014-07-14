@@ -111,9 +111,11 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.cache.UpdateCacheMiddleware',
+    'htmlmin.middleware.HtmlMinifyMiddleware'
     'django.middleware.common.CommonMiddleware',
     'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
     'django.middleware.cache.FetchFromCacheMiddleware',
+    'htmlmin.middleware.MarkRequestMiddleware',
 
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -219,6 +221,8 @@ if DEBUG:
         'django.middleware.common.CommonMiddleware',
         'django.contrib.messages.middleware.MessageMiddleware',
         'django.contrib.redirects.middleware.RedirectFallbackMiddleware',
+        'htmlmin.middleware.HtmlMinifyMiddleware',
+        'htmlmin.middleware.MarkRequestMiddleware',
     )
     INSTALLED_APPS += ('debug_toolbar', )
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
