@@ -26,12 +26,14 @@ v1_api.register(PortfolioImageResource())
 urlpatterns = patterns('',
     (r'^feed/$', AllFeed()),
     # url(r'^$', TemplateView.as_view(template_name="bsdesign/home.html"), name="home"),
+    url(r'^projects/$', TemplateView.as_view(template_name="projects/index.html"), name="projects"),
     url(r'^about/$', TemplateView.as_view(template_name="bsdesign/about.html"), name="about"),
     url(r'^podcast/$', TemplateView.as_view(template_name="bsdesign/wtfawd.html"), name="podcast"),
 
     (r'^admin/', include(admin.site.urls)),
     (r'^blog/', include("bscom.blog.urls")),
     (r'^portfolio/', include("bscom.folio.urls")),
+
     (r'^mub/', include('mub.urls')),
 
     (r'^', include("bscom.website.urls")),
