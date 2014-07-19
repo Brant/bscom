@@ -12,19 +12,23 @@ html{
 body{
 	line-height:1.5em;
 	overflow-x:hidden;
-	font-family:Verdana;	
+	font-family: Verdana;	
+	color:#474948;
 }
 
 h1,h2,h3,h4,h5,h6{
 	margin:0;
 	padding:0;
 	line-height: 1.6em;
+	font-family: "PT Sans Caption", verdana, sans-serif;
+	font-weight: bold;
+	font-weight: 700;
 }
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
 	text-decoration: none;
 }
 h1{
-	font-size:1.4em;
+	font-size:1.6em;
 	color:#3f0316;
 	margin:1em 0 .6em;
 	text-decoration: none;
@@ -41,9 +45,10 @@ h1 a:active{
 h2{
 	font-size:1.3em;
 	margin:1.5em 0 .5em 0;
+	color:#272727;
 }
 h3{
-	font-size:1.1em;
+	font-size:1em;
 	margin: 1.5em 0 .5em 0;
 }
 
@@ -202,10 +207,11 @@ hgroup h3{
 .nav{
 	margin:0;
 	padding:0;
-	font:normal normal normal 17px/17px "Nobile", sans-serif;
+	font:normal normal normal 20px/20px "Ek Mukta", sans-serif;
+
 	float:right;
 	position: absolute;
-	bottom:12px;
+	bottom:11px;
 	right:0;
 	
 }
@@ -219,7 +225,8 @@ hgroup h3{
 	padding:0 8px 0 12px;
 }
 .nav a{
-	font:normal normal normal 17px/17px "Nobile", sans-serif;
+	font:normal normal normal 20px/20px "Ek Mukta", sans-serif;
+	font-weight: 200;
 	padding-top:25px;
 	display:block;
 	

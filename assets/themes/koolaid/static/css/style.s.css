@@ -19,6 +19,7 @@
 	.nav{
 		display: none;
 	}
+
 	/*
 	 * specific shows
 	 */
@@ -28,10 +29,11 @@
 	.show-on-small-only{
 		display:block;
 	}
-	body{
-		
-	}
+	
 
+	/**
+	 * Layout stuff
+	 */
 	.logo{
 		height:50px;
 		letter-spacing: 0px;
@@ -166,9 +168,7 @@
 	}
 	.folio-piece h1,
 	.folio-piece p{
-		margin-left:0;
-		
-		
+		margin-left:0;		
 	}
 	.folio-piece .ribbon{
 		position: static;
@@ -185,6 +185,8 @@
 	.foot-section{
 		padding:0 0 20px 0;
 	}
+
+
 	/*
 	 * social footer
 	 */
@@ -205,6 +207,10 @@
 	.social a{
 		
 	}
+
+	/**
+	 * Contact Page
+	 */
 	.contact-page .pg-raised .two-col-right{
 		padding-top:20px;
 	} 
@@ -221,6 +227,10 @@
 	.contact .contact-submit{
 		width:80px;
 	}
+
+	/**
+	 * Profile Page
+	 */
 	.profile{
 		float:none;
 		width:auto;
@@ -253,6 +263,7 @@
 		float:none;
 		padding:0;
 	}
+
 	/*
 	 * wtfawd
 	 */
@@ -281,6 +292,7 @@
 	.wtfawd .pg-wrap{
 		background:#fdfdfd;
 	}
+
 	/*
 	 * Alternating layout for a page
 	 */
@@ -311,6 +323,7 @@
 		right:auto;
 		
 	}
+
 	/*
 	 * about me page
 	 */
@@ -324,12 +337,23 @@
 	.about #resume{
 		background:none;
 	}
+
 	/*
 	 * ribbons
 	 */
 	.ribbon{
 		padding:5px 10px;
 		text-align: right;
+	}
+	.embossed-body{
+		position: static;
+		left:auto;
+		top:auto;
+		margin:0 0 1em;
+		padding:0;
+		font-size:2.5em;
+		line-height: 1.3em;
+		font-weight:normal;		
 	}
 	
 	/*
@@ -353,21 +377,9 @@
 	/*
 	 * Homepage
 	 */
-	
 	.home-link{
 		position: relative;
 		margin:20px 0;
-	}
-	.home-link h2{
-		position: static;
-		left:auto;
-		top:auto;
-		margin:0;
-		padding:0 0 10px;
-		font-size:1.7em;
-		line-height: 1.3em;
-		font-weight:normal;
-		
 	}
 	.hire-me{
 		top:-70px;
@@ -385,17 +397,11 @@
 	
 	
 	}
-	.home-link h2 a{
-		
-	}
 	.home .content hgroup{
-		padding:0 80px 0 0;
-		
-		
+		padding:0 80px 0 0;		
 	}
 	.home .content{
-		padding:0px 10px 50px;
-		
+		padding:0 10px 50px;
 	}
 	
 }

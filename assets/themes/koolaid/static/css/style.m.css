@@ -86,30 +86,8 @@
 	 * Tangentials
 	 */
 	.tangential{
-		z-index: 1;
+		display: none;
 	}
-	.tangential nav{
-		-webkit-box-shadow:none;
-		-moz-box-shadow:none;
-		-o-box-shadow:none;
-		box-shadow:none;
-		
-		z-index:1;
-	}
-	.tangential nav a{
-		background:#006C8B;
-		height:150px;
-		z-index: 1;
-	}
-	.tangential nav:before,
-	.tangential nav:after{
-		display:none;
-	}
-	.tangential-rss nav a{
-		background:#ed832d;
-		
-	}
-
 	
 	/*
 	 * folio
@@ -157,25 +135,24 @@
 		width:50%;
 		float:right;
 		padding-left:10%;
-		
 	}
+
 	.profile{
 		width:35%;
 	}
 	.profile img{
 		max-width:100%;
 	}
+	
 	/*
 	 * Alternating layout for a page
 	 */
-	
 	.alternate .alternate-left{
-		padding:40px 0px 20px 190px;
+		padding:40px 0 20px 190px;
 	}
 	
 	.alternate .alternate-right{
-			
-		padding:40px 190px 20px 0px;
+		padding:40px 190px 20px 0;
 	}
 	.alternate .ribbon{
 		position: absolute;
@@ -188,6 +165,8 @@
 	.alternate .ribbon{
 		right:-20px;
 	}
+
+
 	/*
 	 * wtfawd
 	 */
@@ -216,5 +195,12 @@
 		right:10px;
 		height:110px;
 		padding:60px 10px 0;
+	}
+
+	/**
+	 * Projects
+	 */
+	.projects-grouped{
+		margin:2em 0 3.5em;
 	}
 }
