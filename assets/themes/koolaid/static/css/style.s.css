@@ -294,51 +294,6 @@
 	}
 
 	/*
-	 * Alternating layout for a page
-	 */
-	.alternate{
-		
-	}
-	.alternate section{
-		position: static;
-	}
-	.alternate .alternate-left,
-	.alternate .alternate-right{
-		padding:30px 0 0px 0;
-	}
-	.alternate section:last-of-type{
-		padding-bottom:20px;
-		
-	}
-	.alternate .ribbon{
-		position: static;
-		top:auto;
-		width:auto;	
-		margin-right:-10px;
-	}
-	.alternate .ribbon-left{
-		left:auto;
-	}
-	.alternate .ribbon{
-		right:auto;
-		
-	}
-
-	/*
-	 * about me page
-	 */
-	.about .me-strip{
-		display:none;
-	}
-	.about #education,
-	.about #web-geek,
-	.about #what-i-do,
-	.about #day-job,
-	.about #resume{
-		background:none;
-	}
-
-	/*
 	 * ribbons
 	 */
 	.ribbon{

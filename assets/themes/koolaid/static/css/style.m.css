@@ -143,28 +143,6 @@
 	.profile img{
 		max-width:100%;
 	}
-	
-	/*
-	 * Alternating layout for a page
-	 */
-	.alternate .alternate-left{
-		padding:40px 0 20px 190px;
-	}
-	
-	.alternate .alternate-right{
-		padding:40px 190px 20px 0;
-	}
-	.alternate .ribbon{
-		position: absolute;
-		top:65px;
-		width:180px;	
-	}
-	.alternate .ribbon-left{
-		left:-20px;
-	}
-	.alternate .ribbon{
-		right:-20px;
-	}
 
 
 	/*
@@ -187,6 +165,7 @@
 	.section-nav a{
 		padding:8px 25px;
 	}
+	
 	/*
 	 * Home
 	 */
