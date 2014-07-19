@@ -1,6 +1,108 @@
+/**
+ * Tangential on project page
+ */
 .projects .tangential svg{
 	fill:#fff;
 }
 .projects .tangential img{
 	max-width:65%;
+}
+.projects .embossed-body{
+}
+/**
+ * individual projects
+ */
+.projects-project{
+	position: relative;	
+	padding:0;
+	margin:2em 0 0;
+}
+
+.projects-project-heading{
+	margin:0 0 0 55%;
+	font-size:2em;
+	line-height: 2.5em;
+}
+.projects-project-desc{
+	margin:0 0 0 55%;
+}
+.projects-large-image-wrap{
+	height:0;
+	margin:0;
+	padding:0;
+}
+.projects-large-image{
+	font-size:2em;
+	border:solid 1px #115D72;
+	padding:4px;
+	max-width:70%;
+	background: #fff;
+	margin:-2.5em 0 0 -20%; /* Margin-top must match .projects-project-heading line-height */
+	float: left;
+	vertical-align: baseline;
+
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+/**
+ * Grouped projects
+ */
+.projects-grouped{
+	margin:2em 0 3em;
+}
+.projects-grouped .projects-project{
+	float: left;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	width:33%;
+	padding:2%;
+	margin:0;
+	text-align: center;
+}
+.projects-grouped .projects-project h3{
+	
+}
+
+/**
+ * Past Projects
+ */
+.projects-past{
+	text-align: center;
+}
+.projects-past .projects-project{
+	position: relative;	
+	padding:0;
+	float: left;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	width:48%;
+	margin:0 0 0 2%;
+}
+.projects-past .projects-project:nth-of-type(odd){
+	margin:0 2% 0 0;
+}
+
+
+.projects-past .projects-large-image{
+	max-width: 100%;
+	width:auto;
+	-webkit-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	
+	margin:0;
+	position: static;
+	
 }

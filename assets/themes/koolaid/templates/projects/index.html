@@ -1,20 +1,53 @@
 {% extends "projects/base.html" %}
 
+{% load static from staticfiles %}
+
 {% block pg_raised_wrap %}
 	{% block content %}
 		<div id="content" class="content clearfix">
+
 			<section class="projects-current">
 				<h2 class="embossed-body">Current Projects</h2>
-				<h3><a href="http://podiobooks.com/">Podiobooks</a></h3>
-				<h3><a href="http://brant.github.io/django-noodles/">Noodles for Django</a></h3>
-				<h3><a href="http://brant.github.io/django-mub/">Monster Under the Bed</a></h3>
-				<h3><a href="http://brant.github.io/djtpl/">djtpl: A Project Template for Django</a></h3>
+
+				<div class="projects-project clearfix">
+					<h3 class="projects-project-heading"><a href="http://podiobooks.com/">Podiobooks</a></h3>
+					<p class="projects-large-image-wrap"><a href="http://podiobooks.com"><img src="{% static 'img/pb.jpg' %}" alt="podiobooks" class="projects-large-image" /></a></p>
+					<div class="projects-project-desc">
+						<p>Podiobooks is an indie audiobook project that we <a href="https://github.com/podiobooks/podiobooks">open sourced</a> the code for a few years ago.</p>
+					</div>
+				</div>
+				<div class="projects-grouped clearfix">
+					<div class="projects-project">
+						<h3><a href="http://brant.github.io/django-noodles/">Noodles for Django</a></h3>
+						<p>A django app focused on being unfocused - it provides little bits of glued-together functionality to help fill in some common gaps for me when developing with django.</p>
+					</div>
+
+					<div class="projects-project">
+						<h3><a href="http://brant.github.io/django-mub/">Monster Under the Bed</a></h3>
+						<p>A django app for streamlined CSS and JS minification for use during both development and production.</p>
+					</div>
+
+					<div class="projects-project">
+						<h3><a href="http://brant.github.io/djtpl/">djtpl: A Project Template for Django</a></h3>
+						<p>A project template for new django projects, bootstrapping common settings and putting in place all the things that I find useful when using django as a framework.</p>
+					</div>
+				</div>
 			</section>
 
 			<section class="projects-past">
 				<h2 class="embossed-body">Past Projects</h2>
-				<h3><a href="http://hateandnut.com/">Hate and NuT</a></h3>
-				<h3><a href="{% url 'podcast' %}">wtfawd?</a></h3>
+				<div class="projects-project">
+					<h3><a href="http://hateandnut.com/">Hate and NuT</a></h3>
+					<p class="projects-large-image-wrap"><a href="http://hateandnut.com"><img src="{% static 'img/han.jpg' %}" alt="hate and nut" class="projects-large-image" /></a></p>
+					<p>Hate and NuT is a webcomic that I was made.</p>
+				</div>
+				<div class="projects-project">
+					<h3><a href="{% url 'podcast' %}">wtfawd podcast?</a></h3>
+					<p class="projects-large-image-wrap"><a href="{% url 'podcast' %}"><img src="{% static 'img/wtfawd.jpg' %}" alt="wtfawd podcast" class="projects-large-image" /></a></p>
+					<p>Hate and NuT is a webcomic that I was made.</p>
+				</div>
+
+
 			</section>
 		</div>
 	{% endblock %}

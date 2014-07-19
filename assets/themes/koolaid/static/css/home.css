@@ -6,13 +6,10 @@
 	margin:20px 0;
 	padding:10px 0;
 }
-.home-link h2{
+.home-link .embossed-body{
 	position: absolute;
 	left:295px;
 	top:20px;
-	margin:0;
-	padding:0;
-	
 }
 .home-link h2 a{
 	color:inherit;
