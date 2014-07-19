@@ -28,9 +28,10 @@
 .folio-piece a:link,
 .folio-piece a:visited{
 	text-decoration:none;	
+	border:none;
 }
 .folio-piece a:hover{
-	text-decoration: underline;
+	
 }
 
 .folio-piece aside{

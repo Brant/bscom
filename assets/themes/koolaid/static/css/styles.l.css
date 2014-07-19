@@ -15,7 +15,6 @@ body{
 	font-family: Verdana;	
 	color:#474948;
 }
-
 h1,h2,h3,h4,h5,h6{
 	margin:0;
 	padding:0;
@@ -24,8 +23,39 @@ h1,h2,h3,h4,h5,h6{
 	font-weight: bold;
 	font-weight: 700;
 }
-h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{
+h1 a,
+h1 a:hover,
+h1 a:visited,
+h1 a:link,
+h1 a:active,
+h2 a,
+h2 a:hover,
+h2 a:visited,
+h2 a:link,
+h2 a:active,
+h3 a,
+h3 a:hover,
+h3 a:visited,
+h3 a:link,
+h3 a:active,
+h4 a,
+h4 a:hover,
+h4 a:visited,
+h4 a:link,
+h4 a:active,
+h5 a,
+h5 a:hover,
+h5 a:visited,
+h5 a:link,
+h5 a:active,
+h6 a,
+h6 a:hover,
+h6 a:visited,
+h6 a:link,
+h6 a:active{
 	text-decoration: none;
+	color:#3f0316;
+	border:none;
 }
 h1{
 	font-size:1.6em;
@@ -52,10 +82,18 @@ h3{
 	margin: 1.5em 0 .5em 0;
 }
 
-a, a:active, a:visited, a:link { color:#006B8B; }
-a:hover { color:#115C72; }
+a, a:active, a:visited, a:link { 
+	color:#006B8B; 
+	text-decoration: underline; 
+	border-bottom:none;
 
-
+	-webkit-transition: color .15s ease-in-out;
+	-ms-transition: color .15s ease-in-out;
+	-moz-transition: color .15s ease-in-out;
+	-o-transition: color .15s ease-in-out;
+	transition: color .15s ease-in-out;
+}
+a:hover { color:#115C72; color:#348034; }
 
 hgroup{
 	padding: 0 0 10px;
@@ -427,9 +465,8 @@ hgroup h3{
 .foot-section{
 	width:33%;
 	float:left;
-		
 }
-.foot-section h1{
+.foot-section h2{
 	color:#666;
 	text-shadow:1px 1px 1px #fefefe;
 	padding:0 0 7px 0;
@@ -462,7 +499,7 @@ hgroup h3{
 	height:20px;
 	padding-top:12px;
 	padding-left:37px;
-	
+	border: none;
 	float:left;
 	background:url(img/social-cluster.png) left top no-repeat;
 }
@@ -503,12 +540,13 @@ hgroup h3{
 .profile{
 	color:#6f6f6f;
 }
+
+
 /*
  * Footer Contact
  */
 .contact{
 	width:44%;
-	
 }
 .contact-form{
 	margin-top:-10px;
@@ -557,8 +595,6 @@ hgroup h3{
 	margin-right:20px;
 	padding:0;
 	height:32px;
-	
-	
 }
 .contact-social li a{
 	width:0px;

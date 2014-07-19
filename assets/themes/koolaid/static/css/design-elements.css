@@ -116,6 +116,7 @@
 	
 	color:#000;
 	text-decoration:none;
+	border:none;
 	position: relative;
 	z-index: 5;
 	font-weight: bold;
@@ -144,7 +145,6 @@
 .page-heading{
 	position: relative;
 	z-index: 3;
-	
 }
 .page-heading h1{
 	position: relative;
@@ -228,6 +228,7 @@
 .ribbon a:link{
 	color:#fff;
 	text-decoration: none;
+	border:none;
 }
 .ribbon a.cur,
 .ribbon a:hover{

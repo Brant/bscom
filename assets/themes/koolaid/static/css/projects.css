@@ -4,6 +4,10 @@
 .projects{
 	
 }
+.projects a{
+	text-decoration: none;
+	border-bottom:solid 1px;
+}
 .projects .content{
 	font-size:1.1em;
 	line-height: 1.6em;
@@ -23,10 +27,7 @@
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
 }
-.projects h2 a,
-.projects h3 a{
-	color:#3f0316;
-}
+
 
 
 /**
