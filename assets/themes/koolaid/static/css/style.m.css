@@ -21,9 +21,11 @@
 	.show-on-medium-only{
 		display:block;
 	}
+	.projects-page .pg,
 	.width{
 		width:auto;
 		max-width:959px;
+
 	}
 	.nav{
 		/*display:none;*/
@@ -181,5 +183,8 @@
 	 */
 	.projects-grouped{
 		margin:2em 0 3.5em;
+	}
+	.projects-page .embossed-body{
+		text-align: left;
 	}
 }

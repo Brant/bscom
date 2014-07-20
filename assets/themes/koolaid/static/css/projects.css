@@ -2,7 +2,8 @@
  * Generic stuff
  */
 .projects{
-	
+	font-size:1.1em;
+	line-height: 1.6em;
 }
 
 .projects a{
@@ -13,11 +14,7 @@
 	text-decoration: none;
 	border:none;
 }
-.projects{
-	font-size:1.1em;
-	line-height: 1.6em;
 
-}
 .projects .embossed-body{
 	text-align: center;
 }
@@ -35,7 +32,6 @@
 .projects-page .pg{
 	width:90%;
 	max-width:1290px;
-
 }
 
 
@@ -53,10 +49,9 @@
 .projects-project{
 	position: relative;	
 	padding:0;
-	margin:2em 0 0;
 }
 .projects-project-heading{
-	font-size: 2.3em;
+	font-size: 2.1em;
 	font-family: "Ek Mukta", verdana, sans-serif;
 	font-weight: 200;
 
@@ -65,6 +60,9 @@
 /**
  * Featured current project
  */
+.projects-current-featured{
+	margin:2em 0 3em;
+}
 .projects-current-featured .projects-project-desc{
 	margin:0 0 0 52%;
 }
@@ -91,7 +89,7 @@
  * Grouped projects
  */
 .projects-grouped{
-	margin:2em -5em 4em;
+	margin:0 -5em 4em;
 }
 .projects-grouped .projects-project{
 	float: left;
@@ -108,7 +106,7 @@
 }
 .projects-grouped .projects-project-heading{
 	font-weight: 200;
-	font-size:1.6em;
+	
 }
 .grouped-project-image-wrap{
 	-webkit-box-sizing:border-box;

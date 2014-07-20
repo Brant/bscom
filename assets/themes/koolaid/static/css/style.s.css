@@ -300,11 +300,12 @@
 		padding:5px 10px;
 		text-align: right;
 	}
+	.home-link .embossed-body,
 	.embossed-body{
 		position: static;
 		left:auto;
 		top:auto;
-		margin:0 0 1em;
+		margin:0 0 .5em;
 		padding:0;
 		font-size:2.5em;
 		line-height: 1.3em;
@@ -363,7 +364,7 @@
 	 * Projects
 	 */
 	.projects{
-		padding:0 10px;
+		padding:0 10px 2em;
 	}
 	.projects a{
 		
