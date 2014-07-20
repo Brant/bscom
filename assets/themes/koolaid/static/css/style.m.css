@@ -60,7 +60,7 @@
 	 * ribbons
 	 */
 	.ribbon{
-		padding:70px 0px 70px 0px;
+		/*padding:70px 0px 70px 0px;*/
 			
 		-webkit-box-shadow:none;
 		-moz-box-shadow:none;
@@ -186,5 +186,8 @@
 	}
 	.projects-page .embossed-body{
 		text-align: left;
+	}
+	.projects-grouped .projects-project-heading{
+		font-size:1.8em;
 	}
 }
