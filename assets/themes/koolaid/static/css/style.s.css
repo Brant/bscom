@@ -358,6 +358,116 @@
 	.home .content{
 		padding:0 10px 50px;
 	}
+
+	/**
+	 * Projects
+	 */
+	.projects{
+		padding:0 10px;
+	}
+	.projects a{
+		
+	}
+	.projects{
+		font-size:1em;
+		line-height: 1.6em;
+	}
+	.projects .embossed-body{
+		margin:1em 0 0;
+	}
+	.project-img{
+		
+		width:100%;
+	}
+
+	/**
+	 * individual projects
+	 */
+	.projects-project{
+		position: relative;	
+		padding:0;
+		margin:1em 0;
+	}
+	.projects-project-heading{
+		font-size: 2em;
+		margin:1em 0 .3em;
+	}
+
+	/**
+	 * Featured current project
+	 */
+	.projects-current-featured .projects-project-desc{
+		margin:0;
+	}
+	.projects-featured-heading{
+		margin:0;
+	}
+	.projects-current-featured .projects-large-image-wrap{
+		height:auto;
+		margin:0;
+		padding:0;
+	}
+	.projects-current-featured .projects-large-image{
+		max-width:none;
+		width:100%;
+		margin:0; 
+		float: none;
+	}
+
+	/**
+	 * Grouped projects
+	 */
+	.projects-grouped{
+		margin:0;
+
+	}
+	.projects-grouped .projects-project{
+		width:auto;
+		padding:0;
+		margin:0;
+		float:left;
+		width:100%;
+		text-align: left;
+	}
+	.projects-grouped .projects-project-heading{
+		font-size:2em;
+		text-align: left;
+	}
+	.grouped-project-image-wrap{		
+		float: left;
+		width:25%;
+		margin:0 1em .5em 0;
+		padding:0;
+		
+	}
+	.grouped-project-image-wrap img{
+	}
+
+	/**
+	 * Past Projects
+	 */
+	.projects-past{
+		text-align: left;
+	}
+	.projects-past .embossed-body{
+		margin:1em 0 .5em;
+	}
+	.projects-past .projects-project{
+		padding:0;
+		float: none;
+		width:auto;
+		margin:0;
+	}
+	.projects-past .projects-project:nth-of-type(odd){
+		margin:0;
+	}
+
+
+	.projects-past .projects-large-image{
+		
+	}
+
+
 	
 }
 

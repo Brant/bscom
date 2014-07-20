@@ -4,11 +4,16 @@
 .projects{
 	
 }
+
 .projects a{
 	text-decoration: none;
 	border-bottom:solid 1px;
 }
-.projects .content{
+.projects-large-image-wrap a{
+	text-decoration: none;
+	border:none;
+}
+.projects{
 	font-size:1.1em;
 	line-height: 1.6em;
 
@@ -33,10 +38,7 @@
 /**
  * Tangential on project page
  */
-.projects .tangential svg{
-	fill:#fff;
-}
-.projects .tangential img{
+.projects-page .tangential img{
 	max-width:65%;
 }
 
