@@ -197,7 +197,11 @@ LOGGING = {
     }
 }
 
-MUB_CSS_ORDER = (("base.css", "style.l.css", "design-elements.css"), ("folio.css", "style.m.css", "style.s.css", "style.xl.css"))
+MUB_CSS_ORDER = (
+    ("base.css", "style.l.css", "design-elements.css", ),
+    ("folio.css", "style.m.css", "style.s.css", )
+)
+
 MUB_MINIFY = True
 
 SOUTH_MIGRATION_MODULES = {
