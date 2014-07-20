@@ -19,7 +19,7 @@
 
 }
 .projects .embossed-body{
-	
+	text-align: center;
 }
 .project-img{
 	border:solid 1px #85b2be;
@@ -31,6 +31,11 @@
 	-moz-box-sizing:border-box;
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
+}
+.projects-page .pg{
+	width:90%;
+	max-width:1290px;
+
 }
 
 
@@ -96,9 +101,9 @@
 	-ms-box-sizing:border-box;
 	box-sizing:border-box;
 
-	width:27%;
+	width:30%;
 	padding:2%;
-	margin:0 3%;
+	margin:0 1.5%;
 	text-align: center;
 }
 .projects-grouped .projects-project-heading{
@@ -114,6 +119,10 @@
 	
 	border:solid 1px #d7d7d7;
 	border-radius: 10000px;
+
+	width:85%;
+	margin:0 auto;
+	display: none;
 }
 .grouped-project-image-wrap img{
 	-webkit-box-sizing:border-box;
@@ -138,7 +147,7 @@
 	text-align: center;
 }
 .projects-past .embossed-body{
-	text-align: left;
+	
 }
 .projects-past .projects-project{
 	position: relative;	
