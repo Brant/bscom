@@ -16,7 +16,7 @@ framework.
 import os
 import newrelic.agent
 
-newrelic.agent.initialize('bucksac_config/newrelic.ini', "production")
+newrelic.agent.initialize('newrelic.ini', "production")
 
 
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
