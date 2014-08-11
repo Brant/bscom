@@ -14,9 +14,9 @@ framework.
 
 """
 import os
-# import newrelic.agent
+import newrelic.agent
 
-# newrelic.agent.initialize('newrelic.ini', "production")
+newrelic.agent.initialize('newrelic.ini', "production")
 
 
 # We defer to a DJANGO_SETTINGS_MODULE already in the environment. This breaks
@@ -31,4 +31,4 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "bscom.settings")
 from django.core.wsgi import get_wsgi_application
 
 application = get_wsgi_application()
-# application = newrelic.agent.wsgi_application()(application)
+application = newrelic.agent.wsgi_application()(application)
