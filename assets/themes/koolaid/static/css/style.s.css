@@ -128,12 +128,13 @@
 	.blog-single article pre,
 	.blog-single article figure,
 	.blog-single article .non-figure-image{
-		margin-left:-10px;
-		margin-right:-10px;
+		margin:1em -10px;
 		padding-left:0;
 		padding-right:0;
 		border-left:none;
 		border-right:none;
+		max-width:none;
+		width:auto;
 	}
 	.blog-single article pre code{
 		border-left:none;
