@@ -136,6 +136,10 @@
 		max-width:none;
 		width:auto;
 	}
+	.blog-single article figure figcaption{
+		padding-left:10px;
+		padding-right:10px;
+	}
 	.blog-single article pre code{
 		border-left:none;
 		border-right:none;
