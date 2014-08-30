@@ -51,12 +51,10 @@
 					{% if section.title %}<h2>{{ section.title }}</h2>{% endif %}
 					{% if section.image %}
 						{% if section.image_caption %}
-							<p>
-								<figure>
-									<img src="{{ section.image_800.url }}" alt="{{ section.image_caption }}" />
-									<figcaption>{{ section.image_caption }}</figcaption>
-								</figure>
-							</p>
+							<figure>
+								<img src="{{ section.image_800.url }}" alt="{{ section.image_caption }}" />
+								<figcaption>{{ section.image_caption }}</figcaption>
+							</figure>
 						{% else %}
 							<p class="non-figure-image"><img src="{{ section.image_800.url }}" alt="" /></p>
 						{% endif %}

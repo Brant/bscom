@@ -84,6 +84,7 @@
 .blog-single article figure{
 	border:solid 1px #ddd;
 	padding:8px;
+	display: block;
 }
 .blog-single article figure figcaption{
 	padding: 15px 0 0px;
