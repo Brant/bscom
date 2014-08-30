@@ -120,9 +120,24 @@
 		position: static;
 		left:auto;
 		top:auto;
+		margin:0;
 	}
 	.blog-single-header-text{
 		margin-left:0;
+	}
+	.blog-single article pre,
+	.blog-single article figure,
+	.blog-single article .non-figure-image{
+		margin-left:-10px;
+		margin-right:-10px;
+		padding-left:0;
+		padding-right:0;
+		border-left:none;
+		border-right:none;
+	}
+	.blog-single article pre code{
+		border-left:none;
+		border-right:none;
 	}
 	
 	/*

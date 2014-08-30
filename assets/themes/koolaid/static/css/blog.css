@@ -77,6 +77,10 @@
 	padding-top:15px;
 	margin-top:45px;
 }
+.blog-single article .non-figure-image{
+	border:solid 1px #ddd;
+	padding:3px;
+}
 .blog-single article figure{
 	border:solid 1px #ddd;
 	padding:8px;

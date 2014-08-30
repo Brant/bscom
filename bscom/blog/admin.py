@@ -2,13 +2,14 @@
 Blog admin configurations
 """
 from django.contrib import admin
+from django import forms
 from django.contrib.redirects.models import Redirect
 from django.contrib.sites.models import get_current_site
 from django.core.exceptions import ObjectDoesNotExist
 
 from noodles.admin.actions import re_create_assets
 
-from bscom.blog.models import Entry, Category
+from bscom.blog.models import Entry, Category, EntrySection
 
 
 def reslug(modeladmin, request, queryset):
@@ -43,11 +44,25 @@ def reslug(modeladmin, request, queryset):
 reslug.short_description = "Re-slug"
 
 
+class EntrySectionAdminForm(forms.ModelForm):
+    def clean(self):
+        if not self.cleaned_data['image'] and not self.cleaned_data['content']:
+            raise forms.ValidationError("Sections must either have an image or some content")
+
+        return self.cleaned_data
+
+
+class EntrySectionAdmin(admin.StackedInline):
+    model = EntrySection
+    extra = 0
+    form = EntrySectionAdminForm
+
+
 class EntryAdmin(admin.ModelAdmin):
     """
     Blog Entry admin configuration
     """
-    actions = [reslug, re_create_assets]
+    actions = [reslug, re_create_assets, ]
 
     fieldsets = (
         (None, {
@@ -67,7 +82,7 @@ class EntryAdmin(admin.ModelAdmin):
     list_display = ["title", "slug", "date", "category"]
     list_filter = ["category", "draft", ]
     readonly_fields = ['draft_file', 'date_modified', 'slug', ]
-
+    inlines = [EntrySectionAdmin, ]
 
 admin.site.register(Category)
 admin.site.register(Entry, EntryAdmin)

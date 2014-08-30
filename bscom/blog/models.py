@@ -1,10 +1,11 @@
-from datetime import datetime
+"""
+Blog models
+"""
 from django.db import models
-from django.utils.timezone import utc
 
 from taggit.managers import TaggableManager
 
-from noodles.models import TitleDateSlug, DefinedWidthsAssetsFromImagesMixin
+from noodles.models import TitleDateSlug, DefinedWidthsAssetsFromImagesMixin, NameSlug
 
 
 class Entry(DefinedWidthsAssetsFromImagesMixin, TitleDateSlug):
@@ -19,7 +20,7 @@ class Entry(DefinedWidthsAssetsFromImagesMixin, TitleDateSlug):
     category = models.ForeignKey('Category', null=True, blank=True)
     thumbnail = models.ImageField(null=True, blank=True, upload_to="blog/img/thumbnails", help_text="Should be a square (e.g. 300x300)")
 
-    content = models.TextField(null=True, blank=True)
+    content = models.TextField(null=True, blank=True, help_text="Markdown and/or HTML")
     blurb = models.TextField(null=True, blank=True)
 
     draft = models.BooleanField(default=False, help_text="While in draft status, the entry will never show up on a live site")
@@ -42,6 +43,28 @@ class Entry(DefinedWidthsAssetsFromImagesMixin, TitleDateSlug):
     def get_dimensions(self):
         """ asset widths """
         return [100, 200, 300, 500]
+
+
+class EntrySection(DefinedWidthsAssetsFromImagesMixin, NameSlug):
+    """
+    Way to split a blog into sections rather than one large entry
+    """
+    entry = models.ForeignKey(Entry)
+    index = models.IntegerField(default=0)
+
+    title = models.CharField(max_length=1000, null=True, blank=True, help_text="Turns into &lt;h2&gt; for this section")
+    content = models.TextField(null=True, blank=True, help_text="Markdown and/or HTML. Will appear after any images attached to this section.")
+
+    image = models.ImageField(null=True, blank=True, upload_to="blog/img/sections", help_text="Add an image for this section of content")
+    image_caption = models.CharField(max_length=3000, null=True, blank=True, help_text="If used, it will turn 'image' into a 'figure'")
+
+    class Meta:
+        """ Django Metadata """
+        ordering = ["entry", "index", ]
+
+    def get_dimensions(self):
+        """ asset widths """
+        return [200, 500, 800, ]
 
 
 class Category(TitleDateSlug):
